@@ -13,6 +13,12 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+" Themes
+"
+Plug 'jaredgorski/spacecamp'
+
+" Modules
+"
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 if has('nvim')
@@ -44,9 +50,10 @@ call plug#end()
 
 " --------------------
 
-let NERDTreeShowHidden=1    " Show hidden files
+let NERDTreeShowHidden=1    " Show hidden files.
+let NERDTreeQuitOnOpen=1    " Close NERDTree after opening a file.
 
-set termguicolors   " Enable true colors support
+set termguicolors   " Enable true colors support.
 
 set relativenumber
 
@@ -60,6 +67,8 @@ set shiftwidth=2    " Indents will have a width of n.
 set softtabstop=4   " Sets the number of columns for a TAB.
 
 set expandtab       " Expand TABs to spaces
+
+colorscheme spacecamp
 
 let g:airline_theme='dark'
 let g:airline#extensions#tabline#enabled = 1            " Enable tab line
