@@ -5,6 +5,11 @@ export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
+export ANDROID_SDK="$HOME/Library/Android/sdk"
+export ANDROID_TOOLS="$HOME/Library/Android/sdk/platform-tools"
+
+export PATH="$ANDROID_SDK:$ANDROID_TOOLS:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/xcession/.oh-my-zsh"
 
