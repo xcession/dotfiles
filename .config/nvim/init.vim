@@ -63,6 +63,8 @@ set termguicolors   " Enable true colors support.
 
 set relativenumber
 
+set linespace=2
+
 set tabstop=2       " The width of a TAB is set to n.
                     " Still it is a \t. It is just that
                     " Vim will interpret it to be having
