@@ -1,13 +1,18 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Ncurses
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
+# Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+# Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
-
+# Android SDK
 export ANDROID_SDK="$HOME/Library/Android/sdk"
 export ANDROID_TOOLS="$HOME/Library/Android/sdk/platform-tools"
-
 export PATH="$ANDROID_SDK:$ANDROID_TOOLS:$PATH"
 
 # Path to your oh-my-zsh installation.
