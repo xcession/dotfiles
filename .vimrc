@@ -12,17 +12,11 @@ Plug 'jaredgorski/spacecamp'
 "
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
 Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -96,10 +90,6 @@ nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
 
 " --------------------
 
-let g:deoplete#enable_at_startup = 1
-
-" --------------------
-
 map <C-n> :NERDTreeToggle<CR>       " Toggle NERDTree
 map <Leader>n :NERDTreeFind<CR>
 
@@ -119,4 +109,3 @@ let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal = 0
 
 " --------------------
-
