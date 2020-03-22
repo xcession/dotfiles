@@ -11,11 +11,11 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # Android SDK
-export ANDROID_SDK="$HOME/Library/Android/sdk"
-export PATH="$PATH:$ANDROID_SDK/emulator"
-export PATH="$PATH:$ANDROID_SDK/tools"
-export PATH="$PATH:$ANDROID_SDK/tools/bin"
-export PATH="$PATH:$ANDROID_SDK/platform-tools"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/xcession/.oh-my-zsh"
