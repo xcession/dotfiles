@@ -161,8 +161,6 @@ nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
 
 " Trigger configuration.
 let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<c-b>"
-"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
