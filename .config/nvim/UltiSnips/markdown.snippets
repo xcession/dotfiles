@@ -1,0 +1,9 @@
+snippet meta "Markdown metadata front matter" b
+---
+layout: article
+title: "${1:title}"
+date: `!v strftime("%Y-%m-%d %H:%M:%S %z")`
+tags: $2
+---
+$0
+endsnippet
