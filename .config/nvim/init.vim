@@ -117,14 +117,14 @@ filetype plugin on
 let mapleader="\<SPACE>"
 
 " Disable arrow keys
-nnoremap <up>    <nop>
-nnoremap <down>  <nop>
-nnoremap <left>  <nop>
-nnoremap <right> <nop>
-inoremap <up>    <nop>
-inoremap <down>  <nop>
-inoremap <left>  <nop>
-inoremap <right> <nop>
+"nnoremap <up>    <nop>
+"nnoremap <down>  <nop>
+"nnoremap <left>  <nop>
+"nnoremap <right> <nop>
+"inoremap <up>    <nop>
+"inoremap <down>  <nop>
+"inoremap <left>  <nop>
+"inoremap <right> <nop>
 
 " Switch between different windows by their direction.
 no <C-j> <C-w>j| " switching to below window 
@@ -154,6 +154,18 @@ let g:ale_fix_on_save = 1
 
 nnoremap ]r :ALENextWrap<CR>        " Move to the next ALE warning / error.
 nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
+
+" --------------------
+" ultisnips
+" 
+
+" Trigger configuration.
+let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 " --------------------
 " coc
