@@ -111,7 +111,9 @@ set ignorecase            " Case insensitive search
 set clipboard+=unnamedplus
 
 colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+set background=dark
+let g:gruvbox_contrast_dark=('hard')
+let g:gruvbox_contrast_light=('medium')
 
 filetype plugin on
 
