@@ -139,13 +139,13 @@ no <C-h> <C-w>h| " switching to left window
 " --------------------
 " ale
 "
-let g:ale_linters = {
+let g:ale_linters={
       \ 'python': ['flake8', 'pylint'],
       \ 'javascript': ['eslint'],
       \ 'vue': ['eslint']
       \}
 
-let g:ale_fixers = {
+let g:ale_fixers={
       \ 'javascript': ['eslint'],
       \ 'typescript': ['prettier', 'tslint'],
       \ 'vue': ['eslint'],
@@ -154,7 +154,7 @@ let g:ale_fixers = {
       \ 'reason': ['refmt']
       \}
 
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save=1
 
 nnoremap ]r :ALENextWrap<CR>        " Move to the next ALE warning / error.
 nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
@@ -317,7 +317,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " --------------------
 " quick-scope
 "
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
@@ -325,17 +325,17 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 " vim-airline
 "
 let g:airline_theme='gruvbox'
-let g:airline#extensions#tabline#enabled = 2
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#right_sep = ' '
-let g:airline#extensions#tabline#right_alt_sep = '|'
-let g:airline_left_sep = ' '
-let g:airline_left_alt_sep = '|'
-let g:airline_right_sep = ' '
-let g:airline_right_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
+let g:airline#extensions#tabline#enabled=2
+let g:airline#extensions#tabline#fnamemod=':t'
+let g:airline#extensions#tabline#left_sep=' '
+let g:airline#extensions#tabline#left_alt_sep='|'
+let g:airline#extensions#tabline#right_sep=' '
+let g:airline#extensions#tabline#right_alt_sep='|'
+let g:airline_left_sep=' '
+let g:airline_left_alt_sep='|'
+let g:airline_right_sep=' '
+let g:airline_right_alt_sep='|'
+let g:airline#extensions#tabline#formatter='default'
 
 " --------------------
 " nerdtree
@@ -360,17 +360,17 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "  vim-nerdtree-syntax-highlight
 "
 " Highlight full name (not only icons).
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
+let g:NERDTreeFileExtensionHighlightFullName=1
+let g:NERDTreeExactMatchHighlightFullName=1
+let g:NERDTreePatternMatchHighlightFullName=1
 
 " --------------------
 " vim-jsx-pretty
 "
-let g:vim_jsx_pretty_colorful_config = 1 " default 0
+let g:vim_jsx_pretty_colorful_config=1 " default 0
 
 " --------------------
 " vim-markdown
 "
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
-let g:markdown_syntax_conceal = 0
+let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
+let g:markdown_syntax_conceal=0
