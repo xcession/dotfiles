@@ -105,10 +105,12 @@ if !&sidescrolloff
 endif
 set nostartofline         " Do not jump to first character with page commands.
 
+set ignorecase            " Case insensitive search
+
 " Use system clipboard
 set clipboard+=unnamedplus
-colorscheme gruvbox
 
+colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 
 filetype plugin on
@@ -117,14 +119,14 @@ filetype plugin on
 let mapleader="\<SPACE>"
 
 " Disable arrow keys
-"nnoremap <up>    <nop>
-"nnoremap <down>  <nop>
-"nnoremap <left>  <nop>
-"nnoremap <right> <nop>
-"inoremap <up>    <nop>
-"inoremap <down>  <nop>
-"inoremap <left>  <nop>
-"inoremap <right> <nop>
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
 
 " Switch between different windows by their direction.
 no <C-j> <C-w>j| " switching to below window 
