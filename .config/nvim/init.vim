@@ -31,8 +31,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/goyo.vim'
-Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'junegunn/goyo.vim'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'preservim/nerdcommenter'
 Plug 'SirVer/ultisnips'
 "Plug 'terryma/vim-multiple-cursors'
@@ -158,6 +158,23 @@ let g:ale_fix_on_save=1
 
 nnoremap ]r :ALENextWrap<CR>        " Move to the next ALE warning / error.
 nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
+
+" --------------------
+" hexokinase
+"
+let g:Hexokinase_refreshEvents = ['InsertLeave']
+
+let g:Hexokinase_optInPatterns = [
+      \ 'full_hex',
+      \ 'triple_hex',
+      \ 'rgb',
+      \ 'rgba',
+      \ 'hsl',
+      \ 'hsla',
+      \ 'colour_names'
+      \ ]
+
+let g:Hexokinase_highlighters = ['backgroundfull']
 
 " --------------------
 " ultisnips
