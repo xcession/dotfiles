@@ -16,6 +16,8 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+# iOS Simulator
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
 # Homebrew Shell Completion
 if type brew &>/dev/null; then
