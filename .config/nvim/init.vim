@@ -1,11 +1,15 @@
-""
+"
 "  _       _ _         _
 " (_)_ __ (_) |___   _(_)_ __ ___
 " | | '_ \| | __\ \ / / | '_ ` _ \
 " | | | | | | |_ \ V /| | | | | | |
 " |_|_| |_|_|\__(_)_/ |_|_| |_| |_|
 "
-""
+" Filename:     init.vim
+" GitHub:       https://github.com/xcession/dotfiles
+" Maintainer:   Пэйнт (Tharawut Paripaiboon)
+
+" Plugins {{{
 
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -21,8 +25,6 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-" --------------------
 
 call plug#begin('~/.vim/plugged')
 
@@ -44,8 +46,8 @@ Plug 'unblevable/quick-scope'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Coc
-"
+" Coc {{{
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
@@ -54,31 +56,40 @@ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
-" NERDTree
-"
+" }}}
+
+" NERDTree {{{
+
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" Languages
-"
+" }}}
+
+" Languages {{{
+
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
 
-" Themes
-"
+" }}}
+
+" Themes {{{
+
 "Plug 'jaredgorski/spacecamp'
 Plug 'morhetz/gruvbox'
+
+" }}}
 
 " Initialize plugin system
 call plug#end()
 
-" --------------------
-" Basic settings
-"
+" }}}
+
+" Basic Settings {{{
+
 set encoding=UTF-8
 set termguicolors         " Enable true colors support.
 set number relativenumber " Show current line number and relative line numbers.
@@ -136,9 +147,10 @@ no <C-k> <C-w>k| " switching to above window
 no <C-l> <C-w>l| " switching to right window 
 no <C-h> <C-w>h| " switching to left window
 
-" --------------------
-" ale
-"
+" }}}
+
+" ale {{{
+
 let g:ale_linters={
       \ 'python': ['flake8', 'pylint'],
       \ 'javascript': ['eslint'],
@@ -159,9 +171,10 @@ let g:ale_fix_on_save=1
 nnoremap ]r :ALENextWrap<CR>        " Move to the next ALE warning / error.
 nnoremap [r :ALEPreviousWrap<CR>    " Move to the previous ALE warning / error.
 
-" --------------------
-" hexokinase
-"
+" }}}
+
+" hexokinase {{{
+
 let g:Hexokinase_refreshEvents = ['InsertLeave']
 
 let g:Hexokinase_optInPatterns = [
@@ -176,9 +189,9 @@ let g:Hexokinase_optInPatterns = [
 
 let g:Hexokinase_highlighters = ['backgroundfull']
 
-" --------------------
-" ultisnips
-" 
+" }}}
+
+" ultisnips {{{
 
 " Trigger configuration.
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -186,9 +199,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 " :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
-" --------------------
-" coc
-"
+" }}}
+
+" coc {{{
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -331,16 +344,18 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-" --------------------
-" quick-scope
-"
+" }}}
+
+" quick-scope {{{
+
 let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
-" --------------------
-" vim-airline
-"
+" }}}
+
+" vim-airline {{{
+
 let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=2
 let g:airline#extensions#tabline#fnamemod=':t'
@@ -354,9 +369,10 @@ let g:airline_right_sep=' '
 let g:airline_right_alt_sep='|'
 let g:airline#extensions#tabline#formatter='default'
 
-" --------------------
-" nerdtree
-"
+" }}}
+
+" nerdtree {{{
+
 let NERDTreeShowHidden=1    " Show hidden files.
 let NERDTreeQuitOnOpen=1    " Close NERDTree after opening a file.
 
@@ -373,21 +389,26 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if the only window left open is a NERDTree.
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" --------------------
-"  vim-nerdtree-syntax-highlight
-"
+" }}}
+
+" vim-nerdtree-syntax-highlight {{{
+
 " Highlight full name (not only icons).
 let g:NERDTreeFileExtensionHighlightFullName=1
 let g:NERDTreeExactMatchHighlightFullName=1
 let g:NERDTreePatternMatchHighlightFullName=1
 
-" --------------------
-" vim-jsx-pretty
-"
+" }}}
+
+" vim-jsx-pretty {{{
+
 let g:vim_jsx_pretty_colorful_config=1 " default 0
 
-" --------------------
-" vim-markdown
-"
+" }}}
+
+" vim-markdown {{{
+
 let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
+
+" }}}
