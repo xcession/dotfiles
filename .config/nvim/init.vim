@@ -1,3 +1,4 @@
+" vim:fileencoding=utf-8:ft=conf:foldmethod=marker
 "
 "  _       _ _         _
 " (_)_ __ (_) |___   _(_)_ __ ___
