@@ -1,4 +1,3 @@
-" vim:fileencoding=utf-8:ft=conf:foldmethod=marker
 "
 "  _       _ _         _
 " (_)_ __ (_) |___   _(_)_ __ ___
@@ -413,3 +412,5 @@ let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
 
 "}}}
+
+" vim:fileencoding=utf-8:foldmethod=marker:foldlevel=0
