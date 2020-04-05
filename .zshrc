@@ -1,3 +1,14 @@
+#
+#            _              
+#    _______| |__  _ __ ___ 
+#   |_  / __| '_ \| '__/ __|
+#  _ / /\__ \ | | | | | (__ 
+# (_)___|___/_| |_|_|  \___|
+#
+# Filename:     .zshrc
+# GitHub:       https://github.com/xcession/dotfiles
+# Maintainer:   Пэйнт (Tharawut Paripaiboon)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
