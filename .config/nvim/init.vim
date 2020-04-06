@@ -116,7 +116,8 @@ if !&sidescrolloff
 endif
 set nostartofline         " Do not jump to first character with page commands.
 
-set ignorecase            " Case insensitive search
+set smartcase               " Ignore the case when the search pattern is all lowercase.
+set ignorecase
 
 " Use system clipboard
 set clipboard+=unnamedplus
