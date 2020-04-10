@@ -9,9 +9,6 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Ncurses
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 # Ruby
@@ -27,16 +24,6 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
-# iOS Simulator
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
-
-# Homebrew Shell Completion
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/xcession/.oh-my-zsh"
