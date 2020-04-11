@@ -79,8 +79,8 @@ Plug 'tpope/vim-markdown'
 
 " Themes {{{
 
+Plug 'joshdick/onedark.vim'
 "Plug 'jaredgorski/spacecamp'
-Plug 'morhetz/gruvbox'
 
 "}}}
 
@@ -145,10 +145,8 @@ set ignorecase
 " Use system clipboard
 set clipboard+=unnamedplus
 
-colorscheme gruvbox
+colorscheme onedark
 set background=dark
-let g:gruvbox_contrast_dark=('hard')
-let g:gruvbox_contrast_light=('medium')
 
 filetype plugin on
 
@@ -386,7 +384,7 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 
 " vim-airline {{{
 
-let g:airline_theme='gruvbox'
+let g:airline_theme='onedark'
 let g:airline#extensions#tabline#enabled=2
 let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#left_sep=' '
