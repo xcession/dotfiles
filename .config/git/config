@@ -1,0 +1,5 @@
+[user]
+	name = Пэйнт
+	email = xcession@gmail.com
+[core]
+	editor = nvim
