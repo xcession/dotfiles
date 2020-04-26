@@ -79,8 +79,8 @@ Plug 'tpope/vim-markdown'
 
 " Themes {{{
 
-Plug 'joshdick/onedark.vim'
-"Plug 'jaredgorski/spacecamp'
+"Plug 'joshdick/onedark.vim'
+Plug 'jaredgorski/spacecamp'
 
 "}}}
 
@@ -145,7 +145,7 @@ set ignorecase
 " Use system clipboard
 set clipboard+=unnamedplus
 
-colorscheme onedark
+colorscheme spacecamp
 set background=dark
 
 filetype plugin on
@@ -225,7 +225,7 @@ let g:Hexokinase_highlighters = ['backgroundfull']
 let g:UltiSnipsExpandTrigger="<tab>"
 
 " :UltiSnipsEdit to split your window
-let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsEditSplit="vertical"
 
 "}}}
 
@@ -384,7 +384,7 @@ highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=und
 
 " vim-airline {{{
 
-let g:airline_theme='onedark'
+let g:airline_theme='dark_minimal'
 let g:airline#extensions#tabline#enabled=2
 let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline#extensions#tabline#left_sep=' '
