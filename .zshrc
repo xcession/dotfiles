@@ -17,7 +17,7 @@ export PATH="/usr/local/opt/ncurses/bin:$PATH"
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-# Python
+# Homebrew's Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
