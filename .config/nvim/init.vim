@@ -97,6 +97,10 @@ set encoding=UTF-8
 " Enable true colors support
 set termguicolors
 
+" Enable column layout
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 " Show current line number and relative line numbers
 set number relativenumber
 
