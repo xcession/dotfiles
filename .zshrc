@@ -12,15 +12,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Ncurses
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-# Homebrew's Python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-# SQLite
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
@@ -29,6 +20,15 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # iOS Simulator
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+# Ncurses
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
+# Python (Homebrew)
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+# SQLite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 
 # Homebrew Shell Completion
 if type brew &>/dev/null; then
