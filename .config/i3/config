@@ -274,7 +274,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 bindsym $Mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # set wallpaper
-exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
+#exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
 
 # lockscreen
 # set desktop background with custom effect
