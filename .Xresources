@@ -21,7 +21,7 @@
 *.color15: #c0c5ce
 
 ! Rofi
-rofi.font: monospace 12
+rofi.font: JetBrains Mono 11
 rofi.padding: 20
 rofi.line-padding: 2
 rofi.color-enabled: true
