@@ -8,6 +8,7 @@ export XDG_CONFIG_HOME
 [ "$PATH" == *"$HOME/bin"* ] || PATH="$HOME/bin:$PATH"
 
 picom -b &
+dunst &
 nitrogen --restore &
 volumeicon &
 nm-applet &
