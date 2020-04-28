@@ -240,14 +240,14 @@ bindsym $Mod+y border 1pixel
 bindsym $Mod+u border none
 
 # change gaps
-bindsym $Mod+plus                   gaps inner current plus  5
-bindsym $Mod+minus                  gaps inner current minus 5
-bindsym $Mod+Shift+plus             gaps outer current plus  5
-bindsym $Mod+Shift+minus            gaps outer current minus 5
-bindsym $Mod+Control+plus           gaps inner all     plus  5
-bindsym $Mod+Control+minus          gaps inner all     minus 5
-bindsym $Mod+Control+Shift+plus     gaps outer all     plus  5
-bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
+#bindsym $Mod+plus                   gaps inner current plus  5
+#bindsym $Mod+minus                  gaps inner current minus 5
+#bindsym $Mod+Shift+plus             gaps outer current plus  5
+#bindsym $Mod+Shift+minus            gaps outer current minus 5
+#bindsym $Mod+Control+plus           gaps inner all     plus  5
+#bindsym $Mod+Control+minus          gaps inner all     minus 5
+#bindsym $Mod+Control+Shift+plus     gaps outer all     plus  5
+#bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
 
 ############### Application Settings }
 
