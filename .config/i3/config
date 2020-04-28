@@ -70,7 +70,7 @@ bindsym $Mod+d exec --no-startup-id "rofi -modi run,drun -show drun -line-paddin
 #bindsym $Mod+t          exec --no-startup-id i3-sensible-terminal
 bindsym $Mod+t          exec --no-startup-id $default-terminal
 bindsym $Mod+Return     exec --no-startup-id $default-terminal
-bindsym Control+Shift+t exec --no-startup-id $default-terminal
+#bindsym Control+Shift+t exec --no-startup-id $default-terminal
 
 # logout script
 bindsym $Mod+x exec --no-startup-id rofi_run -l
