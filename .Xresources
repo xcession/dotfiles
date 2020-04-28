@@ -35,8 +35,8 @@ rofi.kb-cancel: Escape,Alt+F1
 
 ! xterm
 xterm*termName: xterm-256color
-xterm*font: monospace
-xterm*faceName: monospace:size=11
+xterm*font: JetBrains Mono
+xterm*faceName: JetBrains Mono:size=11
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
 xterm*saveLines: 2000
@@ -54,7 +54,7 @@ URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
 URxvt*externalBorder: 0
 URxvt*letterSpace: -1
-URxvt.font: xft:monospace:size=11
+URxvt.font: xft:JetBrains Mono:size=11
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
