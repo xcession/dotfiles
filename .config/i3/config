@@ -252,7 +252,7 @@ bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
 ############### Application Settings }
 
 # assign applications to specific workspace
-assign [class="(?i)(?:firefox)"]    1
+#assign [class="(?i)(?:firefox)"]    1
 #assign [class="(?i)(?:geany)"]      2
 #assign [class="(?i)(?:thunar)"]     3
 
