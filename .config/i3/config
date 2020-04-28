@@ -4,7 +4,8 @@
 set $default-terminal kitty
 
 # border & title
-for_window [class="^.*"] border pixel 1, title_format "<b> %class >> %title </b>"
+set $border_size 3
+for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
 
 # gaps
 gaps inner 8
@@ -236,7 +237,7 @@ bindsym $Mod+Shift+b border toggle
 
 # changing border style
 bindsym $Mod+n border normal
-bindsym $Mod+y border 1pixel
+bindsym $Mod+y border pixel $border_size
 bindsym $Mod+u border none
 
 # change gaps
