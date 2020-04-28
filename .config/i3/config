@@ -5,7 +5,8 @@ set $default-terminal kitty
 
 # border & title
 set $border_size 3
-for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
+#for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
+for_window [class="^.*"] border normal, title_format "<b> %class >> %title </b>"
 
 # gaps
 gaps inner 8
@@ -13,10 +14,11 @@ gaps outer 0
 
 # bar and window color
 set $bg-color               #000000
-set $inactive-bg-color      #2f343f
-set $text-color             #f3f4f5
-set $inactive-text-color    #676E7D
-set $urgent-bg-color        #E53935
+set $active-bg-color        #cdfd00
+set $inactive-bg-color      #1b1c1b
+set $text-color             #f7f8f7
+set $inactive-text-color    #333333
+set $urgent-bg-color        #ff5300
 
 # font
 font pango:JetBrains Mono 9
@@ -40,10 +42,10 @@ bar {
 
 	colors {
 		background $bg-color
-		separator #F4511E
+		separator $inactive-text-color
 		#                   border              background          text
-		focused_workspace   #F4511E             $bg-color           $text-color
-		inactive_workspace  $inactive-bg-color	$inactive-bg-color	$inactive-text-color
+		focused_workspace   $active-bg-color    $active-bg-color    $bg-color
+		inactive_workspace  $bg-color           $inactive-bg-color  $inactive-text-color
 		urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
 	}
 }
@@ -144,10 +146,10 @@ bindsym $Mod+Shift+c reload
 
 # window colors
 #                           border              background          text                    indicator
-#client.focused             $bg-color           $bg-color           $text-color             #00ff00
-#client.unfocused           $inactive-bg-color	$inactive-bg-color	$inactive-text-color    #00ff00
-#client.focused_inactive    $inactive-bg-color	$inactive-bg-color	$inactive-text-color    #00ff00
-#client.urgent              $urgent-bg-color    $urgent-bg-color    $text-color             #00ff00
+client.focused              $active-bg-color    $active-bg-color    $inactive-text-color    #00ff00
+client.unfocused            $bg-color           $bg-color           $inactive-text-color    #00ff00
+client.focused_inactive     $inactive-bg-color	$inactive-bg-color	$bg-color               #00ff00
+client.urgent               $urgent-bg-color    $urgent-bg-color    $text-color             #00ff00
 
 # scratchpad, floating
 bindsym $Mod+Shift+space floating toggle
