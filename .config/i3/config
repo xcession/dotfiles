@@ -50,7 +50,7 @@ bar {
 ############### Autostart }
 
 # run with reload
-#exec_always --no-startup-id xrdb -load ~/.Xresources
+exec_always --no-startup-id xrdb -load ~/.Xresources
 
 # run once
 #exec --no-startup-id xfsettingsd
