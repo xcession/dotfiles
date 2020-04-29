@@ -5,8 +5,7 @@ set $default-terminal kitty
 
 # border & title
 set $border_size 3
-#for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
-for_window [class="^.*"] border normal, title_format "<b> %class >> %title </b>"
+for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
 
 # gaps
 gaps inner 8
