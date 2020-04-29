@@ -152,14 +152,14 @@ client.focused_inactive     $inactive-bg-color	$inactive-bg-color	$bg-color     
 client.urgent               $urgent-bg-color    $urgent-bg-color    $text-color             #00ff00
 
 # scratchpad, floating
-bindsym $Mod+Shift+space floating toggle
+bindsym Mod1+Shift+space floating toggle
 floating_modifier Mod1
 
 # enter fullscreen mode for the focused container
 bindsym $Mod+f fullscreen toggle
 
 # change focus between tiling / floating windows
-bindsym $Mod+space focus mode_toggle
+bindsym Mod1+space focus mode_toggle
 
 # change focus
 bindsym $Mod+$left  focus left
