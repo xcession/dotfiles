@@ -21,8 +21,8 @@ set $down j
 set $left h
 set $right l
 
-# default terminal
-set $default-terminal kitty
+# prefered terminal
+set $term kitty
 
 # border & title
 set $border_size 3
@@ -80,9 +80,9 @@ bindsym $Mod+d exec --no-startup-id "rofi -modi run,drun -show drun -line-paddin
 
 # core
 #bindsym $Mod+t          exec --no-startup-id i3-sensible-terminal
-bindsym $Mod+t          exec --no-startup-id $default-terminal
-bindsym $Mod+Return     exec --no-startup-id $default-terminal
-#bindsym Control+Shift+t exec --no-startup-id $default-terminal
+bindsym $Mod+t          exec --no-startup-id $term
+bindsym $Mod+Return     exec --no-startup-id $term
+#bindsym Control+Shift+t exec --no-startup-id $term
 
 # logout script
 bindsym $Mod+x exec --no-startup-id rofi_run -l
