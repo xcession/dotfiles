@@ -31,6 +31,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# Yarn
+export PATH="$(yarn global bin):$PATH"
 
 # Homebrew Shell Completion
 if type brew &>/dev/null; then
