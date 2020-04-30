@@ -44,6 +44,8 @@ set $text-color             #f7f8f7
 set $inactive-text-color    #333333
 set $urgent-bg-color        #ff5300
 
+set $border_size 1
+
 #: }}}
 
 #: Output configuration {{{
@@ -84,7 +86,6 @@ exec --no-startup-id "setxkbmap -layout gb,th -option grp:win_space_toggle"
 #: Container / Windows control {{{
 
 # border & title
-set $border_size 3
 for_window [class="^.*"] border pixel $border_size, title_format "<b> %class >> %title </b>"
 
 new_window  normal
@@ -124,8 +125,7 @@ bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
 # launcher
-#bindsym $Mod+d exec --no-startup-id rofi_run -r
-bindsym $Mod+d exec --no-startup-id "rofi -modi run,drun -show drun -line-padding 4 -columns 2 -padding 50 -hide-scrollbar -show-icons"
+bindsym $Mod+d exec --no-startup-id rofi_run -r
 
 # restart inplace (preserves your layout/session, can be used to upgrade wm)
 bindsym $Mod+Shift+r restart
@@ -213,13 +213,12 @@ bindsym $Mod+Shift+8 move container to workspace 8; workspace 8
 bindsym $Mod+b split h
 bindsym $Mod+v split v
 
-#TODO
+default_orientation horizontal
+
 # switch between layouts
 #bindsym $Mod+Shift+t layout tabbed
 #bindsym $Mod+Shift+s layout stacking
-#bindsym $Mod+Mod1+b layout toggle split
-
-default_orientation horizontal
+bindsym $Mod+Mod1+b layout toggle split
 
 # make the current focus fullscreen
 bindsym $Mod+f fullscreen toggle
@@ -272,9 +271,9 @@ bindsym $Mod+r mode "resize"
 bindsym $Mod+Shift+b border toggle
 
 # changing border style
-bindsym $Mod+n border normal
-bindsym $Mod+y border pixel $border_size
-bindsym $Mod+u border none
+#bindsym $Mod+n border normal
+#bindsym $Mod+y border pixel $border_size
+#bindsym $Mod+u border none
 
 # change gaps
 #bindsym $Mod+plus                   gaps inner current plus  5
