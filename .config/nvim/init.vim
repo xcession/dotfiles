@@ -168,7 +168,7 @@ inoremap <left>  <nop>
 inoremap <right> <nop>
 
 " Switch between different windows by their direction
-" switching to below window 
+" switching to below window
 no <C-j> <C-w>j|
 " switching to above window
 no <C-k> <C-w>k|
