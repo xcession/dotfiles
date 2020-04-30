@@ -18,6 +18,8 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+# Curl (Homebrew)
+export PATH="/usr/local/opt/curl/bin:$PATH"
 # iOS Simulator
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 # Ncurses
