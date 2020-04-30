@@ -1,4 +1,14 @@
-# i3 config
+#
+#  _ _____                   
+# (_)___ /_      ___ __ ___  
+# | | |_ \ \ /\ / / '_ ` _ \ 
+# | |___) \ V  V /| | | | | |
+# |_|____/ \_/\_/ |_| |_| |_|
+#                   i3 config
+#
+# Filename:     config
+# GitHub:       https://github.com/xcession/dotfiles
+# Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
 # mod key used for most binds
 # Mod1 = Alt
