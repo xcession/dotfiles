@@ -9,21 +9,23 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-# Ncurses
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-# Python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-# SQLite
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+# Ncurses
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
+# Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+# SQLite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# Yarn
+export PATH="$(yarn global bin):$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
