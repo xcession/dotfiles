@@ -1,5 +1,16 @@
 # i3 config
 
+# mod key used for most binds
+# Mod1 = Alt
+# Mod4 = Super
+set $Mod Mod4
+
+# direction keys
+set $up k
+set $down j
+set $left h
+set $right l
+
 # default terminal
 set $default-terminal kitty
 
@@ -21,17 +32,6 @@ set $urgent-bg-color        #ff5300
 
 # font
 font pango:JetBrains Mono 9
-
-# mod key used for most binds
-# Mod1 = Alt
-# Mod4 = Super
-set $Mod Mod4
-
-# direction keys
-set $up k
-set $down j
-set $left h
-set $right l
 
 ############### Bar }
 bar {
