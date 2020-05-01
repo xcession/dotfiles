@@ -114,7 +114,7 @@ set formatoptions+=o
 set expandtab
 
 " The width of a TAB is set to 2
-" Still it is a \t. It is just that Vim will interpret it to be having a width of 2
+" Still it is a \t. It is just interpret it to be having a width of 2
 set linespace=2
 set tabstop=2
 
