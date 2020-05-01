@@ -9,9 +9,6 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
