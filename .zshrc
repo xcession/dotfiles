@@ -143,7 +143,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="ls --color=auto"
 alias la="ls -A"
 alias vim="nvim"
 
