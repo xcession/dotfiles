@@ -65,14 +65,17 @@ font pango:JetBrains Mono 9
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # lockscreen
 # set desktop background with custom effect
-#exec --no-startup-id "betterlockscreen -w dim"
-#bindsym $mod+shift+x exec betterlockscreen -l dim
+exec --no-startup-id "betterlockscreen -w dim"
+bindsym $mod+shift+x exec --no-startup-id "betterlockscreen -l dim"
+# exec --no-startup-id "setxkbmap -layout gb,th -option grp:win_space_toggle && betterlockscreen -w dim"
+# bindsym $mod+shift+x exec --no-startup-id "setxkbmap -layout gb,th -option grp:win_space_toggle && betterlockscreen -l dim"
+
 # set last used background
-#exec --no-startup-id "source ~/.fehbg"
+# exec --no-startup-id "source ~/.fehbg"
 
 #: }}}
 
