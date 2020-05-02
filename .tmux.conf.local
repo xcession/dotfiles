@@ -294,3 +294,11 @@ bind C-a send-prefix
 
 # move status line to top
 #set -g status-position top
+
+# select pane using vim keys
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+set -s escape-time 0
