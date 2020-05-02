@@ -15,6 +15,28 @@ This repository contains my personal dotfiles. They are stored here for convenie
 - `linux`: Linux
 - `macos`: macOS
 
+# Installation
+
+Clone and install the dotfiles repo:
+```
+$ echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"' >> $HOME/.zshrc
+$ source ~/.zshrc
+$ echo ".dotfiles.git" >> .gitignore
+$ git clone --bare https://github.com/xcession/dotfiles.git $HOME/.dotfiles.git
+$ dotfiles checkout
+$ dotfiles config --local status.showUntrackedFiles no
+```
+
+For macOS dotfiles:
+```
+$ dotfiles checkout macos
+```
+
+For Linux dotfiles:
+```
+$ dotfiles checkout linux
+```
+
 # License
 
 MIT License
