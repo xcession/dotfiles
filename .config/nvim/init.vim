@@ -56,7 +56,7 @@ Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
-"}}}
+" }}}
 
 " NERDTree {{{
 
@@ -65,7 +65,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-"}}}
+" }}}
 
 " Languages {{{
 
@@ -74,19 +74,19 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-markdown'
 
-"}}}
+" }}}
 
 " Themes {{{
 
 "Plug 'joshdick/onedark.vim'
 Plug 'jaredgorski/spacecamp'
 
-"}}}
+" }}}
 
 " Initialize plugin system
 call plug#end()
 
-"}}}
+" }}}
 
 " Basic Settings {{{
 
@@ -176,7 +176,7 @@ no <C-l> <C-w>l|
 " switching to left window
 no <C-h> <C-w>h|
 
-"}}}
+" }}}
 
 " ale {{{
 
@@ -202,7 +202,7 @@ nnoremap ]r :ALENextWrap<CR>
 " Move to the previous ALE warning / error
 nnoremap [r :ALEPreviousWrap<CR>
 
-"}}}
+" }}}
 
 " hexokinase {{{
 
@@ -220,7 +220,7 @@ let g:Hexokinase_optInPatterns = [
 
 let g:Hexokinase_highlighters = ['backgroundfull']
 
-"}}}
+" }}}
 
 " ultisnips {{{
 
@@ -230,7 +230,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 " :UltiSnipsEdit to split your window
 "let g:UltiSnipsEditSplit="vertical"
 
-"}}}
+" }}}
 
 " coc {{{
 
@@ -375,7 +375,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-"}}}
+" }}}
 
 " quick-scope {{{
 
@@ -383,7 +383,7 @@ let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
 highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
 
-"}}}
+" }}}
 
 " vim-airline {{{
 
@@ -400,7 +400,7 @@ let g:airline_right_sep=' '
 let g:airline_right_alt_sep='|'
 let g:airline#extensions#tabline#formatter='default'
 
-"}}}
+" }}}
 
 " nerdtree {{{
 
@@ -424,7 +424,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if the only window left open is a NERDTree
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-"}}}
+" }}}
 
 " vim-nerdtree-syntax-highlight {{{
 
@@ -433,19 +433,19 @@ let g:NERDTreeFileExtensionHighlightFullName=1
 let g:NERDTreeExactMatchHighlightFullName=1
 let g:NERDTreePatternMatchHighlightFullName=1
 
-"}}}
+" }}}
 
 " vim-jsx-pretty {{{
 
 let g:vim_jsx_pretty_colorful_config=1 " default 0
 
-"}}}
+" }}}
 
 " vim-markdown {{{
 
 let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
 
-"}}}
+" }}}
 
-" vim:fileencoding=utf-8:foldmethod=marker:foldlevel=0
+" vim:fileencoding=utf-8:ft=vim:foldmethod=marker
