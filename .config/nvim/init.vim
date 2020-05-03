@@ -204,34 +204,6 @@ nnoremap [r :ALEPreviousWrap<CR>
 
 " }}}
 
-" hexokinase {{{
-
-let g:Hexokinase_refreshEvents = ['InsertLeave']
-
-let g:Hexokinase_optInPatterns = [
-      \ 'full_hex',
-      \ 'triple_hex',
-      \ 'rgb',
-      \ 'rgba',
-      \ 'hsl',
-      \ 'hsla',
-      \ 'colour_names'
-      \ ]
-
-let g:Hexokinase_highlighters = ['backgroundfull']
-
-" }}}
-
-" ultisnips {{{
-
-" Trigger configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-
-" :UltiSnipsEdit to split your window
-"let g:UltiSnipsEditSplit="vertical"
-
-" }}}
-
 " coc {{{
 
 " TextEdit might fail if hidden is not set
@@ -377,28 +349,21 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 " }}}
 
-" quick-scope {{{
+" hexokinase {{{
 
-let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
-highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
-highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+let g:Hexokinase_refreshEvents = ['InsertLeave']
 
-" }}}
+let g:Hexokinase_optInPatterns = [
+      \ 'full_hex',
+      \ 'triple_hex',
+      \ 'rgb',
+      \ 'rgba',
+      \ 'hsl',
+      \ 'hsla',
+      \ 'colour_names'
+      \ ]
 
-" vim-airline {{{
-
-let g:airline_theme='dark_minimal'
-let g:airline#extensions#tabline#enabled=2
-let g:airline#extensions#tabline#fnamemod=':t'
-let g:airline#extensions#tabline#left_sep=' '
-let g:airline#extensions#tabline#left_alt_sep='|'
-let g:airline#extensions#tabline#right_sep=' '
-let g:airline#extensions#tabline#right_alt_sep='|'
-let g:airline_left_sep=' '
-let g:airline_left_alt_sep='|'
-let g:airline_right_sep=' '
-let g:airline_right_alt_sep='|'
-let g:airline#extensions#tabline#formatter='default'
+let g:Hexokinase_highlighters = ['backgroundfull']
 
 " }}}
 
@@ -424,14 +389,45 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if the only window left open is a NERDTree
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" }}}
-
-" vim-nerdtree-syntax-highlight {{{
-
 " Highlight full name (not only icons)
 let g:NERDTreeFileExtensionHighlightFullName=1
 let g:NERDTreeExactMatchHighlightFullName=1
 let g:NERDTreePatternMatchHighlightFullName=1
+
+" }}}
+
+" quick-scope {{{
+
+let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
+highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline
+highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline
+
+" }}}
+
+" ultisnips {{{
+
+" Trigger configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+
+" :UltiSnipsEdit to split your window
+"let g:UltiSnipsEditSplit="vertical"
+
+" }}}
+
+" vim-airline {{{
+
+let g:airline_theme='dark_minimal'
+let g:airline#extensions#tabline#enabled=2
+let g:airline#extensions#tabline#fnamemod=':t'
+let g:airline#extensions#tabline#left_sep=' '
+let g:airline#extensions#tabline#left_alt_sep='|'
+let g:airline#extensions#tabline#right_sep=' '
+let g:airline#extensions#tabline#right_alt_sep='|'
+let g:airline_left_sep=' '
+let g:airline_left_alt_sep='|'
+let g:airline_right_sep=' '
+let g:airline_right_alt_sep='|'
+let g:airline#extensions#tabline#formatter='default'
 
 " }}}
 
