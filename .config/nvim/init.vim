@@ -11,6 +11,8 @@
 
 " Plugins {{{
 
+" Automatic vim-plug installation {{{
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
@@ -25,6 +27,8 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
+" }}}
 
 call plug#begin('~/.vim/plugged')
 
