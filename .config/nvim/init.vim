@@ -34,11 +34,11 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/goyo.vim'
+Plug 'mhinz/vim-signify'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
 "Plug 'terryma/vim-multiple-cursors'
@@ -398,16 +398,6 @@ let g:airline#extensions#tabline#formatter='default'
 
 " }}}
 
-" vim-gitgutter {{{
-
-highlight GitGutterAdd      guifg=#009900 ctermfg=2
-highlight GitGutterChange   guifg=#bbbb00 ctermfg=3
-highlight GitGutterDelete   guifg=#ff2222 ctermfg=1
-let g:gitgutter_enabled = 1
-let g:gitgutter_map_keys = 0
-
-" }}}
-
 " vim-jsx-pretty {{{
 
 let g:vim_jsx_pretty_colorful_config=1 " default 0
@@ -418,6 +408,22 @@ let g:vim_jsx_pretty_colorful_config=1 " default 0
 
 let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
+
+" }}}
+
+" vim-signify {{{
+
+let g:signify_sign_add                  = '+'
+let g:signify_sign_delete               = '_'
+let g:signify_sign_delete_first_line    = '‾'
+let g:signify_sign_change               = '~'
+
+let g:signify_sign_show_count = 0
+let g:signify_sign_show_text = 1
+
+highlight SignifySignAdd                    ctermbg=green                   guibg=#00ff00
+highlight SignifySignDelete ctermfg=black   ctermbg=red     guifg=#ffffff   guibg=#ff0000
+highlight SignifySignChange ctermfg=black   ctermbg=yellow  guifg=#000000   guibg=#ffff00
 
 " }}}
 
