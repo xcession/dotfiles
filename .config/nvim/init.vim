@@ -38,6 +38,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/goyo.vim'
+Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
