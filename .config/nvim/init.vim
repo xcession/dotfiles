@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
@@ -394,6 +395,16 @@ let g:airline_left_alt_sep='|'
 let g:airline_right_sep=' '
 let g:airline_right_alt_sep='|'
 let g:airline#extensions#tabline#formatter='default'
+
+" }}}
+
+" vim-gitgutter {{{
+
+highlight GitGutterAdd      guifg=#009900 ctermfg=2
+highlight GitGutterChange   guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete   guifg=#ff2222 ctermfg=1
+let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
 
 " }}}
 
