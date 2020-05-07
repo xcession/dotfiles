@@ -76,8 +76,8 @@ Plug 'tpope/vim-markdown'
 
 " Themes {{{
 
-"Plug 'joshdick/onedark.vim'
-Plug 'jaredgorski/spacecamp'
+Plug 'joshdick/onedark.vim'
+Plug 'pgdouyon/vim-yin-yang'
 
 " }}}
 
@@ -91,35 +91,89 @@ call plug#end()
 " Set default encoding
 set encoding=UTF-8
 
+" Use system clipboard
+set clipboard+=unnamedplus
+
+" Ignore the case when the search pattern is all lowercase
+set smartcase
+set ignorecase
+
+" Disable arrow keys
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
+
+" Map the leader key to SPACE
+let mapleader="\<SPACE>"
+
+" Switch between different windows by their direction
+" switching to below window
+no <C-j> <C-w>j|
+" switching to above window
+no <C-k> <C-w>k|
+" switching to right window
+no <C-l> <C-w>l|
+" switching to left window
+no <C-h> <C-w>h|
+
+" }}}
+
+" Colors {{{
+
+" Switches on syntax highlighting
+syntax enable
+
+" Loading the plugin files for specific file types
+filetype plugin on
+
 " Enable true colors support
 set termguicolors
 
-" Enable column layout
+colorscheme yin
+set background=dark
+
+autocmd BufNewFile,BufRead *.json.template set syntax=json
+
+" }}}
+
+" Tabs and Spaces {{{
+
+" Indents will have a width of 2
+set shiftwidth=2
+
+" Sets the number of columns for a TAB
+set softtabstop=2
+set tabstop=2
+
+" Expand TABs to spaces
+set expandtab
+
+set linespace=2
+
+" }}}
+
+" UI {{{
+
+" Enable column ruler
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Show current line number and relative line numbers
 set number relativenumber
 
+" Show command characters
+set showcmd
+
 " Show matching brackets
 set showmatch
 
 " Continue comment marker in new lines
 set formatoptions+=o
-
-" Expand TABs to spaces
-set expandtab
-
-" The width of a TAB is set to 2
-" Still it is a \t. It is just interpret it to be having a width of 2
-set linespace=2
-set tabstop=2
-
-" Indents will have a width of 2
-set shiftwidth=2
-
-" Sets the number of columns for a TAB
-set softtabstop=4
 
 " More natural splits
 " Horizontal split below current
@@ -138,41 +192,6 @@ endif
 
 " Do not jump to first character with page commands
 set nostartofline
-
-" Ignore the case when the search pattern is all lowercase
-set smartcase
-set ignorecase
-
-" Use system clipboard
-set clipboard+=unnamedplus
-
-colorscheme spacecamp
-set background=dark
-
-filetype plugin on
-
-" Map the leader key to SPACE
-let mapleader="\<SPACE>"
-
-" Disable arrow keys
-nnoremap <up>    <nop>
-nnoremap <down>  <nop>
-nnoremap <left>  <nop>
-nnoremap <right> <nop>
-inoremap <up>    <nop>
-inoremap <down>  <nop>
-inoremap <left>  <nop>
-inoremap <right> <nop>
-
-" Switch between different windows by their direction
-" switching to below window
-no <C-j> <C-w>j|
-" switching to above window
-no <C-k> <C-w>k|
-" switching to right window
-no <C-l> <C-w>l|
-" switching to left window
-no <C-h> <C-w>h|
 
 " }}}
 
