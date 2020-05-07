@@ -39,6 +39,7 @@ Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/goyo.vim'
 Plug 'junegunn/gv.vim'
+Plug 'mcchrish/nnn.vim'
 Plug 'mhinz/vim-signify'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
@@ -361,6 +362,24 @@ let g:Hexokinase_optInPatterns = [
       \ ]
 
 let g:Hexokinase_highlighters = ['backgroundfull']
+
+" }}}
+
+" nnn.vim {{{
+
+" Disable default mappings
+let g:nnn#set_default_mappings = 0
+
+nnoremap <silent> <leader>nn :NnnPicker<CR>
+nnoremap <leader>n :NnnPicker '%:p:h'<CR>
+
+" Open nnn in floating window
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
+
+let g:nnn#action = {
+      \ '<c-t>': 'tab split',
+      \ '<c-x>': 'split',
+      \ '<c-v>': 'vsplit' }
 
 " }}}
 
