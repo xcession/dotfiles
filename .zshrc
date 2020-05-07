@@ -144,6 +144,7 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 
 alias ls="ls --color=auto"
 alias la="ls -A"
+alias v="nvim"
 alias vim="nvim"
 
 # }}}
