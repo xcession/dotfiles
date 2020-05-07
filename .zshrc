@@ -155,6 +155,7 @@ fi
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 
 alias la="ls -A"
+alias v="nvim"
 alias vim="nvim"
 
 # }}}
