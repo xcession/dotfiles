@@ -49,7 +49,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-colorscheme yin
+colorscheme srcery
 set background=dark
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
@@ -96,7 +96,7 @@ set showtabline=2
 
 " Enable column ruler
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=0 guibg=black
 
 " Show command characters
 set showcmd

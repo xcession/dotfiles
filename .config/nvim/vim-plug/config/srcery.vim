@@ -6,19 +6,14 @@
 "   \_/ |_|_| |_| |_|     | .__/|_|\__,_|\__, |
 "                         |_|            |___/
 "
-" Filename:     quick-scope.vim
+" Filename:     srcery.vim
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" quick-scope {{{
+" Enable italic text (default: gui 1, term 0)
+let g:srcery_italic = 1
 
-let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
-
-highlight QuickScopePrimary guifg='#00c7df' gui=underline ctermfg=155 cterm=underline
-highlight QuickScopeSecondary guifg='#ef5f70' gui=underline ctermfg=81 cterm=underline
-
-let g:qs_max_chars=150
-
-" }}}
+" Enabled inverse matching delimiters
+let g:srcery_inverse_match_paren = 1
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
