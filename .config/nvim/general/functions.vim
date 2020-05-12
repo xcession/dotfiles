@@ -5,13 +5,18 @@
 " | | | |  __/ (_) \ V /| | | | | | |
 " |_| |_|\___|\___/ \_/ |_|_| |_| |_|
 "
-" Filename:     init.vim
+" Filename:     functions.vim
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/general/mappings.vim
-source $HOME/.config/nvim/general/functions.vim
+" Turn spellcheck on for markdown files
+augroup auto_spellcheck
+  autocmd BufNewFile,BufRead *.md setlocal spell
+augroup END
+
+" Remove trailing whitespaces automatically before save
+" augroup strip_ws
+"   autocmd BufWritePre * call utils#stripTrailingWhitespaces()
+" augroup END
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker

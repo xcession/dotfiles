@@ -1,0 +1,95 @@
+"
+"        _                       _
+" __   _(_)_ __ ___        _ __ | |_   _  __ _
+" \ \ / / | '_ ` _ \ _____| '_ \| | | | |/ _` |
+"  \ V /| | | | | | |_____| |_) | | |_| | (_| |
+"   \_/ |_|_| |_| |_|     | .__/|_|\__,_|\__, |
+"                         |_|            |___/
+"
+" Filename:     plugins.vim
+" GitHub:       https://github.com/xcession/dotfiles
+" Maintainer:   Пэйнт (Tharawut Paripaiboon)
+
+" Automatic vim-plug installation {{{
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" }}}
+
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
+Plug 'jiangmiao/auto-pairs'
+" Plug 'junegunn/goyo.vim'
+Plug 'junegunn/gv.vim'
+" Plug 'junegunn/limelight.vim'
+Plug 'mcchrish/nnn.vim'
+Plug 'mhinz/vim-signify'
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-characterize'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Coc {{{
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
+" }}}
+
+" Languages {{{
+
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-markdown'
+
+" }}}
+
+" Themes {{{
+
+" Plug 'joshdick/onedark.vim'
+Plug 'pgdouyon/vim-yin-yang'
+
+" }}}
+
+" Initialize plugin system
+call plug#end()
+
+source $HOME/.config/nvim/vim-plug/config/airline.vim
+source $HOME/.config/nvim/vim-plug/config/ale.vim
+source $HOME/.config/nvim/vim-plug/config/coc.vim
+source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
+source $HOME/.config/nvim/vim-plug/config/jsx-pretty.vim
+source $HOME/.config/nvim/vim-plug/config/markdown.vim
+source $HOME/.config/nvim/vim-plug/config/nnn.vim
+source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
+source $HOME/.config/nvim/vim-plug/config/signify.vim
+source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
+
+" vim:fileencoding=utf-8:ft=vim:foldmethod=marker
