@@ -73,8 +73,7 @@ Plug 'tpope/vim-markdown'
 
 " Themes {{{
 
-" Plug 'joshdick/onedark.vim'
-Plug 'pgdouyon/vim-yin-yang'
+Plug 'srcery-colors/srcery-vim'
 
 " }}}
 
@@ -90,6 +89,7 @@ source $HOME/.config/nvim/vim-plug/config/markdown.vim
 source $HOME/.config/nvim/vim-plug/config/nnn.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
+source $HOME/.config/nvim/vim-plug/config/srcery.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker

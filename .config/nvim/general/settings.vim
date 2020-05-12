@@ -49,7 +49,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-colorscheme yin
+colorscheme srcery
 set background=dark
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
