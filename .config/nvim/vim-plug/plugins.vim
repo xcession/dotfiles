@@ -39,6 +39,7 @@ Plug 'junegunn/gv.vim'
 " Plug 'junegunn/limelight.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'mhinz/vim-signify'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-characterize'
@@ -84,6 +85,7 @@ source $HOME/.config/nvim/vim-plug/config/airline.vim
 source $HOME/.config/nvim/vim-plug/config/ale.vim
 source $HOME/.config/nvim/vim-plug/config/coc.vim
 source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
+source $HOME/.config/nvim/vim-plug/config/indent-guides.vim
 source $HOME/.config/nvim/vim-plug/config/jsx-pretty.vim
 source $HOME/.config/nvim/vim-plug/config/markdown.vim
 source $HOME/.config/nvim/vim-plug/config/nnn.vim
