@@ -1,11 +1,10 @@
-"
+" $HOME/.config/nvim/general/settings.vim
 "                        _
 "  _ __   ___  _____   _(_)_ __ ___
 " | '_ \ / _ \/ _ \ \ / / | '_ ` _ \
 " | | | |  __/ (_) \ V /| | | | | | |
 " |_| |_|\___|\___/ \_/ |_|_| |_| |_|
 "
-" Filename:     settings.vim
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
