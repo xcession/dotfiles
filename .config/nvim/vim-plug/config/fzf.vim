@@ -1,4 +1,4 @@
-" $HOME/.config/nvim/vim-plug/config/ultisnips.vim
+" $HOME/.config/nvim/vim-plug/config/fzf.vim
 "        _                       _
 " __   _(_)_ __ ___        _ __ | |_   _  __ _
 " \ \ / / | '_ ` _ \ _____| '_ \| | | | |/ _` |
@@ -9,14 +9,7 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" ultisnips {{{
-
-" Trigger configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-
-" :UltiSnipsEdit to split your window
-"let g:UltiSnipsEditSplit="vertical"
-
-" }}}
+nmap <Leader>f :GFiles<CR>
+nmap <Leader>F :Files<CR>
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker

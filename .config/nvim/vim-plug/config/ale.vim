@@ -1,4 +1,4 @@
-"
+" $HOME/.config/nvim/vim-plug/config/ale.vim
 "        _                       _
 " __   _(_)_ __ ___        _ __ | |_   _  __ _
 " \ \ / / | '_ ` _ \ _____| '_ \| | | | |/ _` |
@@ -6,7 +6,6 @@
 "   \_/ |_|_| |_| |_|     | .__/|_|\__,_|\__, |
 "                         |_|            |___/
 "
-" Filename:     ale.vim
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
