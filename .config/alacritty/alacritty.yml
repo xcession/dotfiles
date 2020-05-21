@@ -90,7 +90,7 @@ font:
     style: Bold
   italic:
     family: Iosevka
-    style: Italic
+    style: Regular
   bold_italic:
     family: Iosevka
     style: Bold Italic
