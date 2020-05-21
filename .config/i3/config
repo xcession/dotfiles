@@ -34,7 +34,7 @@ set $left h
 set $right l
 
 # prefered terminal
-set $term kitty
+set $term alacritty
 
 # bar and window color
 set $bg-color               #000000
