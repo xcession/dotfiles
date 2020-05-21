@@ -11,7 +11,7 @@
 # PATH variables {{{
 
 # Android SDK
-export ANDROID_SDK_ROOT="$HOME/Android/sdk"
+export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
