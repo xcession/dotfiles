@@ -329,7 +329,7 @@ bar {
 		separator $inactive-text-color
 		#                   border              background          text
 		focused_workspace   $active-bg-color    $active-bg-color    $bg-color
-		inactive_workspace  $bg-color           $inactive-bg-color  $inactive-text-color
+		inactive_workspace  $bg-color           $inactive-bg-color  $active-bg-color
 		urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
 	}
 }
