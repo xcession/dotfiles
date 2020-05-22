@@ -1,12 +1,10 @@
-"
+" $HOME/.vimrc
 "        _
 " __   _(_)_ __ ___
 " \ \ / / | '_ ` _ \
 "  \ V /| | | | | | |
 "   \_/ |_|_| |_| |_|
 "
-"
-" Filename:     .vimrc
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
