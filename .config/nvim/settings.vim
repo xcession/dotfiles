@@ -30,7 +30,7 @@ set smartcase
 set ignorecase
 
 " Use system clipboard
-set clipboard+=unnamedplus
+set clipboard^=unnamed,unnamedplus
 
 " Working directory will always be the same
 " set autochdir
