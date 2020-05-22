@@ -9,14 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" ultisnips {{{
-
 " Trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
 
 " :UltiSnipsEdit to split your window
 "let g:UltiSnipsEditSplit="vertical"
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker

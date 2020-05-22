@@ -9,8 +9,6 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" vim-hexokinase {{{
-
 let g:Hexokinase_refreshEvents = ['InsertLeave']
 
 let g:Hexokinase_optInPatterns = [
@@ -24,7 +22,5 @@ let g:Hexokinase_optInPatterns = [
       \ ]
 
 let g:Hexokinase_highlighters = ['backgroundfull']
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
