@@ -8,9 +8,6 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" Leader key
-let mapleader="\<SPACE>"
-
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
