@@ -9,8 +9,6 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" ale {{{
-
 let g:ale_linters={
       \ 'python': ['flake8', 'pylint'],
       \ 'javascript': ['eslint'],
@@ -32,7 +30,5 @@ let g:ale_fix_on_save=1
 nnoremap ]r :ALENextWrap<CR>
 " Move to the previous ALE warning / error
 nnoremap [r :ALEPreviousWrap<CR>
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker

@@ -9,11 +9,7 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" vim-markdown {{{
-
 let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
