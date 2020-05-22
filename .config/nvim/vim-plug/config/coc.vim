@@ -9,8 +9,6 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" coc {{{
-
 " TextEdit might fail if hidden is not set
 set hidden
 
@@ -151,7 +149,5 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
