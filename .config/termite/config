@@ -1,4 +1,4 @@
-#
+# $HOME/.config/termite/config
 #  _                      _ _
 # | |_ ___ _ __ _ __ ___ (_) |_ ___
 # | __/ _ \ '__| '_ ` _ \| | __/ _ \
@@ -6,7 +6,6 @@
 #  \__\___|_|  |_| |_| |_|_|\__\___|
 #                     termite config
 #
-# Filename:     config
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
