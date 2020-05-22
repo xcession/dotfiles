@@ -27,10 +27,11 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Plug 'junegunn/goyo.vim'
 Plug 'junegunn/gv.vim'
 " Plug 'junegunn/limelight.vim'
-Plug 'mcchrish/nnn.vim'
 Plug 'mhinz/vim-signify'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -77,11 +78,11 @@ call plug#end()
 source $HOME/.config/nvim/vim-plug/config/airline.vim
 source $HOME/.config/nvim/vim-plug/config/ale.vim
 source $HOME/.config/nvim/vim-plug/config/coc.vim
+source $HOME/.config/nvim/vim-plug/config/fzf.vim
 source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
 source $HOME/.config/nvim/vim-plug/config/indent-guides.vim
 source $HOME/.config/nvim/vim-plug/config/jsx-pretty.vim
 source $HOME/.config/nvim/vim-plug/config/markdown.vim
-source $HOME/.config/nvim/vim-plug/config/nnn.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
 source $HOME/.config/nvim/vim-plug/config/srcery.vim
