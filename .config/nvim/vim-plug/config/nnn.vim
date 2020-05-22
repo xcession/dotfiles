@@ -9,8 +9,6 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" nnn.vim {{{
-
 " Disable default mappings
 let g:nnn#set_default_mappings = 0
 
@@ -24,7 +22,5 @@ let g:nnn#action = {
       \ '<c-t>': 'tab split',
       \ '<c-x>': 'split',
       \ '<c-v>': 'vsplit' }
-
-" }}}
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
