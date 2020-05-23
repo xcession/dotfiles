@@ -220,6 +220,7 @@ bindsym $Mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $Mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $Mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $Mod+Shift+9 move container to workspace $ws9; workspace $ws9
+bindsym $Mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 #: }}}
 
@@ -352,16 +353,14 @@ bar {
 #: Application Settings {{{
 
 # assign applications to specific workspace
-#assign [class="(?i)(?:firefox)"]    1
-#assign [class="(?i)(?:geany)"]      2
-#assign [class="(?i)(?:thunar)"]     3
+assign [class="(?i)(?:firefox)"]  $ws1
+
+for_window [class="Spotify"]      move --no-auto-back-and-forth to workspace $ws10
 
 # focus, floating, & sticky
 for_window [class="(?i)(?:qt5ct|pinentry)"]             floating enable, focus
 for_window [title="(?i)(?:copying|deleting|moving)"]    floating enable
 for_window [window_role="(?i)(?:about|pop-up|setup)"]   floating enable
-
-for_window [class="Spotify"]                            move --no-auto-back-and-forth to workspace $ws10
 
 for_window [title="Android Emulator"]                   floating enable
 
