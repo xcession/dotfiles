@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'srcery-colors/srcery-vim'
+" }}}
+
 " Enable italic text (default: gui 1, term 0)
 let g:srcery_italic = 1
 

@@ -9,11 +9,12 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
-" Installation
+" Installation {{{
 " Plug 'preservim/nerdtree'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
+" }}}
 
 " Show hidden files
 let NERDTreeShowHidden=1

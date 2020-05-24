@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'dense-analysis/ale'
+" }}}
+
 let g:ale_linters={
       \ 'python': ['flake8', 'pylint'],
       \ 'javascript': ['eslint'],

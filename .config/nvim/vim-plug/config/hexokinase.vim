@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+" }}}
+
 let g:Hexokinase_refreshEvents = ['InsertLeave']
 
 let g:Hexokinase_optInPatterns = [
