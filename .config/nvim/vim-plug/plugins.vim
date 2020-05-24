@@ -24,10 +24,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Make sure you use single quotes
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/goyo.vim'
-Plug 'junegunn/gv.vim'
 " Plug 'junegunn/limelight.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -68,12 +66,14 @@ Plug 'airblade/vim-rooter'
 " Git {{{
 
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
 
 " }}}
 
 " Language & Syntax {{{
 
+Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 
 " }}}
