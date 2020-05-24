@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'tpope/vim-markdown'
+" }}}
+
 let g:markdown_fenced_languages=['html', 'python', 'bash=sh']
 let g:markdown_syntax_conceal=0
 
