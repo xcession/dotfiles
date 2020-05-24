@@ -23,12 +23,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 " Make sure you use single quotes
 
-Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 " Plug 'junegunn/goyo.vim'
 Plug 'junegunn/gv.vim'
 " Plug 'junegunn/limelight.vim'
@@ -41,8 +38,13 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
+
+" Alrline {{{
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" }}}
 
 " Coc {{{
 
@@ -54,6 +56,14 @@ Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
+" }}}
+
+" FZF {{{
+
+Plug 'airblade/vim-rooter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " }}}
 
