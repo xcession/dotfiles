@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 " Make sure you use single quotes
 
+Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
