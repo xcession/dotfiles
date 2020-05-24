@@ -9,4 +9,5 @@
     "editor.cursorStyle": "block",
     "editor.fontSize": 14,
     "workbench.colorTheme": "Srcery",
+    "editor.lineNumbers": "relative",
 }
