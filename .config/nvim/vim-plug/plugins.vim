@@ -67,12 +67,9 @@ Plug 'junegunn/fzf.vim'
 
 " }}}
 
-" Languages {{{
+" Language & Syntax {{{
 
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'
-Plug 'tpope/vim-markdown'
+Plug 'sheerun/vim-polyglot'
 
 " }}}
 
