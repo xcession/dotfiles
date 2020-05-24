@@ -25,7 +25,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
