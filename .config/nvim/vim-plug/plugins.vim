@@ -24,7 +24,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Make sure you use single quotes
 
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
