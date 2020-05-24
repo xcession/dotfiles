@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'unblevable/quick-scope'
+" }}}
+
 let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 
 highlight QuickScopePrimary guifg='#00c7df' gui=underline ctermfg=155 cterm=underline

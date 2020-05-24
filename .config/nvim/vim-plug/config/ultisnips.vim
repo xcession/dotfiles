@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'SirVer/ultisnips'
+" }}}
+
 " Trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
 

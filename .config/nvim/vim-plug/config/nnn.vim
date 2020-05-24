@@ -9,6 +9,10 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Installation {{{
+" Plug 'mcchrish/nnn.vim'
+" }}}
+
 " Disable default mappings
 let g:nnn#set_default_mappings = 0
 
