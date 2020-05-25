@@ -71,8 +71,8 @@ nnoremap <leader>' :Marks<CR>
 
 " Project Finder {{{
 
-nnoremap <leader>/ :Ag<Space>
-nnoremap <leader>/ :Rg<Space>
+nnoremap <leader>/ :Ag<CR>
+nnoremap <leader>/ :Rg<CR>
 
 " }}}
 
