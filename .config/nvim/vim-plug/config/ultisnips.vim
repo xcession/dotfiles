@@ -13,6 +13,10 @@
 " Plug 'SirVer/ultisnips'
 " }}}
 
+" Snippets directory
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", "mycoolsnippets"]
+" let g:UltiSnipsSnippetDirectories=["mycoolsnippets"]
+
 " Trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
 
