@@ -14,8 +14,8 @@
 " }}}
 
 " Snippets directory
-" let g:UltiSnipsSnippetDirectories=["UltiSnips", "mycoolsnippets"]
-" let g:UltiSnipsSnippetDirectories=["mycoolsnippets"]
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", "snips"]
+let g:UltiSnipsSnippetDirectories=["snips"]
 
 " Trigger configuration
 let g:UltiSnipsExpandTrigger="<tab>"
