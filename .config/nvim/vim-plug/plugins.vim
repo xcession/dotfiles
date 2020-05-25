@@ -24,16 +24,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Make sure you use single quotes
 
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 " Plug 'junegunn/goyo.vim'
 " Plug 'junegunn/limelight.vim'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'unblevable/quick-scope'
 
 " Airline {{{
 
@@ -50,7 +50,7 @@ Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
 " }}}
@@ -90,10 +90,10 @@ call plug#end()
 source $HOME/.config/nvim/vim-plug/config/airline.vim
 source $HOME/.config/nvim/vim-plug/config/ale.vim
 source $HOME/.config/nvim/vim-plug/config/coc.vim
+source $HOME/.config/nvim/vim-plug/config/easymotion.vim
 source $HOME/.config/nvim/vim-plug/config/fzf.vim
 source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
 source $HOME/.config/nvim/vim-plug/config/indent-guides.vim
-source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
 source $HOME/.config/nvim/vim-plug/config/srcery.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
