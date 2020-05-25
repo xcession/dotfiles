@@ -45,7 +45,7 @@ nnoremap <leader>F :Files<CR>
 " seach for open buffers
 nnoremap <leader>b :Buffers<CR>
 " seach buffer history
-nnoremap <leader>h :History<CR>
+" nnoremap <leader>h :History<CR>
 
 " }}}
 
@@ -61,7 +61,7 @@ nnoremap <leader>T :Tags<CR>
 " Line Finder {{{
 
 " search for lines in current buffer
-nnoremap <leader>l :BLines<CR>
+nnoremap <leader>B :BLines<CR>
 " search for lines in loaded buffers
 nnoremap <leader>L :Lines<CR>
 " search for marked lines
@@ -78,7 +78,7 @@ nnoremap <leader>/ :Rg<CR>
 
 " Help Finder {{{
 
-nnoremap <leader>H :Helptags!<CR>
+" nnoremap <leader>H :Helptags!<CR>
 
 " }}}
 
