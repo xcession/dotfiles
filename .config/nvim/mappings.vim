@@ -24,11 +24,11 @@ nnoremap <M-j>  :resize -2<CR>
 nnoremap <M-k>  :resize +2<CR>
 nnoremap <M-l>  :vertical resize +2<CR>
 
-" Disable arrow keys
-nnoremap <up>    <nop>
-nnoremap <down>  <nop>
-nnoremap <left>  <nop>
-nnoremap <right> <nop>
+" Disable arrow movement, resize splits instead.
+nnoremap <Up>    :resize +2<CR>
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
 inoremap <up>    <nop>
 inoremap <down>  <nop>
 inoremap <left>  <nop>
