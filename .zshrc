@@ -154,11 +154,16 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
-
 alias la="ls -A"
+
 alias v="nvim"
 alias vim="nvim"
+
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
+alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME status"
+
+alias gs="git status"
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
