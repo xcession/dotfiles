@@ -161,9 +161,7 @@ alias vim="nvim"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
-alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME status"
-
-alias gs="git status"
+alias dotst="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME status"
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 # add support for ctrl+o to open selected file in VS Code
