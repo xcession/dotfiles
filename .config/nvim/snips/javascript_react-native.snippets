@@ -1,0 +1,62 @@
+snippet im "import xyz from 'xyz'" b
+import ${1} from '${2}';
+endsnippet
+snippet imm "import { member } from 'xyz'" b
+import { ${1} } from '${2}';
+endsnippet
+snippet imas "import * as xyz from 'xyz'" b
+import * as ${1} from '${2}';
+endsnippet
+snippet ir "import React from 'react'" b
+import React from 'react';
+endsnippet
+snippet irnc "import react-native component" b
+import { ${1:Component} } from 'react-native';
+endsnippet
+snippet initrnfc "initial react-native functional component" b
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+function ${1:`!p snip.rv = snip.basename`}(${2}){
+	return (
+		${3}
+	);
+}
+
+export default $4`!p snip.rv = snip.basename`;
+endsnippet
+snippet initrnfca "initial react-native functional component" b
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+const ${1:`!p snip.rv = snip.basename`} = (${2}) => {
+	return (
+		${3}
+	);
+}
+
+export default $4`!p snip.rv = snip.basename`;
+endsnippet
+snippet rnfc "react-native functional component" b
+function ${1:FunctionName}(${2}){
+	return (
+		${3}
+	)
+}
+endsnippet
+snippet rnfca "react-native arrow functional component" b
+const ${1:FunctionName} = (${2}) => {
+	return (
+		${3}
+	)
+}
+endsnippet
+snippet rncc "react-native class component" b
+class ${1:ClassName} extends React.Component {
+	render () {
+		return (
+			${2}
+		)
+	}
+}
+endsnippet
