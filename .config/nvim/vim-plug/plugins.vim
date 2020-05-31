@@ -77,6 +77,7 @@ Plug 'mhinz/vim-signify'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
+Plug 'tridactyl/vim-tridactyl'
 
 " }}}
 
