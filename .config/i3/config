@@ -17,6 +17,9 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 # run once
 #exec --no-startup-id xfsettingsd
 
+# autotiling
+exec_always --no-startup-id autotiling
+
 #: }}}
 
 #: Variables {{{
