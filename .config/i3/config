@@ -62,7 +62,7 @@ set $border_size 1
 #: Output configuration {{{
 
 # font
-font pango:JetBrains Mono 9
+font pango:Noto Sans 9
 
 # wallpaper
 #exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
