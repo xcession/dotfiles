@@ -337,20 +337,24 @@ bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
 
 #: Statusbar {{{
 
-bar {
-	status_command i3status
-	tray_output primary
-	position top
+# i3Bar
+# bar {
+# 	status_command i3status
+# 	tray_output primary
+# 	position top
 
-	colors {
-		background $bg-color
-		separator $inactive-text-color
-		#                   border              background          text
-		focused_workspace   $active-bg-color    $active-bg-color    $bg-color
-		inactive_workspace  $bg-color           $inactive-bg-color  $active-bg-color
-		urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
-	}
-}
+# 	colors {
+# 		background $bg-color
+# 		separator $inactive-text-color
+# 		#                   border              background          text
+# 		focused_workspace   $active-bg-color    $active-bg-color    $bg-color
+# 		inactive_workspace  $bg-color           $inactive-bg-color  $active-bg-color
+# 		urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
+# 	}
+# }
+
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #: }}}
 
