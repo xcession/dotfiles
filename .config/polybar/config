@@ -293,7 +293,8 @@ label-disconnected-foreground = ${colors.foreground-alt}
 type = internal/fs
 interval = 30
 
-mount-0 = /home
+mount-0 = /
+mount-1 = /home
 
 format-mounted = <label-mounted>
 format-mounted-foreground = ${colors.foreground-alt}
@@ -302,8 +303,8 @@ format-mounted-underline = ${colors.secondary}
 format-unmounted = <label-unmounted>
 format-unmounted-underline = ${colors.background-alt}
 
-; label-mounted = %{F#2c78bf}%mountpoint%%{F-}: %free% free
-label-mounted =  %free% free
+label-mounted = %{F#2c78bf}%mountpoint%%{F-}: %free%
+; label-mounted = %free% free
 label-unmounted = %mountpoint% not mounted
 
 [module/i3]
@@ -472,7 +473,7 @@ label-connected =  %essid%
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${colors.state_bad}
 
-label-disconnected =  %ifname% down
+label-disconnected =  down
 label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = ▁
