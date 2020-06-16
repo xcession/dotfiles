@@ -373,6 +373,8 @@ for_window [window_role="(?i)(?:about|pop-up|setup)"]   floating enable
 for_window [title="Android Emulator"]                   floating enable
 # GOG Games installer
 for_window [class="(?i)(?:mojosetup)"]                  floating enable
+# Flameshot
+for_window [class="(?i)(?:flameshot)"]                  floating enable
 
 popup_during_fullscreen smart
 
