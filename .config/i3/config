@@ -15,7 +15,7 @@
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
 # run once
-#exec --no-startup-id xfsettingsd
+# exec --no-startup-id xfsettingsd
 
 # autotiling
 exec_always --no-startup-id autotiling
@@ -68,7 +68,7 @@ set $border_size 2
 font pango:Noto Sans 9
 
 # wallpaper
-#exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
+# exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
 
 #: }}}
 
@@ -138,7 +138,7 @@ gaps outer 0
 #: Basic {{{
 
 # terminal
-#bindsym $Mod+t          exec --no-startup-id i3-sensible-terminal
+# bindsym $Mod+t          exec --no-startup-id i3-sensible-terminal
 bindsym $Mod+t          exec --no-startup-id $term
 bindsym $Mod+Return     exec --no-startup-id $term
 
@@ -244,8 +244,8 @@ bindsym $Mod+v split v
 default_orientation horizontal
 
 # switch between layouts
-#bindsym $Mod+Shift+t layout tabbed
-#bindsym $Mod+Shift+s layout stacking
+# bindsym $Mod+Shift+t layout tabbed
+# bindsym $Mod+Shift+s layout stacking
 bindsym $Mod+Mod1+b layout toggle split
 
 # make the current focus fullscreen
@@ -299,21 +299,21 @@ bindsym $Mod+r mode "resize"
 # bindsym $Mod+Shift+b border toggle
 
 # changing border style
-#bindsym $Mod+n border normal
-#bindsym $Mod+y border pixel $border_size
-#bindsym $Mod+u border none
+# bindsym $Mod+n border normal
+# bindsym $Mod+y border pixel $border_size
+# bindsym $Mod+u border none
 
 # change gaps
-#bindsym $Mod+plus                   gaps inner current plus  5
-#bindsym $Mod+minus                  gaps inner current minus 5
-#bindsym $Mod+Shift+plus             gaps outer current plus  5
-#bindsym $Mod+Shift+minus            gaps outer current minus 5
-#bindsym $Mod+Control+plus           gaps inner all     plus  5
-#bindsym $Mod+Control+minus          gaps inner all     minus 5
-#bindsym $Mod+Control+Shift+plus     gaps outer all     plus  5
-#bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
+# bindsym $Mod+plus                   gaps inner current plus  5
+# bindsym $Mod+minus                  gaps inner current minus 5
+# bindsym $Mod+Shift+plus             gaps outer current plus  5
+# bindsym $Mod+Shift+minus            gaps outer current minus 5
+# bindsym $Mod+Control+plus           gaps inner all     plus  5
+# bindsym $Mod+Control+minus          gaps inner all     minus 5
+# bindsym $Mod+Control+Shift+plus     gaps outer all     plus  5
+# bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
 
-#}}}
+#: }}}
 
 #: Media control {{{
 
