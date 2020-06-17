@@ -441,7 +441,7 @@ bar-volume-empty-foreground = ${colors.background-alt}
 ;https://github.com/polybar/polybar/wiki/Module:-temperature
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 65
+warn-temperature = 70
 
 format = <ramp> <label>
 format-warn = <label-warn>
