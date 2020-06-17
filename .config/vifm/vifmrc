@@ -280,7 +280,7 @@ filetype *.asc
        \ !!gpg --verify %c,
 
 " Torrent
-filetype *.torrent ktorrent %f &
+filetype *.torrent transmission-gtk %f &
 fileviewer *.torrent dumptorrent -v %c
 
 " FuseZipMount
