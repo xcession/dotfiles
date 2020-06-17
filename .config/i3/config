@@ -58,7 +58,7 @@ set $text-color             #f7f8f7
 set $inactive-text-color    #333333
 set $urgent-bg-color        #ff5300
 
-set $border_size 1
+set $border_size 2
 
 #: }}}
 
@@ -296,7 +296,7 @@ bindsym $Mod+r mode "resize"
 
 #: Border & Gaps {{{
 
-bindsym $Mod+Shift+b border toggle
+# bindsym $Mod+Shift+b border toggle
 
 # changing border style
 #bindsym $Mod+n border normal
