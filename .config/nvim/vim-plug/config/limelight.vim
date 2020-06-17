@@ -1,3 +1,14 @@
+" $HOME/.config/nvim/vim-plug/config/limelight.vim
+"        _                       _
+" __   _(_)_ __ ___        _ __ | |_   _  __ _
+" \ \ / / | '_ ` _ \ _____| '_ \| | | | |/ _` |
+"  \ V /| | | | | | |_____| |_) | | |_| | (_| |
+"   \_/ |_|_| |_| |_|     | .__/|_|\__,_|\__, |
+"                         |_|            |___/
+"
+" GitHub:       https://github.com/xcession/dotfiles
+" Maintainer:   Пэйнт (Tharawut Paripaiboon)
+
 " Color name (:help cterm-colors) or ANSI code
 let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
