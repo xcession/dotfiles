@@ -78,7 +78,7 @@ nnoremap <leader>/ :Rg<CR>
 
 " Help Finder {{{
 
-" nnoremap <leader>H :Helptags!<CR>
+nnoremap <leader>H :Helptags!<CR>
 
 " }}}
 
