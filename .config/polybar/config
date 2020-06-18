@@ -134,7 +134,7 @@ label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =  muted
-label-muted-foreground = ${colors.foreground-alt}
+label-muted-foreground = ${colors.foreground}
 label-muted-background = ${colors.alert}
 label-muted-padding = 1
 
@@ -415,7 +415,7 @@ label-volume =  %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =  muted
-label-muted-foreground = ${colors.foreground-alt}
+label-muted-foreground = ${colors.foreground}
 label-muted-background = ${colors.alert}
 label-muted-padding = 1
 
@@ -515,6 +515,7 @@ label-layout-padding = 1
 label-layout-background = ${colors.background-alt}
 
 label-indicator-padding = 1
+label-indicator-foreground = ${colors.foreground}
 label-indicator-background = ${colors.alert}
 
 [module/xwindow]
