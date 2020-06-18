@@ -57,6 +57,7 @@ set $inactive-bg-color      #1b1c1b
 set $text-color             #f7f8f7
 set $inactive-text-color    #333333
 set $urgent-bg-color        #ff5300
+set $indicator-color        #2c78bf
 
 set $border_size 2
 
@@ -115,13 +116,13 @@ hide_edge_borders both
 # client    border    background \
 #   text    indicator
 client.focused            $active-bg-color    $active-bg-color \
-  $inactive-text-color    #00ff00
+  $inactive-text-color    $indicator-color
 client.unfocused          $bg-color           $bg-color \
-  $inactive-text-color    #00ff00
+  $inactive-text-color    $indicator-color
 client.focused_inactive   $inactive-bg-color	$inactive-bg-color \
-  $bg-color               #00ff00
+  $bg-color               $indicator-color
 client.urgent             $urgent-bg-color    $urgent-bg-color \
-  $text-color             #00ff00
+  $text-color             $indicator-color
 
 # switch to workspace with urgent window
 for_window [urgent="latest"]    focus
