@@ -130,4 +130,6 @@ endif
 " Do not jump to first character with page commands
 set nostartofline
 
+" }}}
+
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
