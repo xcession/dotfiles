@@ -97,7 +97,7 @@ font-2 = "Noto Sans:style=Regular:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = filesystem cpu memory temperature wlan eth pulseaudio backlight-acpi battery xkeyboard date
+modules-right = filesystem cpu memory temperature wlan eth pulseaudio backlight battery xkeyboard date
 
 ; separator = |
 
@@ -155,7 +155,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.background-alt}
 
-[module/backlight-acpi]
+[module/backlight]
 ;https://github.com/polybar/polybar/wiki/Module:-backlight
 inherit = module/xbacklight
 type = internal/backlight
