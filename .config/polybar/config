@@ -156,7 +156,7 @@ bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.background-alt}
 
 [module/backlight]
-;https://github.com/polybar/polybar/wiki/Module:-backlight
+;https://github.com/polybar/polybar/wiki/Module:-xbacklight
 inherit = module/xbacklight
 type = internal/backlight
 
