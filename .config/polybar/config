@@ -162,7 +162,8 @@ type = internal/backlight
 
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
-card = acpi_video0
+; card = acpi_video0
+card = intel_backlight
 
 [module/battery]
 ;https://github.com/polybar/polybar/wiki/Module:-battery
