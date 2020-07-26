@@ -97,7 +97,7 @@ font-2 = "Noto Sans:style=Regular:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center = 
-modules-right = filesystem memory cpu temperature wlan eth pulseaudio backlight-acpi battery xkeyboard date
+modules-right = filesystem cpu memory temperature wlan eth pulseaudio backlight-acpi battery xkeyboard date
 
 ; separator = |
 
