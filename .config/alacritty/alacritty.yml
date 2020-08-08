@@ -127,17 +127,17 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: false
+  use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
 
-# Colors (srcery)
+# Colors
 colors:
   # Default colors
   primary:
-    background: "#1c1b19"
-    foreground: "#fce8c3"
+    background: "#100d23"
+    foreground: "#00ff9c"
 
     # Bright and dim foreground colors
     #
@@ -152,8 +152,8 @@ colors:
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
   cursor:
-    text: "#1c1b19"
-    cursor: "#fbb829"
+    text: "#100d23"
+    cursor: "#9dff00"
 
   # Selection colors
   #
@@ -161,30 +161,30 @@ colors:
   # background is unset, selection color will be the inverse of the cell colors.
   # If only text is unset the cell text color will remain the same.
   selection:
-    text: "#1c1b19"
-    background: "#fce8c3"
+    text: "#9dff00"
+    background: "#311b92"
 
   # Normal colors
   normal:
-    black: "#1c1b19"
-    red: "#ef2f27"
-    green: "#519f50"
-    yellow: "#fbb829"
-    blue: "#2c78bf"
-    magenta: "#e02c6d"
-    cyan: "#0aaeb3"
-    white: "#d0bfa1"
+    black: "#100d23"
+    red: "#ff004c"
+    green: "#009550"
+    yellow: "#fcec02"
+    blue: "#3d5afe"
+    magenta: "#b700ff"
+    cyan: "#00c3ff"
+    white: "#ffffff"
 
   # Bright colors
   bright:
-    black: "#918175"
-    red: "#f75341"
-    green: "#98bc37"
-    yellow: "#fed06e"
-    blue: "#68a8e4"
-    magenta: "#ff5c8f"
-    cyan: "#53fde9"
-    white: "#fce8c3"
+    black: "#372963"
+    red: "#a22929"
+    green: "#3c9f4a"
+    yellow: "#ffff00"
+    blue: "#8b96ff"
+    magenta: "#c566fc"
+    cyan: "#b4baff"
+    white: "#f7f7f7"
 
   # Dim colors
   #
