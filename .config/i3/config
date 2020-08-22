@@ -99,6 +99,9 @@ bindsym $mod+shift+x exec --no-startup-id "betterlockscreen -l dim"
 # keyboard layouts
 exec --no-startup-id "setxkbmap -layout gb,th -option grp:win_space_toggle"
 
+# disable trackpad on startup
+exec --no-startup-id "xinput set-prop 12 164 0"
+
 #: }}}
 
 #: Container / Windows control {{{
