@@ -13,9 +13,11 @@
 allow_bold = true
 #audible_bell = false
 #bold_is_bright = true
+#cell_height_scale = 1.0
+#cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = JetBrains Mono 11
+font = JetBrains Mono 10
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -23,7 +25,7 @@ font = JetBrains Mono 11
 #scroll_on_keystroke = true
 # Length of the scrollback buffer, 0 disabled the scrollback buffer
 # and setting it to a negative value means "infinite scrollback"
-scrollback_lines = 10000
+scrollback_lines = 5000
 #search_wrap = true
 #urgent_on_bell = true
 #hyperlinks = false
@@ -52,36 +54,36 @@ cursor_shape = block
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #fbfcfc
+cursor = #9dff00
 #cursor_foreground = #dcdccc
 
-foreground = #cbe3e7
+foreground = #00ff9c
 #foreground_bold = #ffffff
-background = #1b182c
+background = #100d23
 
 # 20% background transparency (requires a compositor)
 #background = rgba(27, 24, 44, 0.8)
 
 # If unset, will reverse foreground and background
-highlight = #2f2f2f
+# highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #100e23
-color1 = #ff8080
-color2 = #95ffa4
-color3 = #ffe9aa
-color4 = #91ddff
-color5 = #c991e1
-color6 = #aaffe4
-color7 = #cbe3e7
-color8 = #565575
-color9 = #ff5458
-color10 = #62d196
-color11 = #ffb378
-color12 = #65b2ff
-color13 = #906cff
-color14 = #63f2f1
-color15 = #a6b3cc
+color0 = #100d23
+color1 = #ff004c
+color2 = #009550
+color3 = #fcec02
+color4 = #3d5afe
+color5 = #b700ff
+color6 = #00c3ff
+color7 = #ffffff
+color8 = #372963
+color9 = #a22929
+color10 = #3c9f4a
+color11 = #ffff00
+color12 = #8b96ff
+color13 = #c566fc
+color14 = #b4baff
+color15 = #f7f7f7
 
 [hints]
 #font = Monospace 12
