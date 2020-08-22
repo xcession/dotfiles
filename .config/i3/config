@@ -52,7 +52,7 @@ set $ws10 0:<span foreground="#1ED760">Spotify</span>
 
 # bar and window color
 set $bg-color               #000000
-set $active-bg-color        #cdfd00
+set $active-bg-color        #00ff9c
 set $inactive-bg-color      #1b1c1b
 set $text-color             #f7f8f7
 set $inactive-text-color    #333333
