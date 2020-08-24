@@ -36,7 +36,7 @@ set $left h
 set $right l
 
 # prefered terminal
-set $term alacritty
+set $term kitty
 
 # define workspace
 set $ws1 1
