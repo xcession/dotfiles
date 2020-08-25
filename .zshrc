@@ -100,6 +100,7 @@ DISABLE_UPDATE_PROMPT="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gitignore
   vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
