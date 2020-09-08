@@ -22,7 +22,7 @@ export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # Yarn
