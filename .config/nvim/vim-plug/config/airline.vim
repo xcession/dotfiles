@@ -15,7 +15,7 @@
 " }}}
 
 " theme
-let g:airline_theme='srcery'
+let g:airline_theme='pop_punk'
 
 " tabline
 let g:airline#extensions#tabline#enabled=2
