@@ -83,7 +83,8 @@ Plug 'tridactyl/vim-tridactyl'
 
 " Themes {{{
 
-Plug 'srcery-colors/srcery-vim'
+" Plug 'srcery-colors/srcery-vim'
+Plug 'bignimbus/pop-punk.vim'
 
 " }}}
 
@@ -100,7 +101,7 @@ source $HOME/.config/nvim/vim-plug/config/indentline.vim
 source $HOME/.config/nvim/vim-plug/config/limelight.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
-source $HOME/.config/nvim/vim-plug/config/srcery.vim
+" source $HOME/.config/nvim/vim-plug/config/srcery.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
