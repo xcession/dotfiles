@@ -48,7 +48,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-colorscheme srcery
+colorscheme pop-punk
 set background=dark
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
