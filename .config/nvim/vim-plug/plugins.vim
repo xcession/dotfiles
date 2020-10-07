@@ -58,25 +58,25 @@ Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 
 " FZF {{{
 
+Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-rooter'
 
 " }}}
 
 " Git {{{
 
-Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
 
 " }}}
 
 " Language & Syntax {{{
 
 Plug 'dense-analysis/ale'
-Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
+Plug 'sheerun/vim-polyglot'
 Plug 'tridactyl/vim-tridactyl'
 
 " }}}
