@@ -12,12 +12,12 @@
 [options]
 allow_bold = true
 #audible_bell = false
-#bold_is_bright = true
+bold_is_bright = true
 #cell_height_scale = 1.0
 #cell_width_scale = 1.0
 #clickable_url = true
 #dynamic_title = true
-font = JetBrains Mono 10
+font = JetBrainsMono Nerd Font 10.5
 #fullscreen = true
 #icon_name = terminal
 #mouse_autohide = false
@@ -54,12 +54,12 @@ cursor_shape = block
 [colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
-cursor = #9dff00
+#cursor = #9dff00
 #cursor_foreground = #dcdccc
 
-foreground = #00ff9c
+foreground = #ffffff
 #foreground_bold = #ffffff
-background = #100d23
+background = #000000
 
 # 20% background transparency (requires a compositor)
 #background = rgba(27, 24, 44, 0.8)
@@ -68,22 +68,22 @@ background = #100d23
 # highlight = #2f2f2f
 
 # Colors from color0 to color254 can be set
-color0 = #100d23
-color1 = #ff004c
+color0 = #000000
+color1 = #d70061
 color2 = #009550
-color3 = #fcec02
-color4 = #3d5afe
-color5 = #b700ff
+color3 = #ff9d00
+color4 = #445291
+color5 = #5f2a5f
 color6 = #00c3ff
 color7 = #ffffff
-color8 = #372963
-color9 = #a22929
+color8 = #2e373e
+color9 = #ff005f
 color10 = #3c9f4a
 color11 = #ffff00
-color12 = #8b96ff
-color13 = #c566fc
-color14 = #b4baff
-color15 = #f7f7f7
+color12 = #306b8f
+color13 = #c526ff
+color14 = #40e0d0
+color15 = #ffffcd
 
 [hints]
 #font = Monospace 12
