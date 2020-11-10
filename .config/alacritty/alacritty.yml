@@ -94,16 +94,16 @@ scrolling:
 # fall back to the value specified for the normal font.
 font:
   normal:
-    family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold:
-    family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
     style: Bold
   italic:
-    family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold_italic:
-    family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
   size: 8
 
