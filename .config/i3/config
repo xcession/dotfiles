@@ -27,6 +27,7 @@ exec_always --no-startup-id autotiling
 # mod key used for most binds
 # Mod1 = Alt
 # Mod4 = Super
+# (Use the 'xmodmap' command to list them all)
 set $Mod Mod4
 
 # direction keys
