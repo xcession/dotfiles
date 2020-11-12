@@ -51,6 +51,19 @@ set $ws8 8
 set $ws9 9
 set $ws10 0:<span foreground="#1ED760">Spotify</span>
 
+# define monitor
+# (Use the 'xrandr --listmonitors')
+set $mon1  LVDS1
+set $mon2  LVDS1
+set $mon3  LVDS1
+set $mon4  LVDS1
+set $mon5  LVDS1
+set $mon6  DP1
+set $mon7  DP1
+set $mon8  DP1
+set $mon9  DP1
+set $mon10 DP1
+
 # bar and window color
 set $bg-color               #000000
 set $active-bg-color        #00ff9c
@@ -198,27 +211,27 @@ bindsym $Mod+Shift+Right    move right  10px
 workspace_auto_back_and_forth yes
 
 # switch to workspace
-bindsym $Mod+1 workspace $ws1
-bindsym $Mod+2 workspace $ws2
-bindsym $Mod+3 workspace $ws3
-bindsym $Mod+4 workspace $ws4
-bindsym $Mod+5 workspace $ws5
-bindsym $Mod+6 workspace $ws6
-bindsym $Mod+7 workspace $ws7
-bindsym $Mod+8 workspace $ws8
-bindsym $Mod+9 workspace $ws9
-bindsym $Mod+0 workspace $ws10
+bindsym $Mod+1 workspace $ws1  output $sc1
+bindsym $Mod+2 workspace $ws2  output $sc2
+bindsym $Mod+3 workspace $ws3  output $sc3
+bindsym $Mod+4 workspace $ws4  output $sc4
+bindsym $Mod+5 workspace $ws5  outout $sc5
+bindsym $Mod+6 workspace $ws6  output $sc6
+bindsym $Mod+7 workspace $ws7  output $sc7
+bindsym $Mod+8 workspace $ws8  output $sc8
+bindsym $Mod+9 workspace $ws9  output $sc9
+bindsym $Mod+0 workspace $ws10 output $sc10
 # switch to workspace - numpad alternatives
-bindsym $Mod+Mod2+KP_1 workspace $ws1
-bindsym $Mod+Mod2+KP_2 workspace $ws2
-bindsym $Mod+Mod2+KP_3 workspace $ws3
-bindsym $Mod+Mod2+KP_4 workspace $ws4
-bindsym $Mod+Mod2+KP_5 workspace $ws5
-bindsym $Mod+Mod2+KP_6 workspace $ws6
-bindsym $Mod+Mod2+KP_7 workspace $ws7
-bindsym $Mod+Mod2+KP_8 workspace $ws8
-bindsym $Mod+Mod2+KP_9 workspace $ws9
-bindsym $Mod+Mod2+KP_0 workspace $ws10
+bindsym $Mod+Mod2+KP_1 workspace $ws1  output $sc1
+bindsym $Mod+Mod2+KP_2 workspace $ws2  output $sc2
+bindsym $Mod+Mod2+KP_3 workspace $ws3  output $sc3
+bindsym $Mod+Mod2+KP_4 workspace $ws4  output $sc4
+bindsym $Mod+Mod2+KP_5 workspace $ws5  output $sc5
+bindsym $Mod+Mod2+KP_6 workspace $ws6  output $sc6
+bindsym $Mod+Mod2+KP_7 workspace $ws7  output $sc7
+bindsym $Mod+Mod2+KP_8 workspace $ws8  output $sc8
+bindsym $Mod+Mod2+KP_9 workspace $ws9  output $sc9
+bindsym $Mod+Mod2+KP_0 workspace $ws10 output $sc10
 
 # switch to next or previous workspace
 bindsym $Mod+Mod1+Left workspace prev
