@@ -203,7 +203,7 @@ bindsym $Mod+2 workspace $ws2
 bindsym $Mod+3 workspace $ws3
 bindsym $Mod+4 workspace $ws4
 bindsym $Mod+5 workspace $ws5
-bindsym $Mod+6 workspace $wsj
+bindsym $Mod+6 workspace $ws6
 bindsym $Mod+7 workspace $ws7
 bindsym $Mod+8 workspace $ws8
 bindsym $Mod+9 workspace $ws9
