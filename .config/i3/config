@@ -40,29 +40,29 @@ set $right l
 set $term termite
 
 # define workspace
-set $ws1 1
-set $ws2 2
-set $ws3 3
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
-set $ws9 9
-set $ws10 0:<span foreground="#1ED760">Spotify</span>
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "0"
 
 # define monitor
 # (Use the 'xrandr --listmonitors')
-set $mon1  LVDS1
-set $mon2  LVDS1
-set $mon3  LVDS1
-set $mon4  LVDS1
-set $mon5  LVDS1
-set $mon6  DP1
-set $mon7  DP1
-set $mon8  DP1
-set $mon9  DP1
-set $mon10 DP1
+set $mon1 "LVDS1"
+set $mon2 "LVDS1"
+set $mon3 "LVDS1"
+set $mon4 "LVDS1"
+set $mon5 "LVDS1"
+set $mon6 "DP1"
+set $mon7 "DP1"
+set $mon8 "DP1"
+set $mon9 "DP1"
+set $mon10 "DP1"
 
 # bar and window color
 set $bg-color               #000000
