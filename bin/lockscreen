@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+echo Detecting keyboard layout...
+currentLayout=$(xkb-switch -p)
+echo Current keyboard layout: $currentLayout
+
+if [ $currentLayout != 'us' ]
+then
+  echo Change keyboard layout to 'us'
+  xkb-switch -s us
+  currentLayout=$(xkb-switch -p)
+  echo Current keyboard layout: $currentLayout
+  echo Screen locked
+  # xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
+  # i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
+  i3lock -c 00000088 --nofork
+else
+  echo Screen locked
+  # xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
+  # i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
+  i3lock -c 00000088 --nofork
+fi

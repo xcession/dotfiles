@@ -110,8 +110,10 @@ font pango:Noto Sans 9
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
-bindsym $mod+shift+x exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/bin/lockscreen
+# bindsym $mod+shift+x exec --no-startup-id xkb-switch -s us && xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
+bindsym $mod+shift+x exec --no-startup-id ~/bin/lockscreen
 
 # set last used background
 # exec --no-startup-id "source ~/.fehbg"
