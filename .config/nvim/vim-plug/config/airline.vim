@@ -15,7 +15,7 @@
 " }}}
 
 " theme
-let g:airline_theme='pop_punk'
+let g:airline_theme='gruvbox'
 
 " tabline
 let g:airline#extensions#tabline#enabled=2

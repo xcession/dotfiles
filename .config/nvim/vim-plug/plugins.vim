@@ -85,7 +85,8 @@ Plug 'tridactyl/vim-tridactyl'
 " Themes {{{
 
 " Plug 'srcery-colors/srcery-vim'
-Plug 'bignimbus/pop-punk.vim'
+" Plug 'bignimbus/pop-punk.vim'
+Plug 'morhetz/gruvbox'
 
 " }}}
 

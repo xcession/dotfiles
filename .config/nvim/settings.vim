@@ -48,8 +48,8 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-colorscheme pop-punk
-set background=dark
+colorscheme gruvbox
+set background=light
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
 
