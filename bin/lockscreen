@@ -5,10 +5,10 @@ echo Detecting keyboard layout...
 currentLayout=$(xkb-switch -p)
 echo Current keyboard layout: $currentLayout
 
-if [ $currentLayout != 'us' ]
+if [ $currentLayout != 'gb' ]
 then
-  echo Change keyboard layout to 'us'
-  xkb-switch -s us
+  echo Change keyboard layout to 'gb'
+  xkb-switch -s gb
   currentLayout=$(xkb-switch -p)
   echo Current keyboard layout: $currentLayout
   echo Screen locked
