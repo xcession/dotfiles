@@ -98,7 +98,7 @@ set showtabline=2
 
 " Enable column ruler
 set colorcolumn=80
-highlight ColorColumn ctermbg=0 guibg=black
+" highlight ColorColumn ctermbg=246 guibg=#2d2d2d
 
 " Show command characters
 set showcmd
