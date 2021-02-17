@@ -208,7 +208,7 @@ schemes:
       cyan:     "#8ec07c"
       white:    "#ebdbb2"
 
-colors: *light
+colors: *dark
 
 # Bell
 #
