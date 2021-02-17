@@ -10,6 +10,9 @@
 
 " Settings {{{
 
+" Disable line wrapping
+set nowrap
+
 " Enable syntax highlighting
 syntax enable
 
