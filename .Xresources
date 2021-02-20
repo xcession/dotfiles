@@ -1,24 +1,24 @@
 ! Base colors
-*.foreground:  #E1E1E1
-*.background:  #1c2023
-*.cursorColor: #778899
+*.foreground:  #ffffff
+*.background:  #000000
+*.cursorColor: #9dff00
 
-*.color0:  #1c2023
-*.color1:  #bf616a
-*.color2:  #a3be8c
-*.color3:  #ebcb8b
-*.color4:  #8fa1b3
-*.color5:  #b48ead
-*.color6:  #96b5b4
-*.color7:  #E1E1E1
-*.color8:  #919ba0
-*.color9:  #bf616a
-*.color10: #a3be8c
-*.color11: #ebcb8b
-*.color12: #8fa1b3
-*.color13: #b48ead
-*.color14: #96b5b4
-*.color15: #c0c5ce
+*.color0:  #000000
+*.color1:  #d70061
+*.color2:  #009550
+*.color3:  #ff9d00
+*.color4:  #445291
+*.color5:  #5f2a5f
+*.color6:  #00c3ff
+*.color7:  #ffffff
+*.color8:  #2e373e
+*.color9:  #ff005f
+*.color10: #3c9f4a
+*.color11: #ffff00
+*.color12: #306b8f
+*.color13: #c526ff
+*.color14: #40e0d0
+*.color15: #ffffcd
 
 ! Rofi
 rofi.font: JetBrains Mono 11
