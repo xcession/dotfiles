@@ -35,8 +35,8 @@ rofi.kb-cancel: Escape,Alt+F1
 
 ! xterm
 xterm*termName: xterm-256color
-xterm*font: JetBrains Mono
-xterm*faceName: JetBrains Mono:size=11
+xterm*font: JetBrainsMono Nerd Font
+xterm*faceName: JetBrainsMono Nerd Font:size=11
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
 xterm*saveLines: 2000
