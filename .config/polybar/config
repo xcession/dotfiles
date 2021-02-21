@@ -207,9 +207,9 @@ format-charging = <animation-charging> <label-charging>
 format-discharging = <animation-discharging> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 
-format-charging-underline = ${colors.state_degraded}
-format-discharging-underline = ${colors.state_degraded}
-format-full-underline = ${colors.state_good}
+; format-charging-underline = ${colors.state_degraded}
+; format-discharging-underline = ${colors.state_degraded}
+; format-full-underline = ${colors.state_good}
 
 label-charging = %percentage%%
 label-discharging = %percentage%%
@@ -308,12 +308,12 @@ interface = enp0s25
 interval = 3.0
 
 format-connected = <label-connected>
-format-connected-underline = ${colors.secondary}
+; format-connected-underline = ${colors.secondary}
 
 label-connected =  %local_ip%
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${colors.state_bad}
+; format-disconnected-underline = ${colors.state_bad}
 
 label-disconnected =  down
 label-disconnected-foreground = ${colors.foreground-alt}
@@ -326,10 +326,10 @@ interval = 30
 mount-0 = /home
 
 format-mounted =  <label-mounted> /
-format-mounted-underline = ${colors.primary}
+; format-mounted-underline = ${colors.primary}
 
 format-unmounted =  <label-unmounted> /
-format-unmounted-underline = ${colors.foreground-alt}
+; format-unmounted-underline = ${colors.foreground-alt}
 
 ; label-mounted = %{F#2c78bf}%mountpoint%%{F-}: %free%
 ; label-mounted = %mountpoint% %free%
@@ -497,12 +497,12 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = ${colors.primary}
+; format-connected-underline = ${colors.primary}
 
 label-connected =  %essid%
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${colors.state_bad}
+; format-disconnected-underline = ${colors.state_bad}
 
 label-disconnected =  down
 label-disconnected-foreground = ${colors.foreground-alt}
