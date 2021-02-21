@@ -505,7 +505,7 @@ format-disconnected = <label-disconnected>
 ; format-disconnected-underline = ${colors.state_bad}
 
 label-disconnected =  down
-label-disconnected-foreground = ${colors.foreground-alt}
+; label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = ▁
 ramp-signal-1 = ▂
