@@ -161,7 +161,7 @@ for_window [urgent="latest"]    focus
 focus_on_window_activation      focus
 
 # gaps
-gaps inner 0
+gaps inner 8
 gaps outer 0
 
 #: }}}
