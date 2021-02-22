@@ -409,6 +409,12 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 assign [class="(?i)(?:firefox)"] \
   $ws1
 
+for_window [class="VirtualBox Manager"] \
+  move --no-auto-back-and-forth to workspace $ws10
+
+for_window [class="VirtualBox Machine"] \
+  move --no-auto-back-and-forth to workspace $ws9
+
 for_window [class="Spotify"] \
   move --no-auto-back-and-forth to workspace $ws10
 
