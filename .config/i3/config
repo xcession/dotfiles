@@ -297,6 +297,16 @@ bindsym $Mod+c focus child
 
 #: }}}
 
+#: Scratchpad {{{
+
+# move the current focus to scratchpad
+bindsym $Mod+Shift+minus move scratchpad
+
+# show the first scratchpad window
+bindsym $Mod+minus scratchpad show
+
+#: }}}
+
 #: Resizing containers {{{
 
 mode "resize" {
