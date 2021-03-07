@@ -10,27 +10,49 @@
 
 # PATH variables {{{
 
+# iOS Simulator
+alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
-# Curl (Homebrew)
-export PATH="/usr/local/opt/curl/bin:$PATH"
-# Homebrew sbin
-export PATH="/usr/local/sbin:$PATH"
-# iOS Simulator
-alias simulator='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
-# Ncurses
-export PATH="/usr/local/opt/ncurses/bin:$PATH"
-# Python (Homebrew)
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Homebrew bin (Apple)
+export PATH="/opt/homebrew/bin:$PATH"
+# Homebrew sbin (Intel)
+#export PATH="/usr/local/sbin:$PATH"
+# Homebrew sbin (Apple)
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# Python (Intel)
+# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# Python (Apple)
+export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
+
+# Homebrew Ruby (Intel)
+# export PATH="/usr/local/opt/ruby/bin:$PATH"
+# Homebrew Ruby (Apple)
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-# SQLite
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+# Curl (Intel)
+# export PATH="/usr/local/opt/curl/bin:$PATH"
+# Curl (Apple)
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# Ncurses (Intel)
+# export PATH="/usr/local/opt/ncurses/bin:$PATH"
+# Ncurses (Apple)
+export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+
+# SQLite (Intel)
+# export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# SQLite (Apple)
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+
 # Yarn
 export PATH="$(yarn global bin):$PATH"
 
