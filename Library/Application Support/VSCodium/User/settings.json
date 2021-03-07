@@ -34,5 +34,6 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "sync.gist": "e71f3c56f6f2a282bf1ff6b5b7312ac6"
 }
