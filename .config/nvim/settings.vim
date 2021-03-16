@@ -32,6 +32,9 @@ set iskeyword+=-
 set smartcase
 set ignorecase
 
+" Incremental search
+set incsearch
+
 " Use system clipboard
 set clipboard^=unnamed,unnamedplus
 
