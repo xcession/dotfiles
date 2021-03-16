@@ -86,7 +86,7 @@ Plug 'tridactyl/vim-tridactyl'
 
 " Plug 'srcery-colors/srcery-vim'
 " Plug 'bignimbus/pop-punk.vim'
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 
 " }}}
 
