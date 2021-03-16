@@ -1,1 +1,0 @@
-/Users/xcession/.config/nvim/init.vim
