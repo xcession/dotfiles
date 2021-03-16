@@ -55,7 +55,8 @@ set termguicolors
 filetype plugin on
 
 colorscheme gruvbox
-set background=light
+set background=dark
+highlight Normal guibg=none
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
 
