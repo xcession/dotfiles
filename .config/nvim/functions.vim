@@ -14,8 +14,15 @@ augroup auto_spellcheck
 augroup END
 
 " Remove trailing whitespaces automatically before save
-" augroup strip_ws
-"   autocmd BufWritePre * call utils#stripTrailingWhitespaces()
-" augroup END
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+
+augroup auto_trim_whitespace
+  autocmd!
+  autocmd BufWritePre * :call TrimWhitespace()
+augroup END
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
