@@ -64,7 +64,7 @@ autocmd BufNewFile,BufRead *.json.template set syntax=json
 " Tabs and Spaces {{{
 
 " Number of space characters for a tab stop
-set tabstop=2
+set tabstop=2 softtabstop=2
 
 " Number of space characters inserted for indentation
 set shiftwidth=2
