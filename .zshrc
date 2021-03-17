@@ -36,7 +36,7 @@ export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Homebrew Ruby (Apple)
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 # Curl (Intel)
 # export PATH="/usr/local/opt/curl/bin:$PATH"
