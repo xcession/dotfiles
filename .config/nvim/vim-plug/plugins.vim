@@ -26,7 +26,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
