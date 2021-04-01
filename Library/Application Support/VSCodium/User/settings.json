@@ -22,7 +22,7 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Activate UMBRA protocol",
+  "workbench.colorTheme": "Panda Syntax",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
