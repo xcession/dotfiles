@@ -132,13 +132,13 @@ font:
 draw_bold_text_with_bright_colors: true
 
 schemes:
-  gruvbox_light: &light
+  panda_syntax: &panda
     # Default colors
     primary:
       # hard contrast: background = '#f9f5d7'
-      background: "#fbf1c7"
+      background: "#25282a"
       # hard contrast: background = '#f2e5bc'
-      foreground: "#3c3836"
+      foreground: "#f3f3f3"
 
     cursor:
       text: CellBackground
@@ -150,27 +150,27 @@ schemes:
 
     # Normal colors
     normal:
-      black:    "#fbf1c7"
-      red:      "#cc241d"
-      green:    "#98971a"
-      yellow:   "#d79921"
-      blue:     "#458588"
-      magenta:  "#b16286"
-      cyan:     "#689d6a"
-      white:    "#7c6f64"
+      black:    "#29292a"
+      red:      "#ff2b6c"
+      green:    "#14fbdc"
+      yellow:   "#ffb76b"
+      blue:     "#6db1fe"
+      magenta:  "#ff74b5"
+      cyan:     "#15fbdc"
+      white:    "#f3f3f3"
 
     # Bright colors
     bright:
-      black:    "#928374"
-      red:      "#9d0006"
-      green:    "#79740e"
-      yellow:   "#b57614"
-      blue:     "#076678"
-      magenta:  "#8f3f71"
-      cyan:     "#427b58"
-      white:    "#3c3836"
+      black:    "#6f7683"
+      red:      "#ff2b6c"
+      green:    "#14fbdc"
+      yellow:   "#ffc88f"
+      blue:     "#65bcfe"
+      magenta:  "#ffaad9"
+      cyan:     "#15fbdc"
+      white:    "#f3f3f3"
 
-  gruvbox_dark: &dark
+  gruvbox_dark: &gruvbox
     # Default colors
     primary:
       # hard contrast: background = '#1d2021'
@@ -208,7 +208,7 @@ schemes:
       cyan:     "#8ec07c"
       white:    "#ebdbb2"
 
-colors: *dark
+colors: *panda
 
 # Bell
 #
