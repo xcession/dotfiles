@@ -42,19 +42,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " }}}
 
-" Coc {{{
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-
-" }}}
-
 " FZF {{{
 
 Plug 'airblade/vim-rooter'
@@ -68,6 +55,13 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
+
+" }}}
+
+" Intellisense {{{
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 
 " }}}
 
@@ -92,14 +86,20 @@ call plug#end()
 
 source $HOME/.config/nvim/vim-plug/config/airline.vim
 source $HOME/.config/nvim/vim-plug/config/ale.vim
-source $HOME/.config/nvim/vim-plug/config/coc.vim
 source $HOME/.config/nvim/vim-plug/config/easymotion.vim
 source $HOME/.config/nvim/vim-plug/config/fzf.vim
 source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
 source $HOME/.config/nvim/vim-plug/config/indentline.vim
 source $HOME/.config/nvim/vim-plug/config/limelight.vim
+source $HOME/.config/nvim/vim-plug/config/lsp-config.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
+luafile $HOME/.config/nvim/vim-plug/config/compe-config.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-bash.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-css.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-html.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-python.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-ts.lua
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
