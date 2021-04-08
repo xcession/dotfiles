@@ -27,6 +27,9 @@ export PATH="/opt/homebrew/bin:$PATH"
 # Homebrew sbin (Apple)
 export PATH="/opt/homebrew/sbin:$PATH"
 
+# GNU
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
 # Python (Intel)
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Python (Apple)
