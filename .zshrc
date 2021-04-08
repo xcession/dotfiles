@@ -20,15 +20,17 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
+# GNU make (Intel)
+# export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+# GNU make (Apple)
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
 # Homebrew bin (Apple)
 export PATH="/opt/homebrew/bin:$PATH"
 # Homebrew sbin (Intel)
 #export PATH="/usr/local/sbin:$PATH"
 # Homebrew sbin (Apple)
 export PATH="/opt/homebrew/sbin:$PATH"
-
-# GNU
-export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 # Python (Intel)
 # export PATH="/usr/local/opt/python/libexec/bin:$PATH"
