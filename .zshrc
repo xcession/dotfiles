@@ -25,6 +25,8 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # GNU make (Apple)
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
+# Homebrew bin (Intel)
+export PATH="/usr/local/bin:$PATH"
 # Homebrew bin (Apple)
 export PATH="/opt/homebrew/bin:$PATH"
 # Homebrew sbin (Intel)
