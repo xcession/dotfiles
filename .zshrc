@@ -21,44 +21,44 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 # GNU make (Intel)
-# export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 # GNU make (Apple)
-export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+# export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
 # Homebrew bin (Intel)
 export PATH="/usr/local/bin:$PATH"
 # Homebrew bin (Apple)
-export PATH="/opt/homebrew/bin:$PATH"
+# export PATH="/opt/homebrew/bin:$PATH"
 # Homebrew sbin (Intel)
-#export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 # Homebrew sbin (Apple)
-export PATH="/opt/homebrew/sbin:$PATH"
+# export PATH="/opt/homebrew/sbin:$PATH"
 
 # Python (Intel)
-# export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Python (Apple)
-export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
+# export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
 
 # Homebrew Ruby (Intel)
-# export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Homebrew Ruby (Apple)
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 # Curl (Intel)
-# export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 # Curl (Apple)
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+# export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 # Ncurses (Intel)
-# export PATH="/usr/local/opt/ncurses/bin:$PATH"
+export PATH="/usr/local/opt/ncurses/bin:$PATH"
 # Ncurses (Apple)
-export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
+# export PATH="/opt/homebrew/opt/ncurses/bin:$PATH"
 
 # SQLite (Intel)
-# export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # SQLite (Apple)
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+# export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # Yarn
 export PATH="$(yarn global bin):$PATH"
