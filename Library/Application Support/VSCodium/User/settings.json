@@ -16,6 +16,7 @@
   "prettier.jsxSingleQuote": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "update.mode": "none",
   "vim.easymotion": true,
   "vim.hlsearch": true,
