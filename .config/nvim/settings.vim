@@ -54,9 +54,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-colorscheme gruvbox
-set background=dark
-highlight Normal guibg=none
+source $HOME/.config/nvim/vim-plug/config/themes/gruvbox.vim
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
 
