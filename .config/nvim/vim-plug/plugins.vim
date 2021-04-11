@@ -84,7 +84,7 @@ Plug 'tridactyl/vim-tridactyl'
 
 " Themes {{{
 
-Plug 'gruvbox-community/gruvbox'
+Plug 'joshdick/onedark.vim'
 
 " }}}
 
