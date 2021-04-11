@@ -42,6 +42,13 @@ Plug 'vim-airline/vim-airline-themes'
 
 " }}}
 
+" File Explorer {{{
+
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
+
+" }}}
+
 " FZF {{{
 
 Plug 'airblade/vim-rooter'
@@ -92,6 +99,7 @@ source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
 source $HOME/.config/nvim/vim-plug/config/indentline.vim
 source $HOME/.config/nvim/vim-plug/config/limelight.vim
 source $HOME/.config/nvim/vim-plug/config/lsp-config.vim
+source $HOME/.config/nvim/vim-plug/config/nvim-tree.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
