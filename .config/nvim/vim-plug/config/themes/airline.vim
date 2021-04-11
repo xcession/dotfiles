@@ -15,7 +15,7 @@
 " }}}
 
 " theme
-let g:airline_theme='gruvbox'
+let g:airline_theme='onedark'
 
 " tabline
 let g:airline#extensions#tabline#enabled=2
