@@ -1,4 +1,4 @@
-" $HOME/.config/nvim/general/mappings.vim
+" $HOME/.config/nvim/mappings.vim
 "                        _
 "  _ __   ___  _____   _(_)_ __ ___
 " | '_ \ / _ \/ _ \ \ / / | '_ ` _ \

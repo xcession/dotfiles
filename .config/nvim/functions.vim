@@ -1,4 +1,4 @@
-" $HOME/.config/nvim/general/functions.vim
+" $HOME/.config/nvim/functions.vim
 "                        _
 "  _ __   ___  _____   _(_)_ __ ___
 " | '_ \ / _ \/ _ \ \ / / | '_ ` _ \
