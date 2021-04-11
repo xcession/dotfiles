@@ -1,6 +1,6 @@
 ```
-     _       _    __ _ _           
-  __| | ___ | |_ / _(_) | ___  ___ 
+     _       _    __ _ _
+  __| | ___ | |_ / _(_) | ___  ___
  / _` |/ _ \| __| |_| | |/ _ \/ __|
 | (_| | (_) | |_|  _| | |  __/\__ \
  \__,_|\___/ \__|_| |_|_|\___||___/
@@ -13,7 +13,8 @@ This repository contains my personal dotfiles. They are stored here for convenie
 ## Branches
 - `master`: README
 - `linux`: Linux
-- `macos`: macOS
+- `macos`: macOS (Intel)
+- `macos-arm` : macOS (Apple Silicon)
 
 # Installation
 
@@ -27,9 +28,14 @@ $ dotfiles checkout
 $ dotfiles config --local status.showUntrackedFiles no
 ```
 
-For macOS dotfiles:
+For macOS (Intel) dotfiles:
 ```
 $ dotfiles checkout macos
+```
+
+For macOS (Apple Silicon) dotfiles:
+```
+$ dotfiles checkout macos-arm
 ```
 
 For Linux dotfiles:
