@@ -78,7 +78,6 @@ Plug 'dense-analysis/ale'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/vader.vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'tridactyl/vim-tridactyl'
 
 " }}}
 
