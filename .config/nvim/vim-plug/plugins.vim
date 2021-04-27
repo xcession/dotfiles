@@ -84,7 +84,7 @@ Plug 'tridactyl/vim-tridactyl'
 
 " Themes {{{
 
-Plug 'joshdick/onedark.vim'
+Plug 'srcery-colors/srcery-vim'
 
 " }}}
 
