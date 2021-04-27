@@ -1,3 +1,7 @@
+" Installation {{{
+" Plug 'joshdick/onedark.vim'
+" }}}
+
 " onedark.vim override: Don't set a background color when running in a terminal;
 if (has("autocmd") && !has("gui_running"))
   augroup colorset
@@ -21,3 +25,4 @@ if (has("termguicolors"))
     hi LineNr ctermbg=NONE guibg=NONE
 endif
 
+" vim:fileencoding=utf-8:ft=vim:foldmethod=marker
