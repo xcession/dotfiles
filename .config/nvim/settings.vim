@@ -54,7 +54,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-source $HOME/.config/nvim/vim-plug/config/themes/onedark.vim
+source $HOME/.config/nvim/vim-plug/config/themes/srcery.vim
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
 
