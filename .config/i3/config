@@ -31,6 +31,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # mod key used for most binds
 # Mod1 = Alt
+# Mod2 = Numlock
 # Mod4 = Super
 # (Use the 'xmodmap' command to list them all)
 set $mod Mod4
@@ -94,7 +95,7 @@ workspace $ws10 output $mon2
 # font
 font pango:Noto Sans 9
 
-# wallpaper
+# wallpaper (feh)
 # exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
 
 #: }}}
@@ -130,7 +131,7 @@ exec --no-startup-id "xinput set-prop 9 302 1"
 
 #: }}}
 
-#: Container / Windows control {{{
+#: Container control {{{
 
 # border & title
 for_window [class="^.*"] border pixel $border_size, \
@@ -385,9 +386,8 @@ bindsym $mod+slash exec "splatmoji copy"
 
 #: }}}
 
-#: Statusbar {{{
+#: i3Bar {{{
 
-# i3Bar
 # bar {
 # 	status_command i3status
 # 	tray_output primary
