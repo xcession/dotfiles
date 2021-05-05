@@ -425,6 +425,11 @@ for_window [title="(?i)(?:copying|deleting|moving)"] \
 for_window [window_role="(?i)(?:about|pop-up|setup)"] \
   floating enable
 
+# Android Studio
+for_window [title="win0"] \
+  floating enable
+for_window [title="Welcome to Android Studio"] \
+  floating false
 for_window [title="Android Emulator"] \
   floating enable
 # GOG Games installer
