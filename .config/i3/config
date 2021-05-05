@@ -11,11 +11,13 @@
 
 #: Autostart {{{
 
-# run with reload
+# run once: exec
+# run with reload: exec_always
+
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
-# run once
-# exec --no-startup-id xfsettingsd
+# polkit
+exec --no-startup-id /usr/bin/lxpolkit &
 
 # autotiling
 exec_always --no-startup-id autotiling
