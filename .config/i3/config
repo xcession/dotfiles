@@ -22,6 +22,9 @@ exec --no-startup-id /usr/bin/lxpolkit &
 # autotiling
 exec_always --no-startup-id autotiling
 
+# Polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 #: }}}
 
 #: Variables {{{
@@ -399,9 +402,6 @@ bindsym $mod+slash exec "splatmoji copy"
 # 		urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
 # 	}
 # }
-
-# Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #: }}}
 
