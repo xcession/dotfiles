@@ -28,7 +28,7 @@ exec_always --no-startup-id autotiling
 # Mod1 = Alt
 # Mod4 = Super
 # (Use the 'xmodmap' command to list them all)
-set $Mod Mod4
+set $mod Mod4
 
 # direction keys
 set $up k
@@ -171,55 +171,55 @@ gaps outer 0
 #: Basic {{{
 
 # terminal
-# bindsym $Mod+t          exec --no-startup-id i3-sensible-terminal
-bindsym $Mod+t          exec --no-startup-id $term
-bindsym $Mod+Return     exec --no-startup-id $term
+# bindsym $mod+t          exec --no-startup-id i3-sensible-terminal
+bindsym $mod+t          exec --no-startup-id $term
+bindsym $mod+Return     exec --no-startup-id $term
 
 # kill focused window
-bindsym $Mod+Shift+q kill
+bindsym $mod+Shift+q kill
 bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
 # launcher
-bindsym $Mod+d exec --no-startup-id rofi_run -r
+bindsym $mod+d exec --no-startup-id rofi_run -r
 
 # restart inplace (preserves your layout/session, can be used to upgrade wm)
-bindsym $Mod+Shift+r restart
+bindsym $mod+Shift+r restart
 
 # reload the configuration file
-bindsym $Mod+Shift+c reload
+bindsym $mod+Shift+c reload
 
 # exit i3 (logs you out of your X session)
-bindsym $Mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # logout script
-bindsym $Mod+x exec --no-startup-id rofi_run -l
+bindsym $mod+x exec --no-startup-id rofi_run -l
 
 #: }}}
 
 #: Moving around {{{
 
 # move focus around
-bindsym $Mod+$left  focus left
-bindsym $Mod+$down  focus down
-bindsym $Mod+$up    focus up
-bindsym $Mod+$right focus right
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
+bindsym $mod+$right focus right
 # alternatively, you can use the cursor keys:
-bindsym $Mod+Left   focus left
-bindsym $Mod+Down   focus down
-bindsym $Mod+Up     focus up
-bindsym $Mod+Right  focus right
+bindsym $mod+Left   focus left
+bindsym $mod+Down   focus down
+bindsym $mod+Up     focus up
+bindsym $mod+Right  focus right
 
 # move focused window
-bindsym $Mod+Shift+$left    move left   10px
-bindsym $Mod+Shift+$down    move down   10px
-bindsym $Mod+Shift+$up      move up     10px
-bindsym $Mod+Shift+$right   move right  10px
+bindsym $mod+Shift+$left    move left   10px
+bindsym $mod+Shift+$down    move down   10px
+bindsym $mod+Shift+$up      move up     10px
+bindsym $mod+Shift+$right   move right  10px
 # alternatively, you can use the cursor keys:
-bindsym $Mod+Shift+Left     move left   10px
-bindsym $Mod+Shift+Down     move down   10px
-bindsym $Mod+Shift+Up       move up     10px
-bindsym $Mod+Shift+Right    move right  10px
+bindsym $mod+Shift+Left     move left   10px
+bindsym $mod+Shift+Down     move down   10px
+bindsym $mod+Shift+Up       move up     10px
+bindsym $mod+Shift+Right    move right  10px
 
 #: }}}
 
@@ -228,61 +228,61 @@ bindsym $Mod+Shift+Right    move right  10px
 workspace_auto_back_and_forth yes
 
 # switch to workspace
-bindsym $Mod+1 workspace $ws1
-bindsym $Mod+2 workspace $ws2
-bindsym $Mod+3 workspace $ws3
-bindsym $Mod+4 workspace $ws4
-bindsym $Mod+5 workspace $ws5
-bindsym $Mod+6 workspace $ws6
-bindsym $Mod+7 workspace $ws7
-bindsym $Mod+8 workspace $ws8
-bindsym $Mod+9 workspace $ws9
-bindsym $Mod+0 workspace $ws10
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 # switch to workspace - numpad alternatives
-bindsym $Mod+Mod2+KP_1 workspace $ws1
-bindsym $Mod+Mod2+KP_2 workspace $ws2
-bindsym $Mod+Mod2+KP_3 workspace $ws3
-bindsym $Mod+Mod2+KP_4 workspace $ws4
-bindsym $Mod+Mod2+KP_5 workspace $ws5
-bindsym $Mod+Mod2+KP_6 workspace $ws6
-bindsym $Mod+Mod2+KP_7 workspace $ws7
-bindsym $Mod+Mod2+KP_8 workspace $ws8
-bindsym $Mod+Mod2+KP_9 workspace $ws9
-bindsym $Mod+Mod2+KP_0 workspace $ws10
+bindsym $mod+Mod2+KP_1 workspace $ws1
+bindsym $mod+Mod2+KP_2 workspace $ws2
+bindsym $mod+Mod2+KP_3 workspace $ws3
+bindsym $mod+Mod2+KP_4 workspace $ws4
+bindsym $mod+Mod2+KP_5 workspace $ws5
+bindsym $mod+Mod2+KP_6 workspace $ws6
+bindsym $mod+Mod2+KP_7 workspace $ws7
+bindsym $mod+Mod2+KP_8 workspace $ws8
+bindsym $mod+Mod2+KP_9 workspace $ws9
+bindsym $mod+Mod2+KP_0 workspace $ws10
 
 # switch to next or previous workspace
-bindsym $Mod+Mod1+Left workspace prev
-bindsym $Mod+Mod1+Right workspace next
+bindsym $mod+Mod1+Left workspace prev
+bindsym $mod+Mod1+Right workspace next
 
 # move focused container to workspace
-bindsym $Mod+Shift+1 move container to workspace $ws1; workspace $ws1
-bindsym $Mod+Shift+2 move container to workspace $ws2; workspace $ws2
-bindsym $Mod+Shift+3 move container to workspace $ws3; workspace $ws3
-bindsym $Mod+Shift+4 move container to workspace $ws4; workspace $ws4
-bindsym $Mod+Shift+5 move container to workspace $ws5; workspace $ws5
-bindsym $Mod+Shift+6 move container to workspace $ws6; workspace $ws6
-bindsym $Mod+Shift+7 move container to workspace $ws7; workspace $ws7
-bindsym $Mod+Shift+8 move container to workspace $ws8; workspace $ws8
-bindsym $Mod+Shift+9 move container to workspace $ws9; workspace $ws9
-bindsym $Mod+Shift+0 move container to workspace $ws10; workspace $ws10
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
 #: }}}
 
 #: Layouts {{{
 
 # split layout
-bindsym $Mod+b split h
-bindsym $Mod+v split v
+bindsym $mod+b split h
+bindsym $mod+v split v
 
 default_orientation horizontal
 
 # switch between layouts
-# bindsym $Mod+Shift+t layout tabbed
-# bindsym $Mod+Shift+s layout stacking
-bindsym $Mod+Mod1+b layout toggle split
+# bindsym $mod+Shift+t layout tabbed
+# bindsym $mod+Shift+s layout stacking
+bindsym $mod+Mod1+b layout toggle split
 
 # make the current focus fullscreen
-bindsym $Mod+f fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # toggle the current focus between tiling / floating
 bindsym Mod1+Shift+space floating toggle
@@ -292,18 +292,18 @@ floating_modifier Mod1
 bindsym Mod1+space focus mode_toggle
 
 # move focus between parent / child windows
-bindsym $Mod+p focus parent
-bindsym $Mod+c focus child
+bindsym $mod+p focus parent
+bindsym $mod+c focus child
 
 #: }}}
 
 #: Scratchpad {{{
 
 # move the current focus to scratchpad
-bindsym $Mod+Shift+minus move scratchpad
+bindsym $mod+Shift+minus move scratchpad
 
 # show the first scratchpad window
-bindsym $Mod+minus scratchpad show
+bindsym $mod+minus scratchpad show
 
 #: }}}
 
@@ -327,34 +327,34 @@ mode "resize" {
   bindsym Left    resize shrink   width   5 px or 5 ppt
   bindsym Right   resize grow     width   5 px or 5 ppt
 
-  # back to normal: Enter or Escape or $Mod+r
+  # back to normal: Enter or Escape or $mod+r
   bindsym Return mode "default"
   bindsym Escape mode "default"
-  bindsym $Mod+r mode "default"
+  bindsym $mod+r mode "default"
 }
 
-bindsym $Mod+r mode "resize"
+bindsym $mod+r mode "resize"
 
 #: }}}
 
 #: Border & Gaps {{{
 
-# bindsym $Mod+Shift+b border toggle
+# bindsym $mod+Shift+b border toggle
 
 # changing border style
-# bindsym $Mod+n border normal
-# bindsym $Mod+y border pixel $border_size
-# bindsym $Mod+u border none
+# bindsym $mod+n border normal
+# bindsym $mod+y border pixel $border_size
+# bindsym $mod+u border none
 
 # change gaps
-# bindsym $Mod+plus                   gaps inner current plus  5
-# bindsym $Mod+minus                  gaps inner current minus 5
-# bindsym $Mod+Shift+plus             gaps outer current plus  5
-# bindsym $Mod+Shift+minus            gaps outer current minus 5
-# bindsym $Mod+Control+plus           gaps inner all     plus  5
-# bindsym $Mod+Control+minus          gaps inner all     minus 5
-# bindsym $Mod+Control+Shift+plus     gaps outer all     plus  5
-# bindsym $Mod+Control+Shift+minus    gaps outer all     minus 5
+# bindsym $mod+plus                   gaps inner current plus  5
+# bindsym $mod+minus                  gaps inner current minus 5
+# bindsym $mod+Shift+plus             gaps outer current plus  5
+# bindsym $mod+Shift+minus            gaps outer current minus 5
+# bindsym $mod+Control+plus           gaps inner all     plus  5
+# bindsym $mod+Control+minus          gaps inner all     minus 5
+# bindsym $mod+Control+Shift+plus     gaps outer all     plus  5
+# bindsym $mod+Control+Shift+minus    gaps outer all     minus 5
 
 #: }}}
 
@@ -382,7 +382,7 @@ bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight -dec 10 ; exec -
 bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
 
 # Splatmoji
-bindsym $Mod+slash exec "splatmoji copy"
+bindsym $mod+slash exec "splatmoji copy"
 
 #: }}}
 
