@@ -53,18 +53,10 @@ set $ws10 "0"
 
 # define monitor
 # (Use the 'xrandr --listmonitors')
-set $mon1 "LVDS1"
-set $mon2 "LVDS1"
-set $mon3 "LVDS1"
-set $mon4 "LVDS1"
-set $mon5 "LVDS1"
-set $mon6 "DP1"
-set $mon7 "DP1"
-set $mon8 "DP1"
-set $mon9 "DP1"
-set $mon10 "DP1"
+set $mon1 "DisplayPort-0"
+set $mon2 "HDMI-A-1"
 
-# bar and window color
+# bar and container color
 set $bg-color               #000000
 set $active-bg-color        #00ff9c
 set $inactive-bg-color      #1b1c1b
@@ -73,22 +65,22 @@ set $inactive-text-color    #333333
 set $urgent-bg-color        #ff5300
 set $indicator-color        #2c78bf
 
-set $border_size 2
+set $border_size 1
 
 #: }}}
 
 #: Initialize workspace {{{
 
 workspace $ws1 output $mon1
-workspace $ws2 output $mon2
-workspace $ws3 output $mon3
-workspace $ws4 output $mon4
-workspace $ws5 output $mon5
-workspace $ws6 output $mon6
-workspace $ws7 output $mon7
-workspace $ws8 output $mon8
-workspace $ws9 output $mon9
-workspace $ws10 output $mon10
+workspace $ws2 output $mon1
+workspace $ws3 output $mon1
+workspace $ws4 output $mon1
+workspace $ws5 output $mon1
+workspace $ws6 output $mon2
+workspace $ws7 output $mon2
+workspace $ws8 output $mon2
+workspace $ws9 output $mon2
+workspace $ws10 output $mon2
 
 #: }}}
 
