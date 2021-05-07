@@ -198,7 +198,7 @@ bindsym $mod+x exec --no-startup-id rofi_run -l
 
 #: Moving around {{{
 
-# move focus around
+# change focus
 bindsym $mod+$left  focus left
 bindsym $mod+$down  focus down
 bindsym $mod+$up    focus up
