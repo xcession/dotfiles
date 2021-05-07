@@ -140,6 +140,7 @@ for_window [class="^.*"] border pixel $border_size, \
 new_window  normal
 new_float   normal
 
+# hide_edge_borders none|vertical|horizontal|both|smart
 hide_edge_borders smart
 
 # window colors
