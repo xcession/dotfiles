@@ -94,7 +94,7 @@ scrolling:
 # fall back to the value specified for the normal font.
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: JetBrainsMono
     style: Regular
   # bold:
   #   family: monospace
