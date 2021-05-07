@@ -428,6 +428,8 @@ for_window [title="(?i)(?:copying|deleting|moving)"] \
   floating enable
 for_window [window_role="(?i)(?:about|pop-up|setup)"] \
   floating enable
+for_window [class="Yad" instance="yad"] \
+  floating enable
 
 # Android Studio
 for_window [title="win0"] \
