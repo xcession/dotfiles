@@ -77,6 +77,8 @@ set $border_size 1
 
 #: Initialize workspace {{{
 
+focus_follows_mouse no
+
 # workspace_layout default|stacking|tabbed
 workspace_layout default
 
