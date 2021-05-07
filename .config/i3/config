@@ -176,8 +176,6 @@ bindsym $mod+Return     exec --no-startup-id $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
-bindsym Mod1+q kill
-bindsym Mod1+F4 kill
 
 # launcher
 bindsym $mod+d exec --no-startup-id rofi_run -r
