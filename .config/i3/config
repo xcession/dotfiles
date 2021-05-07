@@ -22,7 +22,10 @@ exec --no-startup-id /usr/bin/lxpolkit &
 # autotiling
 exec_always --no-startup-id autotiling
 
-# Polybar
+# desktop notification
+exec --no-startup-id /usr/bin/dunst
+
+# polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #: }}}
