@@ -310,7 +310,7 @@ bindsym Mod1+space focus mode_toggle
 
 # move focus between parent / child windows
 bindsym $mod+a focus parent
-# bindsym $mod+c focus child
+bindsym $mod+c focus child
 
 #: }}}
 
