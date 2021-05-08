@@ -286,13 +286,13 @@ ramp-coreload-foreground = ${colors.primary}
 [module/date]
 ;https://github.com/polybar/polybar/wiki/Module:-date
 type = internal/date
-interval = 5
+interval = 1
 
 date =
-date-alt = %a %b %d, %Y
+date-alt = %a %d %b, %Y
 
-time = %H:%M
-time-alt = %H:%M
+time = %H:%M:%S
+time-alt = %H:%M:%S
 
 format = <label>
 
