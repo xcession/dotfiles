@@ -11,9 +11,8 @@
 
 ;: Global WM settings {{{
 
-;https://github.com/jaagr/polybar/wiki/Configuration#global-wm-settings
-
 [global/wm]
+;https://github.com/jaagr/polybar/wiki/Configuration#global-wm-settings
 margin-top = 0
 margin-bottom = 0
 
@@ -21,9 +20,8 @@ margin-bottom = 0
 
 ;: Application settings {{{
 
-;https://github.com/polybar/polybar/wiki/Configuration#application-settings
-
 [settings]
+;https://github.com/polybar/polybar/wiki/Configuration#application-settings
 throttle-output = 5
 throttle-output-for = 10
 screenchange-reload = true
@@ -144,7 +142,7 @@ font-0 = "Cozette:style=Regular:antialias=false:pixelsize=8;1"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right =
+modules-right = xkeyboard date
 
 cursor-click =
 cursor-scroll =
