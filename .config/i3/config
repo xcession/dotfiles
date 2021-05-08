@@ -164,11 +164,24 @@ client.urgent             $urgent-bg-color    $urgent-bg-color \
 for_window [urgent="latest"]    focus
 focus_on_window_activation      focus
 
+#: }}}
+
+#: i3-gaps {{{
+
 # gaps
 gaps inner 8
 gaps outer 0
 
-#: }}}
+# only enable gaps on a workspace when there is at least one container
+smart_gaps on
+
+# smart borders will draw borders on windows only if there is more than one
+# window in a workspace. This feature can also be enabled only if the gap size
+# between widnow and screen edge is 0
+smart_borders on
+smart_borders no_gaps
+
+#}}}
 
 #: Key bindings {{{
 
