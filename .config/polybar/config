@@ -163,7 +163,7 @@ tray-detached = false
 ; - pointer   : Typically in the form of a hand
 ; - ns-resize : Up and down arrows, can be used to indicate scrolling
 cursor-click = pointer
-cursor-scroll = ns-scroll
+cursor-scroll = ns-resize
 
 ;}}}
 
@@ -202,7 +202,7 @@ modules-right = wlan eth xkeyboard date powermenu
 separator =
 
 cursor-click = pointer
-cursor-scroll = ns-scroll
+cursor-scroll = ns-resize
 
 ;}}}
 
