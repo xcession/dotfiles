@@ -713,7 +713,9 @@ label-indicator-padding = 2
 ;{{{
 
 type = internal/xwindow
-label = %title:0:30:...%
+
+label = %title%
+label-maxlen = 40
 
 ;}}}
 
