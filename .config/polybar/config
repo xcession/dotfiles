@@ -677,19 +677,11 @@ type = internal/xbacklight
 
 enable-scroll = false
 
-format = <label> <bar>
+format = <label>
 format-padding = 2
 format-prefix = " "
 
 label = %percentage%
-
-bar-width = 6
-bar-indicator = ┃
-bar-indicator-foreground = ${colors.primary}
-bar-fill = ━
-bar-fill-foreground = ${colors.state_low}
-bar-empty = ━
-bar-empty-foreground = ${colors.background-alt}
 
 ;}}}
 
