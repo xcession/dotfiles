@@ -238,13 +238,13 @@ label-muted-background = ${colors.alert}
 label-muted-padding = 1
 
 bar-volume-width = 6
-bar-volume-foreground-0 = ${colors.state_good}
-bar-volume-foreground-1 = ${colors.state_good}
-bar-volume-foreground-2 = ${colors.state_good}
-bar-volume-foreground-3 = ${colors.state_good}
-bar-volume-foreground-4 = ${colors.state_good}
-bar-volume-foreground-5 = ${colors.state_degraded}
-bar-volume-foreground-6 = ${colors.state_bad}
+bar-volume-foreground-0 = ${colors.state_low}
+bar-volume-foreground-1 = ${colors.state_low}
+bar-volume-foreground-2 = ${colors.state_low}
+bar-volume-foreground-3 = ${colors.state_low}
+bar-volume-foreground-4 = ${colors.state_low}
+bar-volume-foreground-5 = ${colors.state_mid}
+bar-volume-foreground-6 = ${colors.state_hi}
 bar-volume-gradient = false
 bar-volume-indicator = █
 bar-volume-indicator-font = 0
@@ -281,33 +281,32 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
+format-charging-padding = 2
 format-discharging = <animation-discharging> <label-discharging>
+format-discharging-padding = 2
 format-full = <ramp-capacity> <label-full>
-
-; format-charging-underline = ${colors.state_degraded}
-; format-discharging-underline = ${colors.state_degraded}
-; format-full-underline = ${colors.state_good}
+format-full-padding = 2
 
 label-charging = %percentage%%
 label-discharging = %percentage%%
 label-full = %percentage%%
 
-label-charging-foreground = ${colors.state_degraded}
-label-discharging-foreground = ${colors.state_degraded}
+label-charging-foreground = ${colors.state_mid}
+label-discharging-foreground = ${colors.state_mid}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.state_good}
+ramp-capacity-foreground = ${colors.state_low}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = ${colors.state_degraded}
+animation-charging-foreground = ${colors.state_mid}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
@@ -315,7 +314,7 @@ animation-discharging-1 = 
 animation-discharging-2 = 
 animation-discharging-3 = 
 animation-discharging-4 = 
-animation-discharging-foreground = ${colors.state_degraded}
+animation-discharging-foreground = ${colors.state_mid}
 animation-discharging-framerate = 750
 
 ;}}}
@@ -355,7 +354,6 @@ type = internal/cpu
 interval = 2
 
 format = <ramp-coreload> <label>
-
 format-padding = 2
 
 label = %percentage:2%%
@@ -385,7 +383,6 @@ time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format = <label>
-
 format-padding = 2
 format-prefix = " "
 
@@ -405,13 +402,11 @@ interface = enp3s0
 interval = 3.0
 
 format-connected = <label-connected>
-
 format-connected-padding = 2
 
 label-connected =  %local_ip%
 
 format-disconnected = <label-disconnected>
-
 format-disconnected-padding = 2
 
 label-disconnected =  down
@@ -424,19 +419,23 @@ label-disconnected-foreground = ${colors.foreground-alt}
 ;{{{
 
 type = internal/fs
+
+mount-0 = /
+mount-1 = /home
+
 interval = 30
 
-mount-0 = /home
+fixed-values = true
 
-format-mounted =  <label-mounted> /
-; format-mounted-underline = ${colors.primary}
+format-mounted = <label-mounted>
+format-mounted-padding = 2
 
-format-unmounted =  <label-unmounted> /
-; format-unmounted-underline = ${colors.foreground-alt}
+format-unmounted = <label-unmounted>
+format-unmounted-padding = 2
 
 ; label-mounted = %{F#2c78bf}%mountpoint%%{F-}: %free%
-; label-mounted = %mountpoint% %free%
-label-mounted = %free%
+label-mounted = %mountpoint% %free%
+; label-mounted = %free%
 label-mounted-foreground = ${colors.foreground}
 
 ; label-unmounted = %mountpoint%
@@ -495,7 +494,6 @@ type = internal/memory
 interval = 3
 
 format = <label>
-
 format-padding = 2
 
 label =  %percentage_used%%
@@ -577,7 +575,6 @@ menu-2-1-exec = menu-open-0
 type = internal/pulseaudio
 
 format-volume = <ramp-volume><label-volume><bar-volume>
-
 format-volume-padding = 2
 
 label-volume = %percentage%%
@@ -597,7 +594,7 @@ bar-volume-foreground-0 = ${colors.state_low}
 bar-volume-foreground-1 = ${colors.state_low}
 bar-volume-foreground-2 = ${colors.state_low}
 bar-volume-foreground-3 = ${colors.state_low}
-bar-volume-foreground-4 = ${colors.state_mid}
+bar-volume-foreground-4 = ${colors.state_low}
 bar-volume-foreground-5 = ${colors.state_mid}
 bar-volume-foreground-6 = ${colors.state_hi}
 bar-volume-empty = ━
@@ -618,10 +615,10 @@ thermal-zone = 2
 warn-temperature = 70
 
 format = <ramp><label>
-format-warn = <label-warn>
-
 format-padding = 2
 
+format-warn = <label-warn>
+format-warn-padding = 2
 format-warn-underline = ${colors.state_hi}
 
 label = %temperature-c%
@@ -647,13 +644,16 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
+fotmat-connected-padding = 2
+format-connected-prefix = " "
 
-label-connected =  %essid%
+label-connected = %essid%
 
 format-disconnected = <label-disconnected>
+format-disconnected-padding = 2
 
 label-disconnected =  down
-; label-disconnected-foreground = ${colors.foreground-alt}
+label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = ▁
 ramp-signal-1 = ▂
@@ -673,18 +673,20 @@ ramp-signal-foreground = ${colors.primary}
 
 type = internal/xbacklight
 
-format = <label><bar>
+enable-scroll = false
 
+format = <label> <bar>
+format-padding = 2
 format-prefix = " "
 
 label = %percentage%
 
 bar-width = 6
-bar-indicator = |
-bar-indicator-foreground = ${colors.foreground-alt}
-bar-fill = ─
-bar-fill-foreground = ${colors.primary}
-bar-empty = ─
+bar-indicator = ┃
+bar-indicator-foreground = ${colors.primary}
+bar-fill = ━
+bar-fill-foreground = ${colors.state_low}
+bar-empty = ━
 bar-empty-foreground = ${colors.background-alt}
 
 ;}}}
@@ -698,7 +700,6 @@ blacklist-0 = num lock
 blacklist-1 = scroll lock
 
 format = <label-layout><label-indicator>
-
 format-padding = 2
 format-prefix = " "
 
