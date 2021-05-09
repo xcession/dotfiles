@@ -397,8 +397,7 @@ label = %date% %time%
 type = internal/network
 ; Name of the network interface to display. You can get the names of the
 ; interfaces on your machine with `ip link`
-; interface = enp0s25
-interface = enp3s0
+interface = enp0s25
 interval = 3.0
 
 format-connected = <label-connected>
@@ -613,7 +612,12 @@ bar-volume-gradient = false
 ;{{{
 
 type = internal/temperature
-thermal-zone = 2
+interval = 1
+
+; Thermal zone to use
+; To list all the zone types, run
+; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+thermal-zone = 1
 warn-temperature = 70
 
 format = <ramp> <label>
