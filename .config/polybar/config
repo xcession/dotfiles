@@ -11,7 +11,7 @@
 
 ; Global WM settings {{{
 
-; https://github.com/jaagr/polybar/wiki/Configuration#global-wm-settings
+; https://github.com/polybar/polybar/wiki/Configuration#global-wm-settings
 
 [global/wm]
 margin-top = 0
@@ -197,7 +197,7 @@ font-2 = "FontAwesome:style=Regular:antialias=true:pixelsize=11;2"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = xkeyboard date powermenu
+modules-right = wlan eth xkeyboard date powermenu
 
 separator =
 
@@ -434,9 +434,8 @@ format-unmounted = <label-unmounted>
 format-unmounted-padding = 2
 
 ; label-mounted = %{F#2c78bf}%mountpoint%%{F-}: %free%
-label-mounted = %mountpoint% %free%
+label-mounted = %mountpoint% (%free%)
 ; label-mounted = %free%
-label-mounted-foreground = ${colors.foreground}
 
 ; label-unmounted = %mountpoint%
 label-unmounted = %free%
@@ -445,7 +444,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 ;}}}
 
 [module/i3]
-;https://github.com/jaagr/polybar/wiki/Module:-i3
+;https://github.com/polybar/polybar/wiki/Module:-i3
 ;{{{
 
 type = internal/i3
@@ -454,28 +453,30 @@ type = internal/i3
 pin-workspaces = true
 
 index-sort = true
+enable-click = true
+enable-scroll = true
 wrapping-scroll = false
 
 format = <label-state> <label-mode>
 
 label-mode = %mode%
-label-mode-padding = 2
-label-mode-foreground = ${colors.background}
 label-mode-background = ${colors.primary}
+label-mode-foreground = ${colors.background}
+label-mode-padding = 2
 
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-foreground = ${colors.foreground}
-label-focused-underline= ${colors.primary}
 label-focused-padding = 2
+label-focused-underline= ${colors.primary}
 
 label-unfocused = %index%
 label-unfocused-padding = 2
 
 label-visible = %index%
 label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
+label-visible-underline = ${self.label-focused-underline}
 
 label-urgent = %index%
 label-urgent-background = ${colors.alert}
@@ -495,8 +496,9 @@ interval = 3
 
 format = <label>
 format-padding = 2
+format-prefix = " "
 
-label =  %percentage_used%%
+label = %percentage_used%%
 
 ;}}}
 
@@ -614,7 +616,7 @@ type = internal/temperature
 thermal-zone = 2
 warn-temperature = 70
 
-format = <ramp><label>
+format = <ramp> <label>
 format-padding = 2
 
 format-warn = <label-warn>
@@ -677,7 +679,7 @@ enable-scroll = false
 
 format = <label> <bar>
 format-padding = 2
-format-prefix = " "
+format-prefix = " "
 
 label = %percentage%
 
