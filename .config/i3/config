@@ -267,10 +267,6 @@ bindsym $mod+Mod2+KP_8 workspace $ws8
 bindsym $mod+Mod2+KP_9 workspace $ws9
 bindsym $mod+Mod2+KP_0 workspace $ws10
 
-# switch to next or previous workspace
-bindsym $mod+Mod1+Left workspace prev
-bindsym $mod+Mod1+Right workspace next
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
