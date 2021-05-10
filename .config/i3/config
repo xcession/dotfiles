@@ -118,7 +118,7 @@ font pango:Noto Sans 9
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
 exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/bin/lockscreen
 # bindsym $mod+shift+x exec --no-startup-id xkb-switch -s us && xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-bindsym $mod+shift+x exec --no-startup-id ~/bin/lockscreen
+bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
 
 #: }}}
 
@@ -206,7 +206,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+c reload
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+x exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # logout script
 bindsym $mod+x exec --no-startup-id rofi_run -l
@@ -284,7 +284,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 #: Layouts {{{
 
 # split layout
-bindsym $mod+h split h
+bindsym $mod+b split h
 bindsym $mod+v split v
 
 default_orientation horizontal
