@@ -457,6 +457,7 @@ enable-scroll = true
 wrapping-scroll = false
 
 format = <label-state> <label-mode>
+format-padding = 2
 
 label-mode = %mode%
 label-mode-background = ${colors.primary}
