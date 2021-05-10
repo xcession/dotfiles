@@ -132,7 +132,7 @@ font-2 = "FontAwesome:style=Regular:antialias=true:pixelsize=11;2"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = filesystem cpu memory temperature pulseaudio backlight wlan eth battery xkeyboard date powermenu
+modules-right = filesystem cpu memory temperature backlight pulseaudio wlan eth battery xkeyboard date powermenu
 
 separator =
 
@@ -649,7 +649,7 @@ type = internal/network
 interface = wlp3s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected> <ramp-signal>
 fotmat-connected-padding = 2
 format-connected-prefix = " "
 
