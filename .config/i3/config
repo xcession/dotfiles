@@ -35,7 +35,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # mod key used for most binds
 # Mod1 = Alt
 # Mod4 = Super
-# (Use the 'xmodmap' command to list them all)
+# (Use the `xmodmap` command to list them all)
 set $mod Mod4
 
 # direction keys
@@ -183,6 +183,8 @@ smart_borders no_gaps
 #}}}
 
 #: Key bindings {{{
+
+# To list all of the current keys mapping, use `xmodmap -pke` command.
 
 #: Basic {{{
 
