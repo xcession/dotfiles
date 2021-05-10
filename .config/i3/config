@@ -215,23 +215,23 @@ bindsym $mod+x exec --no-startup-id rofi_run -l
 
 #: Moving around {{{
 
-# change focus
+# change focus (hjkl)
 bindsym $mod+$left  focus left
 bindsym $mod+$down  focus down
 bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
-# alternatively, you can use the cursor keys:
+# change focus (arrow keys)
 bindsym $mod+Left   focus left
 bindsym $mod+Down   focus down
 bindsym $mod+Up     focus up
 bindsym $mod+Right  focus right
 
-# move focused window
+# move focused window (hjkl)
 bindsym $mod+Shift+$left    move left   10px
 bindsym $mod+Shift+$down    move down   10px
 bindsym $mod+Shift+$up      move up     10px
 bindsym $mod+Shift+$right   move right  10px
-# alternatively, you can use the cursor keys:
+# move focused window (arrow keys)
 bindsym $mod+Shift+Left     move left   10px
 bindsym $mod+Shift+Down     move down   10px
 bindsym $mod+Shift+Up       move up     10px
@@ -254,6 +254,7 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+
 # switch to workspace - numpad alternatives
 bindsym $mod+Mod2+KP_1 workspace $ws1
 bindsym $mod+Mod2+KP_2 workspace $ws2
@@ -297,17 +298,17 @@ bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+t layout toggle split
 
-# make the current focus fullscreen
+# make the focused container fullscreen
 bindsym $mod+f fullscreen toggle
 
 # toggle the current focus between tiling / floating
 bindsym Mod1+Shift+space floating toggle
 floating_modifier Mod1
 
-# move focus between tiling / floating windows
+# change focus between tiling / floating windows
 bindsym Mod1+space focus mode_toggle
 
-# move focus between parent / child windows
+# change focus between parent / child container
 bindsym $mod+a focus parent
 bindsym $mod+c focus child
 
@@ -315,10 +316,10 @@ bindsym $mod+c focus child
 
 #: Scratchpad {{{
 
-# move the current focus to scratchpad
+# move the focused container to scratchpad
 bindsym $mod+Shift+minus move scratchpad
 
-# show the first scratchpad window
+# show the first scratchpad container
 bindsym $mod+minus scratchpad show
 
 #: }}}
@@ -355,7 +356,7 @@ bindsym $mod+r mode "resize"
 
 #: Border & Gaps {{{
 
-# bindsym $mod+Shift+b border toggle
+bindsym $mod+Shift+b border toggle
 
 # changing border style
 # bindsym $mod+n border normal
