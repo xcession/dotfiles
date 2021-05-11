@@ -14,19 +14,19 @@
 # run once: exec
 # run with reload: exec_always
 
+# polkit
+exec --no-startup-id /usr/bin/lxpolkit &
+
+# desktop notification
+exec --no-startup-id /usr/bin/dunst
+
 # make numlock active
 exec --no-startup-id numlockx on
 
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
-# polkit
-exec --no-startup-id /usr/bin/lxpolkit &
-
 # autotiling
 exec_always --no-startup-id autotiling
-
-# desktop notification
-exec --no-startup-id /usr/bin/dunst
 
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
