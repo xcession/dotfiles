@@ -132,7 +132,7 @@ font-2 = "FontAwesome:style=Regular:antialias=true:pixelsize=11;2"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = filesystem cpu memory temperature backlight pulseaudio wlan eth battery xkeyboard date powermenu
+modules-right = filesystem cpu memory temperature backlight pulseaudio wlan eth battery xkeyboard date
 
 separator =
 
@@ -197,7 +197,7 @@ font-2 = "FontAwesome:style=Regular:antialias=true:pixelsize=11;2"
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = wlan eth xkeyboard date powermenu
+modules-right = wlan eth xkeyboard date
 
 separator =
 
