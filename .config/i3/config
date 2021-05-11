@@ -399,6 +399,9 @@ bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
 # Splatmoji
 bindsym $mod+slash exec "splatmoji copy"
 
+# app shortcuts
+bindsym $mod+n exec "/usr/bin/pcmanfm"
+
 #: }}}
 
 #: }}}
