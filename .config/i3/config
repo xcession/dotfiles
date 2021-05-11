@@ -14,6 +14,9 @@
 # run once: exec
 # run with reload: exec_always
 
+# make numlock active
+exec --no-startup-id numlockx on
+
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
 # polkit
