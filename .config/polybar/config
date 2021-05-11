@@ -581,11 +581,12 @@ format-volume = <ramp-volume><label-volume><bar-volume>
 format-volume-padding = 2
 
 label-volume = %percentage%%
-label-volume-padding = 2
+label-volume-padding = ${self.format-volume-padding}
 
 label-muted =  muted
 label-muted-foreground = ${colors.white}
 label-muted-background = ${colors.alert}
+label-muted-padding = ${self.format-volume-padding}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -657,7 +658,7 @@ format-connected-prefix = " "
 label-connected = %essid%
 
 format-disconnected = <label-disconnected>
-format-disconnected-padding = 2
+format-disconnected-padding = ${self.format-connected-padding}
 
 label-disconnected =  down
 label-disconnected-foreground = ${colors.foreground-alt}
