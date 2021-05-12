@@ -456,7 +456,6 @@ enable-scroll = true
 wrapping-scroll = false
 
 format = <label-state> <label-mode>
-format-padding = 2
 
 label-state-padding = 2
 
@@ -715,6 +714,9 @@ label-indicator-padding = 2
 ;{{{
 
 type = internal/xwindow
+
+format = <label>
+format-padding = 4
 
 label = %title%
 label-maxlen = 40
