@@ -111,6 +111,8 @@ set cmdheight=2
 
 " Always display the status line
 set laststatus=2
+" Hide mode information. Use what in the status line instead
+set noshowmode
 
 " Show matching brackets
 set showmatch
