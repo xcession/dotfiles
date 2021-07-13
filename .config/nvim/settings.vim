@@ -54,7 +54,7 @@ set termguicolors
 " Loading the plugin files for specific file types
 filetype plugin on
 
-source $HOME/.config/nvim/vim-plug/config/themes/srcery.vim
+source $HOME/.config/nvim/vim-plug/config/themes/horizon.vim
 
 autocmd BufNewFile,BufRead *.json.template set syntax=json
 
@@ -110,7 +110,7 @@ set showcmd
 set cmdheight=2
 
 " Always display the status line
-set laststatus=0
+set laststatus=2
 
 " Show matching brackets
 set showmatch
