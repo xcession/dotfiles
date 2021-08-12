@@ -35,9 +35,10 @@ Plug 'tpope/vim-surround'
 Plug 'unblevable/quick-scope'
 Plug 'Yggdroot/indentLine'
 
-" File Explorer {{{
+" UI {{{
 
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'akinsho/nvim-bufferline.lua'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " }}}
@@ -95,6 +96,7 @@ source $HOME/.config/nvim/vim-plug/config/nvim-tree.vim
 source $HOME/.config/nvim/vim-plug/config/quick-scope.vim
 source $HOME/.config/nvim/vim-plug/config/signify.vim
 source $HOME/.config/nvim/vim-plug/config/ultisnips.vim
+luafile $HOME/.config/nvim/vim-plug/config/bufferline.lua
 luafile $HOME/.config/nvim/vim-plug/config/compe-config.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-bash.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-css.lua
