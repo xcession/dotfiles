@@ -18,6 +18,9 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # Ncurses
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Ruby
