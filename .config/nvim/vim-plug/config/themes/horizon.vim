@@ -1,5 +1,5 @@
 " Installation {{{
-" Plug 'srcery-colors/srcery-vim'
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " }}}
 
 syntax on
