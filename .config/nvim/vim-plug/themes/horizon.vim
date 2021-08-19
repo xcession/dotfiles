@@ -1,5 +1,5 @@
 " Installation {{{
-" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'ntk148v/vim-horizon'
 " }}}
 
 syntax on
