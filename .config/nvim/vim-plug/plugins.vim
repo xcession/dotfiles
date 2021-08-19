@@ -78,7 +78,7 @@ Plug 'sheerun/vim-polyglot'
 
 " Themes {{{
 
-Plug 'ntk148v/vim-horizon'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " }}}
 
