@@ -34,6 +34,10 @@ export PATH="/usr/local/sbin:$PATH"
 # Homebrew sbin (Apple)
 # export PATH="/opt/homebrew/sbin:$PATH"
 
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # Python (Intel)
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # Python (Apple)
