@@ -38,6 +38,7 @@ Plug 'Yggdroot/indentLine'
 " UI {{{
 
 Plug 'akinsho/nvim-bufferline.lua'
+Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
@@ -78,7 +79,6 @@ Plug 'sheerun/vim-polyglot'
 " Themes {{{
 
 Plug 'ntk148v/vim-horizon'
-Plug 'itchyny/lightline.vim'
 
 " }}}
 
@@ -103,5 +103,6 @@ luafile $HOME/.config/nvim/vim-plug/config/lsp-css.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-html.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-python.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-ts.lua
+luafile $HOME/.config/nvim/vim-plug/config/lualine.lua
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
