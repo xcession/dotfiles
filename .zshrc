@@ -141,8 +141,9 @@ plugins=(
   git
   gitignore
   vi-mode
-  zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-nvm
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
