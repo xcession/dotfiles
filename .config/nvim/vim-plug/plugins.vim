@@ -64,6 +64,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 " }}}
 
