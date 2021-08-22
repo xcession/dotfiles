@@ -1,2 +1,2 @@
--- npm i -g vscode-html-languageserver-bin
+-- npm i -g vscode-langservers-extracted
 require'lspconfig'.html.setup{}

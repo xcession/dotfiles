@@ -1,3 +1,3 @@
--- npm i -g vscode-css-languageserver-bin
+-- npm i -g vscode-langservers-extracted
 require'lspconfig'.cssls.setup{}
 
