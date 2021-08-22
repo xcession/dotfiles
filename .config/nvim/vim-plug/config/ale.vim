@@ -27,12 +27,12 @@ let g:ale_linters={
       \}
 
 let g:ale_fixers={
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['prettier', 'tslint'],
-      \ 'vue': ['eslint'],
-      \ 'scss': ['prettier'],
       \ 'html': ['prettier'],
-      \ 'reason': ['refmt']
+      \ 'javascript': ['eslint'],
+      \ 'php': ['prettier'],
+      \ 'scss': ['prettier'],
+      \ 'typescript': ['prettier', 'tslint'],
+      \ 'vue': ['eslint']
       \}
 
 let g:ale_fix_on_save=1
