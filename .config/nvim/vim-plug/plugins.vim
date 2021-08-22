@@ -102,8 +102,10 @@ luafile $HOME/.config/nvim/vim-plug/config/compe-config.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-bash.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-css.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-html.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-php.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-python.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-ts.lua
+luafile $HOME/.config/nvim/vim-plug/config/lsp-vim.lua
 luafile $HOME/.config/nvim/vim-plug/config/lualine.lua
 luafile $HOME/.config/nvim/vim-plug/config/nvim-colorizer.lua
 
