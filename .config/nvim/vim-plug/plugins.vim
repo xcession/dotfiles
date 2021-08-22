@@ -27,7 +27,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/limelight.vim'
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-characterize'
 Plug 'tpope/vim-commentary'
@@ -41,6 +40,7 @@ Plug 'akinsho/nvim-bufferline.lua'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'norcalli/nvim-colorizer.lua'
 
 " }}}
 
@@ -104,5 +104,6 @@ luafile $HOME/.config/nvim/vim-plug/config/lsp-html.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-python.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-ts.lua
 luafile $HOME/.config/nvim/vim-plug/config/lualine.lua
+luafile $HOME/.config/nvim/vim-plug/config/nvim-colorizer.lua
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
