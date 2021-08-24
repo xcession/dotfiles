@@ -89,7 +89,6 @@ call plug#end()
 source $HOME/.config/nvim/vim-plug/config/ale.vim
 source $HOME/.config/nvim/vim-plug/config/easymotion.vim
 source $HOME/.config/nvim/vim-plug/config/fzf.vim
-source $HOME/.config/nvim/vim-plug/config/hexokinase.vim
 source $HOME/.config/nvim/vim-plug/config/indentline.vim
 source $HOME/.config/nvim/vim-plug/config/limelight.vim
 source $HOME/.config/nvim/vim-plug/config/lsp-config.vim
