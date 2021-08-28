@@ -15,6 +15,9 @@
 
 require 'colorizer'.setup {
   '*';
+  sh = {
+    RRGGBBAA = true;
+  };
   css = {
     rgb_fn = true;
   };
