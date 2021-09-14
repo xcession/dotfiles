@@ -1,9 +1,8 @@
 # $HOME/.zshrc
-#            _
-#    _______| |__  _ __ ___
-#   |_  / __| '_ \| '__/ __|
-#  _ / /\__ \ | | | | | (__
-# (_)___|___/_| |_|_|  \___|
+
+#  ┏━┓┓━┓┳ ┳┳━┓┏━┓
+#  ┏━┛┗━┓┃━┫┃┳┛┃  
+# o┗━┛━━┛┛ ┻┛┗┛┗━┛
 #
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)

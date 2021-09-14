@@ -1,9 +1,8 @@
 # $HOME/.tmux.conf.local
-#  _
-# | |_ _ __ ___  _   ___  __
-# | __| '_ ` _ \| | | \ \/ /
-# | |_| | | | | | |_| |>  <
-#  \__|_| |_| |_|\__,_/_/\_\
+
+# ┏┓┓┏┏┓┳ ┓┓ ┃
+#  ┃ ┃┃┃┃ ┃┏╋┛
+#  ┛ ┛ ┛┛━┛┛ ┗
 #
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
