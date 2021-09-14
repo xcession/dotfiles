@@ -37,9 +37,10 @@ fi
 # launch the session
 export XDG_SESSION_TYPE=x11
 
-session=${1:-i3}
+session=${1:-bspwm}
 
 case $session in
+  bspwm         ) exec bspwm;;
   gnome		) exec gnome-session;;
   i3|i3wm	) exec i3;;
   kde		) exec startkde;;
