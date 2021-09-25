@@ -23,8 +23,8 @@
 
 ! xterm
 xterm*termName: xterm-256color
-xterm*font: JetBrainsMono Nerd Font
-xterm*faceName: JetBrainsMono Nerd Font:size=11
+xterm*font: Iosevka Nerd Font
+xterm*faceName: Iosevka Nerd Font:size=11
 xterm*loginShell: true
 xterm*vt100*geometry: 90x34
 xterm*saveLines: 2000
@@ -42,7 +42,7 @@ URxvt*scrollBar_right: false
 URxvt*internalBorder: 0
 URxvt*externalBorder: 0
 URxvt*letterSpace: -1
-URxvt.font: xft:JetBrainsMono Nerd Font:size=10.5
+URxvt.font: xft:Iosevka Nerd Font:size=10.5
 URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 URxvt.copyCommand: xclip -i -selection clipboard
 URxvt.pasteCommand: xclip -o -selection clipboard
