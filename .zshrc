@@ -9,6 +9,8 @@
 
 # PATH variables {{{
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # Android {{{
 
 # Android SDK
