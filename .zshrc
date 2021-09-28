@@ -9,7 +9,7 @@
 
 # PATH variables {{{
 
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Android {{{
 
