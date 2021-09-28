@@ -1,7 +1,7 @@
 # $HOME/.zshrc
 
 #  ┏━┓┓━┓┳ ┳┳━┓┏━┓
-#  ┏━┛┗━┓┃━┫┃┳┛┃  
+#  ┏━┛┗━┓┃━┫┃┳┛┃
 # o┗━┛━━┛┛ ┻┛┗┛┗━┛
 #
 # GitHub:       https://github.com/xcession/dotfiles
@@ -9,24 +9,34 @@
 
 # PATH variables {{{
 
+# Android {{{
+
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+
+# }}}
+
 # Ncurses
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
+
 # NVM
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
+
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
 # Yarn
 export PATH="$(yarn global bin):$PATH"
 
