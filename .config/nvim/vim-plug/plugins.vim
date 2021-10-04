@@ -107,5 +107,6 @@ luafile $HOME/.config/nvim/vim-plug/config/lsp-ts.lua
 luafile $HOME/.config/nvim/vim-plug/config/lsp-vim.lua
 luafile $HOME/.config/nvim/vim-plug/config/lualine.lua
 luafile $HOME/.config/nvim/vim-plug/config/nvim-colorizer.lua
+luafile $HOME/.config/nvim/vim-plug/config/nvim-tree.lua
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
