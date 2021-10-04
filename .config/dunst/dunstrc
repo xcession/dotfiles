@@ -1,3 +1,9 @@
+# $HOME/.config/dunst/dunstrc
+
+# ┳━┓┳ ┓┏┓┓┓━┓┏┓┓
+# ┃ ┃┃ ┃┃┃┃┗━┓ ┃
+# ┛━┛┛━┛┛┗┛━━┛ ┛
+
 [global]
     ### Display ###
 
