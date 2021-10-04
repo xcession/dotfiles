@@ -59,6 +59,12 @@ autocmd BufNewFile,BufRead *.json.template set syntax=json
 
 " }}}
 
+" Font {{{
+
+set guifont=Iosevka\ Nerd\ Font:12
+
+" }}}
+
 " Tabs and Spaces {{{
 
 " Number of space characters for a tab stop
