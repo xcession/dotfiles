@@ -1,9 +1,8 @@
 " $HOME/.config/nvim/functions.vim
-"                        _
-"  _ __   ___  _____   _(_)_ __ ___
-" | '_ \ / _ \/ _ \ \ / / | '_ ` _ \
-" | | | |  __/ (_) \ V /| | | | | | |
-" |_| |_|\___|\___/ \_/ |_|_| |_| |_|
+
+" ┏┓┓┳━┓┏━┓┓ ┳o┏┏┓
+" ┃┃┃┣━ ┃ ┃┃┏┛┃┃┃┃
+" ┛┗┛┻━┛┛━┛┗┛ ┛┛ ┛
 "
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
