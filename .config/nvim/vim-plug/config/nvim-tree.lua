@@ -11,22 +11,28 @@ require'nvim-tree'.setup {
   auto_close          = false,
   -- opens the tree when changing/opening a new tab if the tree wasn't previously opened
   open_on_tab         = true,
-  -- hijacks new directory buffers when they are opened
-  update_to_buf_dir   = {
-    -- enable the feature
-    enable = true,
-    -- allow to open the tree if it was previously closed
-    auto_open = true,
-  },
   -- hijack the cursor in the tree to put it at the start of the filename
   hijack_cursor       = false,
   -- updates the root directory of the tree on `DirChanged` (when your run `:cd` usually)
   update_cwd          = false,
+  -- hijacks new directory buffers when they are opened
+  update_to_buf_dir   = {
+    enable = true,
+    -- allow to open the tree if it was previously closed
+    auto_open = true,
+  },
   -- show lsp diagnostics in the signcolumn
-  lsp_diagnostics     = false,
+  diagnostics = {
+    enable = false,
+    icons = {
+      hint = "",
+      info = "",
+      warning = "",
+      error = "",
+    }
+  },
   -- update the focused file on `BufEnter`, un-collapses the folders recursively until it finds the file
   update_focused_file = {
-    -- enables the feature
     enable = true,
     -- update the root directory of the tree to the one of the folder containing the file if the file is not under the current root directory
     -- only relevant when `update_focused_file.enable` is true
@@ -42,11 +48,21 @@ require'nvim-tree'.setup {
     -- the command arguments as a list
     args = {},
   },
+  filters = {
+    dotfiles = false,
+    custom = {}
+  },
+  git = {
+    enable = true,
+    ignore = true,
+    timeout = 500,
+  },
   view = {
     -- width of the window, can be either a number (columns) or a string in `%`, for left or right side placement
     width = 30,
     -- height of the window, can be either a number (columns) or a string in `%`, for top or bottom side placement
     height = 30,
+    hide_root_folder = false,
     -- side of the tree, can be one of `left` | `right` | `top` | `bottom`
     side = 'left',
     -- if true the tree will resize itself after opening a file
@@ -57,6 +73,13 @@ require'nvim-tree'.setup {
       custom_only = false,
       -- list of mappings to set on the tree manually
       list = {},
+      number = false,
+      relativenumber = false,
+      signcolumn = "yes",
+    },
+    trash = {
+      cmd = "trash",
+      require_confirm = true,
     },
   },
 }
