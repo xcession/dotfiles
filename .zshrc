@@ -207,8 +207,16 @@ fi
 
 alias la="ls -A"
 
-alias v="nvim"
-alias vim="nvim"
+vim () {
+  BACKGROUND=$(defaults read -g AppleInterfaceStyle)
+
+  if [[ "$BACKGROUND" == "Dark" ]]; then
+    env lvim --cmd "let g:tokyonight_style = 'night'" $@
+  else
+    env lvim --cmd "let g:tokyonight_style = 'day'" $@
+  fi
+}
+alias v="vim"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
