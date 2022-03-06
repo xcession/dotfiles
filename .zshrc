@@ -28,6 +28,7 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # export PATH="/usr/local/bin:$PATH"
 # Homebrew bin (Apple)
 export PATH="/opt/homebrew/bin:$PATH"
+
 # Homebrew sbin (Intel)
 # export PATH="/usr/local/sbin:$PATH"
 # Homebrew sbin (Apple)
@@ -47,6 +48,7 @@ export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 # export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Homebrew Ruby (Apple)
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
 
 # Ncurses (Intel)
