@@ -49,7 +49,8 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Homebrew Ruby (Apple)
 # export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
-export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+export GEM_HOME=$HOME/.gem
+export PATH="$GEMHOME/bin:$PATH"
 
 # Ncurses (Intel)
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
