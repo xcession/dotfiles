@@ -27,6 +27,16 @@ require'nvim-tree'.setup {
       },
     },
   },
+  renderer = {
+    indent_markers = {
+      enable = true,
+      icon = {
+        corner = "└ ",
+        edge = "│ ",
+        none = "  ",
+      },
+    },
+  },
   hijack_directories = {
     enable = true,
     auto_open = true,
