@@ -87,7 +87,7 @@ window#waybar.spotify {
 
 @keyframes blink {
     to {
-        background-color: #ff009c;
+        background-color: #ff004c;
         color: #000000;
     }
 }
