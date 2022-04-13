@@ -2,7 +2,7 @@
     "layer": "bottom",
     // List output from command line using `swaymsg -t get_output`
     "output": ["LVDS-1", "DP-1"],
-    "height": 20,
+    "height": 24,
     "position": "top",
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": [],
