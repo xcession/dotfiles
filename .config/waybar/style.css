@@ -81,14 +81,16 @@ window#waybar.spotify {
 }
 
 #battery.charging {
-    background-color: #00ff9c;
-    color: #100d23;
+    animation-name: blink-charging;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-@keyframes blink {
+@keyframes blink-charging {
     to {
-        background-color: #ff004c;
-        color: #000000;
+        background-color: #178059;
     }
 }
 
@@ -101,11 +103,18 @@ window#waybar.spotify {
 }
 
 #battery.critical:not(.charging) {
-    animation-name: blink;
+    animation-name: blink-critical;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@keyframes blink-critical {
+    to {
+        background-color: #ff004c;
+        color: #16161c;
+    }
 }
 
 #clock {
