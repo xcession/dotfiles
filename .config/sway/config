@@ -46,6 +46,9 @@ set $right l
 # prefered terminal
 set $term alacritty
 
+# prefered file manager
+set $filemanager pcmanfm
+
 # define workspace
 set $ws1 "1"
 set $ws2 "2"
@@ -212,6 +215,9 @@ gaps outer 0
 # terminal
 bindsym $mod+t          exec --no-startup-id $term
 bindsym $mod+Return     exec --no-startup-id $term
+
+# file manager
+bindsym $mod+Shift+Return exec --no-startup-id $filemanager
 
 # kill focused window
 bindsym $mod+Shift+q kill
