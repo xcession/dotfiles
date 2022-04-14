@@ -63,6 +63,7 @@ set $ws10 "0"
 
 # define monitor(s)
 # (Use the 'swaymsg -t get_outputs')
+set $laptop "LVDS-1"
 set $mon1 "DisplayPort-0"
 set $mon2 "HDMI-A-1"
 
