@@ -219,7 +219,9 @@ vim () {
     env lvim --cmd "let g:tokyonight_style = 'day'" $@
   fi
 }
-alias v="vim"
+alias v="nvim"
+alias vim="nvim"
+alias nv="neovide"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME"
