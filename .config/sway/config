@@ -82,7 +82,8 @@ set $border_size 1
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu dmenu_run -m 0 -fn 'Roboto Condensed-10:Bold' -nb '#16161c' -nf '#fdf0ed' -sb '#09f7a0' -sf '#16161c' | xargs swaymsg exec --
+set $launcher ulauncher
+set $menu dmenu_run -m 0 -fn 'Roboto Condensed-12:Bold' -nb '#16161c' -nf '#fdf0ed' -sb '#09f7a0' -sf '#16161c' | xargs swaymsg exec --
 
 #: }}}
 
@@ -230,6 +231,7 @@ bindsym Mod1+q kill
 bindsym Mod1+F4 kill
 
 # launcher
+bindsym Control+space exec $launcher
 bindsym $mod+d exec $menu
 
 # Drag floating windows by holding down $mod and left mouse button.
@@ -501,6 +503,9 @@ for_window [class="(?i)(?:mojosetup)"] \
   floating enable
 # Flameshot
 for_window [class="(?i)(?:flameshot)"] \
+  floating enable
+#Ulauncher
+for_window [class="(?i)(?:Ulauncher)"] \
   floating enable
 
 popup_during_fullscreen smart
