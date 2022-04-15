@@ -183,7 +183,7 @@ input * xkb_options "grp:alt_shift_toggle"
 for_window [class="^.*"] pixel $border_size, \
   title_format "<b> %class >> %title </b>"
 
-# default_border pixel 2
+default_border pixel 2
 
 # hide_edge_borders both
 
