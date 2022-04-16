@@ -454,16 +454,15 @@ bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2
 bindsym XF86AudioNext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
-# backlight
-bindsym XF86MonBrightnessUp     exec --no-startup-id xbacklight -inc 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
-bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight -dec 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
-
 #: }}}
 
 #: Misc {{{
 
-# screenshot
+# backlight
+bindsym XF86MonBrightnessUp     exec --no-startup-id xbacklight -inc 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
+bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight -dec 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
 
+# screenshot
 bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
 
 #: }}}
