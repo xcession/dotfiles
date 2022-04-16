@@ -505,10 +505,10 @@ for_window [class="(?i)(?:spotify)"] \
   move --no-auto-back-and-forth to workspace $ws10
 
 for_window [app_id="(?i)(?:keepassxc)"] \
-  move scratchpad
+  move --no-auto-back-and-forth to workspace $ws9
 
 for_window [app_id="(?i)(?:telegram)"] \
-  move scratchpad
+  move --no-auto-back-and-forth to workspace $ws9
 
 # focus, floating, & sticky
 for_window [class="(?i)(?:qt5ct|pinentry)"] \
