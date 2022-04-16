@@ -27,6 +27,9 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 # autotiling
 exec_always --no-startup-id autotiling
 
+# import gsettings
+exec_always --no-startup-id ~/bin/import-gsettings
+
 # clamshell detect
 exec_always --no-startup-id ~/bin/sway_clamshell
 
