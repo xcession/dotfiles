@@ -1,16 +1,16 @@
 {
 	"ignored_packages": [
 	],
-	"theme": "ayu-mirage.sublime-theme",
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 	"font_face": "Iosevka Slab",
 	"font_size": 12,
-	"vintage_start_in_command_mode": true,
-	"overlay_scroll_bars": "enabled",
+	"indent_guide_options": ["draw_normal", "draw_active"],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
-	"bold_folder_labels": true,
-	"always_show_minimap_viewport": true,
-	"indent_guide_options": ["draw_normal", "draw_active"],
+	"overlay_scroll_bars": "enabled",
+	"theme": "ayu-mirage.sublime-theme",
+	"vintage_start_in_command_mode": true,
 	"reindent_on_save": ["php", "sublime-settings", "json", "html", "css", "js"],
 }
