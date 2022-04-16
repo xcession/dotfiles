@@ -497,7 +497,7 @@ bar {
 
 # assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
-  $ws1
+  $ws2
 
 for_window [class="Spotify"] \
   move --no-auto-back-and-forth to workspace $ws10
