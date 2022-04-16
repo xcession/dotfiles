@@ -90,11 +90,6 @@ set $border_size 1
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $launcher ulauncher
-# set $menu dmenu_run -m 0 \
-#   -fn 'Roboto Condensed-12:Bold' \
-#   -nb '$bg-color' -nf '$text-color' \
-#   -sb '$active-bg-color' -sf '$active-text-color' \
-#   | xargs swaymsg exec --
 set $menu bemenu-run -m 0 \
   --fn 'RobotoCondensed Regular 13' \
   --tb '$inactive-bg-color' --tf '$inactive-text-color' \
