@@ -26,10 +26,6 @@ window#waybar {
 /*     background-color: #3F3F3F; */
 /* } */
 
-window#waybar.Alacritty {
-    background-color: #3F3F3F;
-}
-
 window#waybar.spotify {
     background-color: #084c22;
 }
