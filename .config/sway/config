@@ -500,13 +500,14 @@ bar {
 # assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
   $ws2
-assign [app_id="(?i)(?:telegram)"] \
-  $ws9
 
 for_window [class="(?i)(?:spotify)"] \
   move --no-auto-back-and-forth to workspace $ws10
 
 for_window [app_id="(?i)(?:keepassxc)"] \
+  move scratchpad
+
+for_window [app_id="(?i)(?:telegram)"] \
   move scratchpad
 
 # focus, floating, & sticky
