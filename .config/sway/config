@@ -459,8 +459,8 @@ bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2
 #: Misc {{{
 
 # backlight
-bindsym XF86MonBrightnessUp     exec --no-startup-id xbacklight -inc 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
-bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight -dec 10 ; exec --no-startup-id "current_brightness=$(xbacklight -get) && notify-send \\"Screen Brightness\\", $current_brightness -u low -t 1000"
+bindsym XF86MonBrightnessUp     exec --no-startup-id light -A 10 && notify-send 'Brightness UP' -u low"
+bindsym XF86MonBrightnessDown   exec --no-startup-id light -U 10 && notify-send 'Brightness DOWN' -u low"
 
 # screenshot
 bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
