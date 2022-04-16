@@ -503,7 +503,7 @@ assign [class="(?i)(?:firefox)"] \
 assign [app_id="(?i)(?:telegram)"] \
   $ws9
 
-for_window [class="Spotify"] \
+for_window [class="(?i)(?:spotify)"] \
   move --no-auto-back-and-forth to workspace $ws10
 
 # focus, floating, & sticky
