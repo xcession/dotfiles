@@ -234,6 +234,11 @@ bindsym Mod1+F4 kill
 bindsym Control+space exec $launcher
 bindsym $mod+d exec $menu
 
+# Drag floating windows by holding down $mod and left mouse button.
+# Resize them with right mouse button + $mod.
+# Despite the name, also works for non-floating windows.
+floating_modifier $mod
+
 # restart inplace (preserves your layout/session, can be used to upgrade wm)
 bindsym $mod+Shift+r restart
 
@@ -334,7 +339,6 @@ bindsym $mod+f fullscreen toggle
 
 # toggle the current focus between tiling / floating
 bindsym Mod1+Shift+space floating toggle
-floating_modifier Mod1
 
 # change focus between tiling / floating windows
 bindsym Mod1+space focus mode_toggle
