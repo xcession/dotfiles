@@ -146,7 +146,7 @@ bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
 #: Input configuration {{{
 
 # keyboard layouts
-exec --no-startup-id "setxkbmap -layout gb,us,th -option grp:alt_shift_toggle"
+exec --no-startup-id setxkbmap -layout gb,us,th -option grp:alt_shift_toggle
 
 # disable trackpad on startup
 exec --no-startup-id "xinput set-prop 12 164 0"
