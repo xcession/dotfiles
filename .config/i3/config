@@ -21,6 +21,9 @@ exec --no-startup-id /usr/bin/lxpolkit &
 # desktop notification
 exec --no-startup-id /usr/bin/dunst
 
+# network manager
+exec --no-startup-id nm-applet
+
 # make numlock active
 exec --no-startup-id numlockx on
 
