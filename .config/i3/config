@@ -148,11 +148,20 @@ bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
 # keyboard layouts
 exec --no-startup-id setxkbmap -layout gb,us,th -option grp:alt_shift_toggle
 
-# disable trackpad on startup
-exec --no-startup-id "xinput set-prop 12 164 0"
+# thinkpad trackpoint
+exec --no-startup-id xinput set-prop "TPPS/2 IBM TrackPoint" "Device Enabled" 1
+exec --no-startup-id xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Middle Emulation Enabled" 1
 
-# enable natural scroll for MX Master 2S
-exec --no-startup-id "xinput set-prop 9 302 1"
+# thinkpad trackpad
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Middle Emulation Enabled" 1
+
+# MX Master 2S
+exec --no-startup-id xinput set-prop "pointer:Logitech MX Master 2S" "Device Enabled" 1
+exec --no-startup-id xinput set-prop "pointer:Logitech MX Master 2S" "libinput Natural Scrolling Enabled" 1
 
 #: }}}
 
