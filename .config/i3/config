@@ -391,9 +391,10 @@ bindsym $mod+Shift+b border toggle
 #: Media control {{{
 
 # audio
-bindsym XF86AudioMute           exec --no-startup-id pamixer -t
-bindsym XF86AudioRaiseVolume    exec --no-startup-id pamixer -i 2
-bindsym XF86AudioLowerVolume    exec --no-startup-id pamixer -d 2
+bindsym XF86AudioMute           exec amixer set Master toggle
+bindsym XF86AudioMicMute        exec amixer set Capture toggle
+bindsym XF86AudioRaiseVolume    exec amixer set Master 2.5%+,5%+;
+bindsym XF86AudioLowerVolume    exec amixer set Master 2.5%-,5%-;
 
 # play/pause keys for spotify
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
