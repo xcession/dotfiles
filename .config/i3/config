@@ -428,7 +428,7 @@ bindsym $mod+slash exec "splatmoji copy"
 
 #: }}}
 
-#: i3Bar {{{
+#: Statusbar {{{
 
 # bar {
 # 	status_command i3status
