@@ -8,6 +8,8 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+# i3 config file (v4)
+
 #: Autostart {{{
 
 # run once: exec
