@@ -311,18 +311,6 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
-#TODO: Numpad is not neccessary
-# switch to workspace - numpad alternatives
-# bindsym $mod+Mod2+KP_1 workspace $ws1
-# bindsym $mod+Mod2+KP_2 workspace $ws2
-# bindsym $mod+Mod2+KP_3 workspace $ws3
-# bindsym $mod+Mod2+KP_4 workspace $ws4
-# bindsym $mod+Mod2+KP_5 workspace $ws5
-# bindsym $mod+Mod2+KP_6 workspace $ws6
-# bindsym $mod+Mod2+KP_7 workspace $ws7
-# bindsym $mod+Mod2+KP_8 workspace $ws8
-# bindsym $mod+Mod2+KP_9 workspace $ws9
-# bindsym $mod+Mod2+KP_0 workspace $ws10
 
 # switch to next or previous workspace
 bindsym $mod+Mod1+Left workspace prev
