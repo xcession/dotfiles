@@ -69,6 +69,7 @@ set $ws10 "0"
 
 # define monitor
 # (Use the 'xrandr --listmonitors')
+set $laptop "LVDS1"
 set $mon1 "DisplayPort-0"
 set $mon2 "HDMI-A-1"
 
