@@ -126,8 +126,8 @@ workspace $ws10 output $mon2
 # font
 font pango:Noto Sans 9
 
-# wallpaper (feh)
-# exec --no-startup-id "feh --bg-scale ~/.wallpaper.png"
+# wallpaper
+exec_always --no-startup-id nitrogen --restore
 
 #: }}}
 
