@@ -19,9 +19,6 @@ exec --no-startup-id /usr/bin/lxpolkit &
 # desktop notification
 exec --no-startup-id /usr/bin/dunst
 
-# make numlock active
-exec --no-startup-id numlockx on
-
 exec_always --no-startup-id xrdb -load ~/.Xresources
 
 # autotiling
