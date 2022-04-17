@@ -1,4 +1,4 @@
-tokyonight: &tokyonight
+colors:
   primary:
     background: "0x1a1b26"
     foreground: "0xc0caf5"
@@ -37,4 +37,3 @@ tokyonight: &tokyonight
     - { index: 16, color: '#ff9e64' }
     - { index: 17, color: '#db4b4b' }
 
-colors: *tokyonight
