@@ -27,6 +27,9 @@ exec_always --no-startup-id xrdb -load ~/.Xresources
 # autotiling
 exec_always --no-startup-id autotiling
 
+# clamshell detect
+exec_always --no-startup-id $HOME/bin/i3_clamshell
+
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
