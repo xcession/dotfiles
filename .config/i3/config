@@ -54,10 +54,10 @@ set $down j
 set $left h
 set $right l
 
-# prefered terminal
+# preferred terminal
 set $term alacritty
 
-# prefered file manager
+# preferred file manager
 set $filemanager pcmanfm
 
 # define workspace
