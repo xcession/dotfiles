@@ -90,6 +90,15 @@ set $indicator-color        #fab28e
 
 set $border_size 1
 
+# preferred application launcher
+# Note: pass the final command to i3-msg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+set $launcher ulauncher
+set $menu dmenu_run -m 0 -i \
+  -fn 'Roboto Condensed-10:Bold' \
+  -nb '#16161c' -nf '#fdf0ed' \
+  -sb '#29d398' -sf '#16161c' \
+  | xargs i3-msg exec --
 #: }}}
 
 #: Initialize workspace {{{
@@ -210,11 +219,12 @@ bindsym $mod+Shift+Return exec --no-startup-id $filemanager
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym Mod1+q kill
+bindsym Mod1+F4 kill
 
 # launcher
-# bindsym $mod+d exec --no-startup-id rofi_run -r
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+Shift+d exec --no-startup-id dmenu_run
+bindsym Control+space exec $launcher
+bindsym $mod+d exec $menu
 
 # restart inplace (preserves your layout/session, can be used to upgrade wm)
 bindsym $mod+Shift+r restart
