@@ -288,7 +288,7 @@ bindsym $mod+Shift+$up      move up     10px
 bindsym $mod+Shift+$down    move down   10px
 bindsym $mod+Shift+$left    move left   10px
 bindsym $mod+Shift+$right   move right  10px
-# Or use $mod+Shoft+[up|down|left|right]
+# Or use $mod+Shift+[up|down|left|right]
 bindsym $mod+Shift+Up       move up     10px
 bindsym $mod+Shift+Down     move down   10px
 bindsym $mod+Shift+Left     move left   10px
