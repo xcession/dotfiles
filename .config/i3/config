@@ -252,23 +252,23 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 #: Moving around {{{
 
-# change focus (hjkl)
+# move focus around
 bindsym $mod+$left  focus left
 bindsym $mod+$down  focus down
 bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
-# change focus (arrow keys)
+# Or use $mod+[up|down|left|right]
 bindsym $mod+Left   focus left
 bindsym $mod+Down   focus down
 bindsym $mod+Up     focus up
 bindsym $mod+Right  focus right
 
-# move focused window (hjkl)
+# move focused window
 bindsym $mod+Shift+$left    move left   10px
 bindsym $mod+Shift+$down    move down   10px
 bindsym $mod+Shift+$up      move up     10px
 bindsym $mod+Shift+$right   move right  10px
-# move focused window (arrow keys)
+# Or use $mod+Shift+[up|down|left|right]
 bindsym $mod+Shift+Left     move left   10px
 bindsym $mod+Shift+Down     move down   10px
 bindsym $mod+Shift+Up       move up     10px
@@ -331,7 +331,7 @@ bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+e layout toggle split
 
-# make the focused container fullscreen
+# make the current focus fullscreen
 bindsym $mod+f fullscreen toggle
 
 # toggle the current focus between tiling / floating
@@ -340,7 +340,7 @@ bindsym Mod1+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym Mod1+space focus mode_toggle
 
-# change focus between parent / child container
+# move focus between parent / child windows
 bindsym $mod+a focus parent
 bindsym $mod+c focus child
 
@@ -348,10 +348,14 @@ bindsym $mod+c focus child
 
 #: Scratchpad {{{
 
-# move the focused container to scratchpad
+# i3 has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# move the current focus window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
 
-# show the first scratchpad container
+# Show the next scratchpad window or hide the current focus scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
 #: }}}
@@ -359,12 +363,10 @@ bindsym $mod+minus scratchpad show
 #: Resizing containers {{{
 
 mode "resize" {
-  # These bindings trigger as soon as you enter the resize mode
-
-  # Pressing up will shrink the window’s height.
-  # Pressing down will grow the window’s height.
-  # Pressing left will shrink the window’s width.
-  # Pressing right will grow the window’s width.
+  # up will shrink the window’s height.
+  # down will grow the window’s height.
+  # left will shrink the window’s width.
+  # right will grow the window’s width.
   bindsym $left   resize shrink   width   5 px or 5 ppt
   bindsym $down   resize grow     height  5 px or 5 ppt
   bindsym $up     resize shrink   height  5 px or 5 ppt
@@ -376,7 +378,7 @@ mode "resize" {
   bindsym Up      resize shrink   height  5 px or 5 ppt
   bindsym Right   resize grow     width   5 px or 5 ppt
 
-  # back to normal: Enter or Escape or $mod+r
+  # back to normal
   bindsym Return mode "default"
   bindsym Escape mode "default"
   bindsym $mod+r mode "default"
