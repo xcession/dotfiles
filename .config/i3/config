@@ -215,6 +215,12 @@ smart_borders no_gaps
 #: Key bindings {{{
 
 # To list all of the current keys mapping, use `xmodmap -pke` command.
+# To interactively enter a key and see what keysym it is configured to,
+# use `xev`.
+#
+# Syntax:
+# bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
+# bindcode [--release] [<Group>+][<Modifiers>+]<keycode> command
 
 #: Basic {{{
 
