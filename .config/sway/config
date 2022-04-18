@@ -100,6 +100,7 @@ set $menu bemenu-run -m 0 -i -p "run >" \
 #: Initialize workspace {{{
 
 focus_follows_mouse yes
+default_orientation horizontal
 
 # workspace_layout default|stacking|tabbed
 workspace_layout default
@@ -335,9 +336,6 @@ bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 # split layout
 bindsym $mod+b splith
 bindsym $mod+v splitv
-
-#TODO: Check if this setting available in Sway
-default_orientation horizontal
 
 # switch between layouts
 # bindsym $mod+s layout stacking
