@@ -97,24 +97,6 @@ set $menu bemenu-run -m 0 -i -p "run >" \
 
 #: }}}
 
-#: Workspace control {{{
-
-# workspace_layout default|stacking|tabbed
-workspace_layout default
-
-workspace $ws1 output $mon1
-workspace $ws2 output $mon1
-workspace $ws3 output $mon1
-workspace $ws4 output $mon1
-workspace $ws5 output $mon1
-workspace $ws6 output $mon2
-workspace $ws7 output $mon2
-workspace $ws8 output $mon2
-workspace $ws9 output $mon2
-workspace $ws10 output $mon2
-
-#: }}}
-
 #: Output configuration {{{
 
 # font
@@ -203,6 +185,9 @@ input "1133:16489:Logitech_MX_Master_2S" {
 #: }}}
 
 #: Window control {{{
+
+# workspace_layout default|stacking|tabbed
+workspace_layout default
 
 focus_follows_mouse yes
 default_orientation horizontal
