@@ -452,7 +452,7 @@ bindsym $mod+slash exec "splatmoji copy"
 assign [class="(?i)(?:firefox)"] \
   number $ws1
 
-for_window [class="Spotify"] \
+for_window [class="(?i)(?:spotify)"] \
   title_format "<b>%title</b>" \
   move --no-auto-back-and-forth to workspace number $ws10
 
