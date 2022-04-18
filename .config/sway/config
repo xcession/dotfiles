@@ -209,7 +209,7 @@ input "1133:16489:Logitech_MX_Master_2S" {
 
 # border & title
 for_window [class="^.*"] pixel $border_size, \
-  title_format "<b> %class >> %title </b>"
+  title_format "<b>%class >> %title</b>"
 
 default_border pixel $border_size
 default_floating_border pixel $border_size

@@ -170,7 +170,7 @@ exec --no-startup-id xinput set-prop "pointer:Logitech MX Master 2S" "libinput N
 
 # border & title
 for_window [class="^.*"] border pixel $border_size, \
-  title_format "<b> %class >> %title </b>"
+  title_format "<b>%class >> %title</b>"
 
 default_border pixel $border_size
 default_floating_border pixel $border_size
