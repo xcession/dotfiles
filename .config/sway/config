@@ -241,6 +241,10 @@ gaps outer 0
 
 #: Key bindings {{{
 
+# Syntax:
+# bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
+# bindcode [--release] [<Group>+][<Modifiers>+]<keycode> command
+
 #: Basic {{{
 
 # terminal
