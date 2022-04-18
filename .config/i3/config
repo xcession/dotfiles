@@ -453,7 +453,8 @@ assign [class="(?i)(?:firefox)"] \
   $ws1
 
 for_window [class="Spotify"] \
-  move --no-auto-back-and-forth to workspace $ws10
+  title_format "<b>%title</b>" \
+  move --no-auto-back-and-forth to workspace number $ws10
 
 # focus, floating, & sticky
 for_window [class="(?i)(?:qt5ct|pinentry)"] \
