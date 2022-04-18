@@ -326,8 +326,9 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # move focus between parent / child windows
+# bindsym $mod+p focus parent
+# bindsym $mod+c focus child
 bindsym $mod+a focus parent
-bindsym $mod+c focus child
 
 #: }}}
 
