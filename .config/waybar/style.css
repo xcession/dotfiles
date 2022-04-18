@@ -4,58 +4,73 @@
     border-radius: 0;
     font-family: "Roboto Condensed, FontAwesome";
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
 }
+
+/* colors */
+/* background: #16161c */
+/* background: rgba(22, 22, 28, 1.0); */
+/* background-alt: #232530 */
+/* background-alt: rgba(35, 37, 48, 1.0); */
+/* foreground: #fadad1 */
+/* foreground: rgba(250, 218, 209, 1.0); */
+/* foreground-alt: #6c6f93 */
+/* foreground-alt: rgba(108, 111, 147, 1.0); */
+/* primary: #29d398 */
+/* primary: rgba(41, 211, 152, 1.0); */
+/* good = #009550 */
+/* good: rgba(0, 149, 80, 1.0); */
+/* warn = #fcec02 */
+/* warn: rgba(252, 236, 2, 1.0); */
+/* alert = #ff0049 */
+/* alert: rgba(255, 0, 73, 1.0); */
 
 #window {
     padding-left: 6px;
 }
 
 window#waybar {
-    background: #16161c;
-    color: #fdf0ed;
+    background-color: rgba(22, 22, 28, 1.0);
+    color: rgba(250, 218, 209, 1.0);
     transition-property: background-color;
     transition-duration: .5s;
 }
 
-/* window#waybar.empty { */
-/*     background-color: transparent; */
-/* } */
-
-/* window#waybar.solo { */
-/*     background-color: #3F3F3F; */
-/* } */
-
-window#waybar.spotify {
-    background-color: #084c22;
+window#waybar.empty {
+    background-color: rgba(22, 22, 28, 0.6);
 }
+
+/* window#waybar.spotify { */
+/*     background-color: rgba(30, 215, 96, 1.0); */
+/* } */
 
 #workspaces button {
     background-color: transparent;
-    box-shadow: none;
-    color: #6c6f93;
+    /* box-shadow: none; */
+    color: rgba(108, 111, 147, 1.0);
     padding: 0 4px;
 }
 
 /* TODO: */
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inherit;
+    background-color: rgba(108, 111, 147, 0.2);
+    /* box-shadow: inherit; */
 }
 
 #workspaces button.focused {
-    background-color: #00ff9c;
-    color: #16161c;
+    background-color: rgba(35, 37, 48, 1.0);
+    border-bottom: 2px solid rgba(41, 211, 152, 1.0);
+    color: rgba(250, 218, 209, 1.0);
 }
 
 #workspaces button.urgent {
-    background-color: #f43e5c;
+    background-color: rgba(255, 0, 73, 1.0);
 }
 
 #mode {
-    background-color: #fab28e;
-    color: #100d23;
+    background-color: rgba(41, 211, 152, 1.0);
+    color: rgba(22, 22, 28, 1.0);
     padding: 0 10px;
     margin: 0 4px;
 }
@@ -86,16 +101,16 @@ window#waybar.spotify {
 
 @keyframes blink-charging {
     to {
-        background-color: #178059;
+        background-color: rgba(0, 149, 80, 0.8);
     }
 }
 
 #battery.warning {
-    color: #fcec02;
+    color: rgba(252, 236, 2, 1.0);
 }
 
 #battery.critical {
-    color: #ff004c;
+    color: rgba(255, 0, 73, 1.0);
 }
 
 #battery.critical:not(.charging) {
@@ -108,13 +123,9 @@ window#waybar.spotify {
 
 @keyframes blink-critical {
     to {
-        background-color: #ff004c;
-        color: #16161c;
+        background-color: rgba(255, 0, 73, 1.0);
+        color: rgba(22, 22, 28, 1.0);
     }
-}
-
-#clock {
-    /* background-color: #64727D; */
 }
 
 #custom-media {
@@ -132,47 +143,35 @@ window#waybar.spotify {
 }
 
 #idle_inhibitor {
-    color: #6c6f93;
+    color: rgba(108, 111, 147, 1.0);
 }
 
 #idle_inhibitor.activated {
-    color: #fab28e;
+    color: rgba(255, 0, 73, 1.0);
 }
 
 #keyboard-state {
-    color: #6c6f93;
+    color: rgba(108, 111, 147, 1.0);
 }
 
 #keyboard-state label.locked {
-    color: #ff004c;
-}
-
-#memory {
-    /* background-color: #9b59b6; */
-}
-
-#network {
+    color: rgba(255, 0, 73, 1.0);
 }
 
 #network.disconnected {
-    color: #2d3436;
-}
-
-#pulseaudio {
-    /* background-color: #f1c40f; */
-    /* color: #000000; */
+    color: rgba(108, 111, 147, 0.6);
 }
 
 #pulseaudio.muted {
-    background-color: #ff004c;
-    color: #100d23;
+    background-color: rgba(255, 0, 73, 1.0);
+    color: rgba(22, 22, 28, 1.0);
 }
 
 #temperature.critical {
-    color: #ff004c;
+    color: rgba(255, 0, 73, 1.0);
 }
 
 #tray {
-    background-color: #2e303e;
+    background-color: rgba(35, 37, 48, 1.0);
 }
 
