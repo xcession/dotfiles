@@ -103,9 +103,6 @@ set $menu dmenu_run -m 0 -i \
 
 #: Initialize workspace {{{
 
-focus_follows_mouse yes
-default_orientation horizontal
-
 # workspace_layout default|stacking|tabbed
 workspace_layout default
 
@@ -167,6 +164,9 @@ exec --no-startup-id xinput set-prop "pointer:Logitech MX Master 2S" "libinput N
 #: }}}
 
 #: Window control {{{
+
+focus_follows_mouse yes
+default_orientation horizontal
 
 # border & title
 for_window [class="^.*"] border pixel $border_size, \

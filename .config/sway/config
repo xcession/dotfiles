@@ -99,9 +99,6 @@ set $menu bemenu-run -m 0 -i -p "run >" \
 
 #: Initialize workspace {{{
 
-focus_follows_mouse yes
-default_orientation horizontal
-
 # workspace_layout default|stacking|tabbed
 workspace_layout default
 
@@ -206,6 +203,9 @@ input "1133:16489:Logitech_MX_Master_2S" {
 #: }}}
 
 #: Window control {{{
+
+focus_follows_mouse yes
+default_orientation horizontal
 
 # border & title
 for_window [class="^.*"] pixel $border_size, \
