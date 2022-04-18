@@ -80,7 +80,7 @@ set $inactive-text-color    #6c6f93
 set $urgent-bg-color        #f43e5c
 set $indicator-color        #fab28e
 
-set $border_size 1
+set $border_size 2
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -211,9 +211,11 @@ input "1133:16489:Logitech_MX_Master_2S" {
 for_window [class="^.*"] pixel $border_size, \
   title_format "<b> %class >> %title </b>"
 
-default_border pixel 2
+default_border pixel $border_size
+default_floating_border pixel $border_size
 
-# hide_edge_borders both
+# hide_edge_borders none|vertical|horizontal|both|smart
+hide_edge_borders smart
 
 # window colors
 # client    border    background \
