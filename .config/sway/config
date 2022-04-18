@@ -498,8 +498,8 @@ for_window [class="(?i)(?:mojosetup)"] \
 for_window [class="(?i)(?:flameshot)"] \
   floating enable
 #Ulauncher
-for_window [class="(?i)(?:Ulauncher)"] \
-  floating enable
+for_window [class="(?i)(?:ulauncher)"] \
+  floating enable, focus
 
 popup_during_fullscreen smart
 
