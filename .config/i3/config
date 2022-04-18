@@ -484,7 +484,7 @@ for_window [class="(?i)(?:flameshot)"] \
   floating enable
 #Ulauncher
 for_window [class="(?i)(?:ulauncher)"] \
-  floating enable, focus
+  border none, floating enable
 
 popup_during_fullscreen smart
 
