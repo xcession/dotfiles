@@ -456,7 +456,7 @@ for_window [class="(?i)(?:spotify)"] \
   title_format "<b>%title</b>" \
   move --no-auto-back-and-forth to workspace number $ws10
 
-for_window [app_id="(?i)(?:keepassxc)"] \
+for_window [class="(?i)(?:keepassxc)"] \
   move --no-auto-back-and-forth to workspace number $ws9
 
 # focus, floating, & sticky
