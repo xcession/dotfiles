@@ -205,7 +205,7 @@ input "1133:16489:Logitech_MX_Master_2S" {
 
 #: }}}
 
-#: Container / Windows control {{{
+#: Window control {{{
 
 # border & title
 for_window [class="^.*"] pixel $border_size, \
@@ -317,7 +317,7 @@ bindsym $mod+0 workspace $ws10
 bindsym $mod+Mod1+Left workspace prev
 bindsym $mod+Mod1+Right workspace next
 
-# move focused container to workspace
+# move focused window to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
@@ -373,7 +373,7 @@ bindsym $mod+minus scratchpad show
 
 #: }}}
 
-#: Resizing containers {{{
+#: Resizing windows {{{
 
 mode "resize" {
 #TODO: Check if 'ppt' value is valid

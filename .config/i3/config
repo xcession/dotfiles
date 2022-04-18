@@ -78,7 +78,7 @@ set $laptop "LVDS1"
 set $mon1 "DisplayPort-0"
 set $mon2 "HDMI-A-1"
 
-# bar and container color
+# bar and window color
 set $bg-color               #16161c
 set $text-color             #fdf0ed
 set $active-bg-color        #09f7a0
@@ -166,7 +166,7 @@ exec --no-startup-id xinput set-prop "pointer:Logitech MX Master 2S" "libinput N
 
 #: }}}
 
-#: Container control {{{
+#: Window control {{{
 
 # border & title
 for_window [class="^.*"] border pixel $border_size, \
@@ -202,7 +202,7 @@ focus_on_window_activation      focus
 gaps inner 8
 gaps outer 0
 
-# only enable gaps on a workspace when there is at least one container
+# only enable gaps on a workspace when there is at least one window
 smart_gaps on
 
 # smart borders will draw borders on windows only if there is more than one
@@ -303,7 +303,7 @@ bindsym $mod+0 workspace number $ws10
 bindsym $mod+Mod1+Left workspace prev
 bindsym $mod+Mod1+Right workspace next
 
-# move focused container to workspace
+# move focused window to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1; workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2; workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3; workspace number $ws3
@@ -357,7 +357,7 @@ bindsym $mod+minus scratchpad show
 
 #: }}}
 
-#: Resizing containers {{{
+#: Resizing windows {{{
 
 mode "resize" {
   # up will shrink the window’s height.
