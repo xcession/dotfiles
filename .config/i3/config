@@ -390,6 +390,7 @@ bindsym $mod+r mode "resize"
 
 #: Border & Gaps {{{
 
+# toggle border
 bindsym $mod+Shift+b border toggle
 
 # changing border style
