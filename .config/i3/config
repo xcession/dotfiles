@@ -476,7 +476,7 @@ for_window [title="Welcome to Android Studio"] \
   floating false
 for_window [title="Android Emulator"] \
   floating enable
-# GOG Games installer
+# GOG installer
 for_window [class="(?i)(?:mojosetup)"] \
   floating enable
 # Flameshot
