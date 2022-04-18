@@ -456,6 +456,9 @@ for_window [class="Spotify"] \
   title_format "<b>%title</b>" \
   move --no-auto-back-and-forth to workspace number $ws10
 
+for_window [app_id="(?i)(?:keepassxc)"] \
+  move --no-auto-back-and-forth to workspace number $ws9
+
 # focus, floating, & sticky
 for_window [class="(?i)(?:qt5ct|pinentry)"] \
   floating enable, focus

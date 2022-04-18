@@ -470,14 +470,14 @@ bar {
 
 # assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
-  $ws2
+  number $ws1
 
 for_window [class="(?i)(?:spotify)"] \
   title_format "<b>%title</b>" \
   move --no-auto-back-and-forth to workspace number $ws10
 
 for_window [app_id="(?i)(?:keepassxc)"] \
-  move --no-auto-back-and-forth to workspace $ws9
+  move --no-auto-back-and-forth to workspace number $ws9
 
 for_window [app_id="(?i)(?:telegram)"] \
   move --no-auto-back-and-forth to workspace $ws9
