@@ -450,7 +450,7 @@ bindsym $mod+slash exec "splatmoji copy"
 
 # assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
-  $ws1
+  number $ws1
 
 for_window [class="Spotify"] \
   title_format "<b>%title</b>" \
