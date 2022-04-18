@@ -101,7 +101,7 @@ set $menu dmenu_run -m 0 -i \
   | xargs i3-msg exec --
 #: }}}
 
-#: Initialize workspace {{{
+#: Workspace control {{{
 
 # workspace_layout default|stacking|tabbed
 workspace_layout default

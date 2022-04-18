@@ -97,7 +97,7 @@ set $menu bemenu-run -m 0 -i -p "run >" \
 
 #: }}}
 
-#: Initialize workspace {{{
+#: Workspace control {{{
 
 # workspace_layout default|stacking|tabbed
 workspace_layout default
