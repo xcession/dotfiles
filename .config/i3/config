@@ -16,7 +16,7 @@
 # run with reload: exec_always
 
 # polkit
-exec --no-startup-id /usr/bin/lxpolkit &
+exec --no-startup-id /usr/bin/lxpolkit
 
 # desktop notification
 exec --no-startup-id /usr/bin/dunst
@@ -399,10 +399,10 @@ bindsym $mod+Shift+b border toggle
 #: Media control {{{
 
 # audio
-bindsym XF86AudioMute           exec "amixer set Master toggle"
-bindsym XF86AudioMicMute        exec "amixer set Capture toggle"
-bindsym XF86AudioRaiseVolume    exec "amixer set Master 2.5%+"
-bindsym XF86AudioLowerVolume    exec "amixer set Master 2.5%-"
+bindsym XF86AudioMute           exec amixer set Master toggle
+bindsym XF86AudioMicMute        exec amixer set Capture toggle
+bindsym XF86AudioRaiseVolume    exec amixer set Master 2.5%+
+bindsym XF86AudioLowerVolume    exec amixer set Master 2.5%-
 
 # play/pause keys for spotify
 bindsym XF86AudioPlay exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
@@ -414,14 +414,14 @@ bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2
 #: Misc {{{
 
 # backlight
-bindsym XF86MonBrightnessUp     exec --no-startup-id "xbacklight -inc 10 && notify-send 'Brightness UP' -u low"
-bindsym XF86MonBrightnessDown   exec --no-startup-id "xbacklight -dec 10 && notify-send 'Brightness DOWN' -u low"
+bindsym XF86MonBrightnessUp     exec --no-startup-id xbacklight -inc 10 && notify-send 'Brightness UP' -u low
+bindsym XF86MonBrightnessDown   exec --no-startup-id xbacklight -dec 10 && notify-send 'Brightness DOWN' -u low
 
 # screenshot
-bindsym Print exec --no-startup-id "flameshot gui -p $HOME/Pictures"
+bindsym Print exec --no-startup-id flameshot gui -p $HOME/Pictures
 
 # Splatmoji
-bindsym $mod+slash exec "splatmoji copy"
+bindsym $mod+slash exec splatmoji copy
 
 #: }}}
 
