@@ -9,6 +9,5 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch polybar
 echo "---" | tee -a /tmp/polybar.log
 polybar i3-primary >>/tmp/polybar.log 2>&1 &
-polybar i3-secondary
 
 echo "Polybar launched..."
