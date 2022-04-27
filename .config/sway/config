@@ -27,8 +27,8 @@ exec_always --no-startup-id /usr/bin/autotiling
 # import gsettings
 exec_always --no-startup-id ~/bin/import-gsettings
 
-# clamshell detect
-exec_always --no-startup-id ~/bin/sway_clamshell
+# detect external monitor
+exec_always --no-startup-id ~/bin/mon_detect
 
 #: }}}
 
