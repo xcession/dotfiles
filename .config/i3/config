@@ -78,8 +78,8 @@ set $ws10 "0"
 # define monitor
 # (Use the 'xrandr --listmonitors')
 set $laptop "LVDS1"
-set $mon1 "DisplayPort-0"
-set $mon2 "HDMI-A-1"
+set $mon1 "HDMI1"
+set $mon2 "VGA1"
 
 # bar and window color
 set $bg-color               #16161c

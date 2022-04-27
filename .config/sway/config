@@ -68,7 +68,7 @@ set $ws10 "0"
 # (Use the 'swaymsg -t get_outputs')
 set $laptop "LVDS-1"
 set $mon1 "HDMI-A-1"
-set $mon2 "DP-2"
+set $mon2 "VGA-1"
 
 # bar and window color
 set $bg-color               #16161c
