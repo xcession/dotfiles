@@ -1,23 +1,22 @@
 #!/bin/bash
 
 
-echo Detecting keyboard layout...
-currentLayout=$(xkb-switch -p)
-echo Current keyboard layout: $currentLayout
+echo "Detecting keyboard layout..."
+CURRENT_LAYOUT=$(xkb-switch -p)
+echo "Current keyboard layout: $CURRENT_LAYOUT"
 
-if [ $currentLayout != 'gb' ]
-then
-  echo Change keyboard layout to 'gb'
+if [ $CURRENT_LAYOUT != 'gb' ]; then
+  echo "Change keyboard layout to 'gb'"
   xkb-switch -s gb
-  currentLayout=$(xkb-switch -p)
-  echo Current keyboard layout: $currentLayout
-  echo Screen locked
+  CURRENT_LAYOUT=$(xkb-switch -p)
+  echo "Current keyboard layout: $CURRENT_LAYOUT"
+  echo "Screen locked"
   # xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
   # i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-  i3lock -c 00000088 --nofork
+  i3lock -c 000000 --nofork
 else
-  echo Screen locked
+  echo "Screen locked"
   # xss-lock --transfer-sleep-lock -- i3lock -c 00000088 --nofork
   # i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-  i3lock -c 00000088 --nofork
+  i3lock -c 000000 --nofork
 fi
