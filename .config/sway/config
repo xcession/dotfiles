@@ -19,10 +19,10 @@ exec --no-startup-id /usr/bin/lxpolkit
 # desktop notification
 exec --no-startup-id /usr/bin/dunst
 
-exec_always --no-startup-id xrdb -load ~/.Xresources
+exec_always --no-startup-id /usr/bin/xrdb -load ~/.Xresources
 
 # autotiling
-exec_always --no-startup-id autotiling
+exec_always --no-startup-id /usr/bin/autotiling
 
 # import gsettings
 exec_always --no-startup-id ~/bin/import-gsettings
