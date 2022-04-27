@@ -25,7 +25,7 @@ exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id nm-applet
 
 # keyboard layouts
-exec --no-startup-id setxkbmap -layout gb,us,th -option "grp:alt_shift_toggle""
+exec --no-startup-id setxkbmap -layout gb,us,th -option "grp:alt_shift_toggle"
 
 # make numlock active
 exec --no-startup-id numlockx on

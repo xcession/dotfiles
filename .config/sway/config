@@ -152,7 +152,7 @@ input "type:keyboard" {
   repeat_delay 300
   repeat_rate 30
   xkb_layout "us,th"
-  xkb_options "grp:alt_shift_toggle""
+  xkb_options "grp:alt_shift_toggle"
 }
 
 input "2:10:TPPS/2_IBM_TrackPoint" {
@@ -172,7 +172,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 
 input "1:1:AT_Translated_Set_2_keyboard" {
   xkb_layout "gb,th"
-  xkb_options "grp:alt_shift_toggle""
+  xkb_options "grp:alt_shift_toggle"
 }
 
 input "1133:16489:Logitech_MX_Master_2S" {
