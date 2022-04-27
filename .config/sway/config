@@ -86,7 +86,7 @@ set $border_size 2
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $launcher ulauncher
-set $menu bemenu-run -m 0 -i -p "run >" \
+set $menu bemenu-run -i -p "run >" \
   --fn 'RobotoCondensed Regular 13' \
   --tb '$inactive-bg-color' --tf '$active-bg-color' \
   --fb '$bg-color' --ff '$active-bg-color' \
