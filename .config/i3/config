@@ -22,15 +22,15 @@ exec --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id /usr/bin/dunst
 
 # network manager
-exec --no-startup-id nm-applet
+exec --no-startup-id /usr/bin/nm-applet
 
 # make numlock active
 exec --no-startup-id numlockx on
 
-exec_always --no-startup-id xrdb -load $HOME/.Xresources
+exec_always --no-startup-id /usr/bin/xrdb -load $HOME/.Xresources
 
 # autotiling
-exec_always --no-startup-id autotiling
+exec_always --no-startup-id /usr/bin/autotiling
 
 # clamshell detect
 exec_always --no-startup-id $HOME/bin/i3_clamshell
