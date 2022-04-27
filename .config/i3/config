@@ -24,9 +24,6 @@ exec --no-startup-id /usr/bin/dunst
 # network manager
 exec --no-startup-id nm-applet
 
-# keyboard layouts
-exec --no-startup-id setxkbmap -layout gb,us,th -option "grp:alt_shift_toggle"
-
 # make numlock active
 exec --no-startup-id numlockx on
 
@@ -120,13 +117,16 @@ exec_always --no-startup-id nitrogen --restore
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/bin/lockscreen
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/bin/lockscreen
 # bindsym $mod+shift+x exec --no-startup-id xkb-switch -s us && xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
+# bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
 
 #: }}}
 
 #: Input configuration {{{
+
+# keyboard layouts
+exec --no-startup-id setxkbmap -layout gb,us,th -option "grp:alt_shift_toggle"
 
 # thinkpad trackpoint
 exec --no-startup-id xinput set-prop "TPPS/2 IBM TrackPoint" "Device Enabled" 1
