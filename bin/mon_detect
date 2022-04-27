@@ -1,0 +1,137 @@
+#! /bin/bash
+
+set -e
+
+getWindowManager () {
+  local WINDOW=$(
+    /usr/bin/xprop -root -notype
+  )
+
+  local IDENTIFIER=$(
+    echo "${WINDOW}" |
+    awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}'
+  )
+
+  local ATTRIBUTES=$(
+    /usr/bin/xprop -id "${IDENTIFIER}" -notype -f _NET_WM_NAME 8t
+  )
+
+  local NAME=$(
+    echo "${ATTRIBUTES}" |
+    grep "_NET_WM_NAME = " |
+    cut --delimiter=' ' --fields=3 |
+    cut --delimiter='"' --fields=2
+  )
+
+  echo "${NAME}"
+}
+
+CURRENT_WM=$(getWindowManager)
+
+echo "Current WM: $CURRENT_WM"
+
+detectMonitor () {
+  HDMI_STATUS=$(</sys/class/drm/card0/card0-HDMI-A-1/status)
+  VGA_STATUS=$(</sys/class/drm/card0/card0-VGA-1/status)
+
+  echo "HDMI status: $HDMI_STATUS"
+  echo "VGA status: $VGA_STATUS"
+
+  if [ "i3" == $CURRENT_WM ]; then
+    LVDS_OUTPUT="LVDS1"
+    HDMI_OUTPUT="HDMI1"
+    VGA_OUTPUT="VGA1"
+
+    echo "Call i3Monitor function..."
+
+    i3Monitor
+  elif [ "wlroots" == $CURRENT_WM ]; then
+    LVDS_OUTPUT="LVDS-1"
+    HDMI_OUTPUT="HDMI-A-1"
+    VGA_OUTPUT="VGA-1"
+
+    echo "Call swayMonitor function..."
+
+    swayMonitor
+  fi
+
+  echo "LVDS output: $LVDS_OUTPUT"
+  echo "HDMI output: $HDMI_OUTPUT"
+  echo "VGA output: $VGA_OUTPUT"
+}
+
+i3Monitor () {
+  echo "Initiate i3Monitor function..."
+
+  if [ "connected" == "$HDMI_STATUS" ]; then
+    echo "HDMI connected"
+    /usr/bin/xrandr --output $HDMI_OUTPUT --left-of $LVDS_OUTPUT --auto
+    echo "HDMI enabled"
+    /usr/bin/xrandr --output $VGA_OUTPUT --off
+    echo "VGA disabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "HDMI plugged in"
+  elif [ "connected" == "$VGA_STATUS" ]; then
+    echo "VGA connected"
+    /usr/bin/xrandr --output $HDMI_OUTPUT --off
+    echo "HDMI disabled"
+    /usr/bin/xrandr --output $VGA_OUTPUT --left-of $LVDS_OUTPUT --auto
+    echo "VGA enabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "VGA plugged in"
+  else
+    echo "Nothing connected"
+    /usr/bin/xrandr --output $HDMI_OUTPUT --off
+    echo "HDMI disabled"
+    /usr/bin/xrandr --output $VGA_OUTPUT --off
+    echo "VGA disabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "External monitor disconnected"
+    exit
+  fi
+
+  echo "Reload i3"
+  /usr/bin/i3-msg restart
+}
+
+swayMonitor () {
+  echo "Initiate swayMonitor function..."
+
+  if [ "connected" == "$HDMI_STATUS" ]; then
+    echo "HDMI connected"
+    /usr/bin/swaymsg output $HDMI_OUTPUT enable
+    echo "HDMI enabled"
+    /usr/bin/swaymsg output $VGA_OUTPUT disable
+    echo "VGA disabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "HDMI plugged in"
+  elif [ "connected" == "$VGA_STATUS" ]; then
+    echo "VGA connected"
+    /usr/bin/swaymsg output $HDMI_OUTPUT disable
+    echo "HDMI disabled"
+    /usr/bin/swaymsg output $VGA_OUTPUT enable
+    echo "VGA enabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "VGA plugged in"
+  else
+    echo "Nothing connected"
+    /usr/bin/swaymsg output $HDMI_OUTPUT disable
+    echo "HDMI disabled"
+    /usr/bin/swaymsg output $VGA_OUTPUT disable
+    echo "VGA disabled"
+    /usr/bin/notify-send --urgency=low -t 5000 \
+      "Graphics Update" \
+      "External monitor disconnected"
+    exit
+  fi
+
+  echo "Reload Sway"
+  /usr/bin/swaymsg reload
+}
+
+detectMonitor
