@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 if grep -q open /proc/acpi/button/lid/LID/state; then
   xrandr --output LVDS1 --auto
 else
