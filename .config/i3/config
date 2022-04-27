@@ -97,7 +97,7 @@ set $border_size 2
 # Note: pass the final command to i3-msg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $launcher ulauncher
-set $menu dmenu_run -m 0 -i \
+set $menu dmenu_run -i \
   -fn 'Roboto Condensed-10:Bold' \
   -nb '#16161c' -nf '#fdf0ed' \
   -sb '#29d398' -sf '#16161c' \
