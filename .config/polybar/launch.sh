@@ -7,7 +7,12 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch polybar
-echo "---" | tee -a /tmp/polybar.log
-polybar i3-primary >>/tmp/polybar.log 2>&1 &
-
-echo "Polybar launched..."
+if type "xrandr"; then
+  for m in $(polybar --list-monitors | cut -d":" -f1); do
+    echo "---" | tee -a /tmp/polybar.log
+    MONITOR=$m polybar --reload i3-primary >>/tmp/polybar.log 2>&1 &
+  done
+else
+  echo "---" | tee -a /tmp/polybar.log
+  polybar --reload i3-primary >>/tmp/polybar.log 2>&1 &
+fi
