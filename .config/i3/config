@@ -114,9 +114,9 @@ exec_always --no-startup-id nitrogen --restore
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/bin/lockscreen
-# bindsym $mod+shift+x exec --no-startup-id xkb-switch -s us && xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
-# bindsym $mod+shift+backslash exec --no-startup-id ~/bin/lockscreen
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/bin/lockscreen
+# bindsym $mod+Shift+x exec --no-startup-id xkb-switch -s us && xss-lock --transfer-sleep-lock -- i3lock -c 00000088 -i ~/.wallpaper.jpg --nofork
+# bindsym $mod+Shift+backslash exec --no-startup-id ~/bin/lockscreen
 
 #: }}}
 
