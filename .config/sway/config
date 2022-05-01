@@ -480,7 +480,7 @@ for_window [app_id="(?i)(?:telegram)"] \
   move --no-auto-back-and-forth to workspace $ws9
 
 # focus, floating, & sticky
-for_window [class="(?i)(?:qt5ct|pinentry)"] \
+for_window [class="(?i)(?:qt5ct|pinentry|yad)"] \
   floating enable, focus
 for_window [title="(?i)(?:copying|deleting|moving)"] \
   floating enable
