@@ -15,7 +15,7 @@ require'nvim-tree'.setup {
     width = 30,
     height = 30,
     hide_root_folder = false,
-    side = 'left',
+    side = "left",
     preserve_window_proportions = false,
     number = false,
     relativenumber = false,
@@ -30,11 +30,14 @@ require'nvim-tree'.setup {
   renderer = {
     indent_markers = {
       enable = true,
-      icon = {
+      icons = {
         corner = "└ ",
         edge = "│ ",
         none = "  ",
       },
+    },
+    icons = {
+      webdev_colors = true,
     },
   },
   hijack_directories = {
@@ -46,9 +49,9 @@ require'nvim-tree'.setup {
     update_cwd = false,
     ignore_list = {},
   },
-  ignore_ft_on_setup  = {},
+  ignore_ft_on_setup = {},
   system_open = {
-    cmd = nil,
+    cmd = "",
     args = {},
   },
   diagnostics = {
@@ -72,9 +75,11 @@ require'nvim-tree'.setup {
     timeout = 400,
   },
   actions = {
+    use_system_clipboard = true,
     change_dir = {
       enable = true,
       global = false,
+      restrict_above_cwd = false,
     },
     open_file = {
       quit_on_open = true,
@@ -100,6 +105,7 @@ require'nvim-tree'.setup {
       all = false,
       config = false,
       copy_paste = false,
+      diagnostics = false,
       git = false,
       profile = false,
     },
