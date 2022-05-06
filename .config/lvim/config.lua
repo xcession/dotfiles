@@ -57,9 +57,9 @@ lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
+lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 1
-lvim.builtin.nvimtree.setup.quit_on_open = 1
 
 -- vim.g.tokyonight_style = "night"
 
