@@ -144,7 +144,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   filesystem_watchers = {
     enable = false,
-    interval = 100,
     debounce_delay = 50,
   },
   git = {
