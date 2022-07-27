@@ -1,2 +1,2 @@
--- https://github.com/phpactor/phpactor
-require'lspconfig'.phpactor.setup{}
+-- npm i -g intelephense
+require'lspconfig'.intelephense.setup{}
