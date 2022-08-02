@@ -92,9 +92,6 @@ i3Monitor () {
       "External monitor disconnected"
     exit
   fi
-
-  echo "Reload i3"
-  /usr/bin/i3-msg restart
 }
 
 swayMonitor () {
@@ -129,9 +126,6 @@ swayMonitor () {
       "External monitor disconnected"
     exit
   fi
-
-  echo "Reload Sway"
-  /usr/bin/swaymsg reload
 }
 
 detectMonitor
