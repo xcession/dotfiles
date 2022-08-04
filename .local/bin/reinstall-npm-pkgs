@@ -1,0 +1,29 @@
+#!/bin/bash
+
+install_pkgs () {
+  npm install --global \
+    yarn \
+    bash-language-server \
+    intelephense \
+    pyright
+}
+
+while true
+do
+  read -r -p "Confirm installation? [(Y)es,(N)o] " confirmation
+
+  case "$confirmation" in
+    [yY][eE][sS]|[yY])
+      echo "Installing..."
+      install_pkgs
+      break
+      ;;
+    [nN][oO]|[nN])
+      echo "Exit..."
+      break
+      ;;
+    *)
+      echo "Invalid input..."
+      ;;
+  esac
+done
