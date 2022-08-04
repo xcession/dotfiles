@@ -7,6 +7,8 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+set -g default-terminal "xterm-256color"
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
