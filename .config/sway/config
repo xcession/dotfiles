@@ -389,6 +389,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+mode "mouse" {
+  bindsym $up seat - cursor move 0 -10
+  bindsym $down seat - cursor move 0 10
+  bindsym $left seat - cursor move -10 0
+  bindsym $right seat - cursor move 10 0
+  # bindsym KP_Home seat - cursor move -10 -10
+  # bindsym KP_End seat - cursor move -10 10
+  # bindsym KP_Prior seat - cursor move 10 -10
+  # bindsym KP_Next seat - cursor move 10 10
+  # bindsym --release KP_Insert seat - cursor press BTN_LEFT, seat - cursor release BTN_LEFT
+  # bindsym KP_Delete seat - cursor press BTN_RIGHT, seat - cursor release BTN_RIGHT
+
+  # back to default mode
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+m mode "default"
+}
+
+bindsym $mod+m mode "mouse"
+
 #: }}}
 
 #: Border & Gaps {{{
