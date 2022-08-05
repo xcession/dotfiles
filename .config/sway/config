@@ -363,7 +363,7 @@ bindsym $mod+minus scratchpad show
 
 #: }}}
 
-#: Resizing windows {{{
+#: Binding modes {{{
 
 mode "resize" {
   # up will shrink the window’s height.
