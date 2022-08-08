@@ -8,7 +8,15 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins ---------------------------------
 set commentary
 set surround
+
+""" Common settings -------------------------
+set showmode
+set incsearch
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
