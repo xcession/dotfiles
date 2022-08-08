@@ -12,8 +12,8 @@
 let mapleader=" "
 
 """ Plugins ---------------------------------
-set commentary
-set surround
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 
 """ Common settings -------------------------
 set showmode
