@@ -493,7 +493,7 @@ for_window [class="(?i)(?:spotify)"] \
   move --no-auto-back-and-forth to workspace number $ws10
 
 for_window [app_id="(?i)(?:keepassxc)"] \
-  move --no-auto-back-and-forth to workspace number $ws9
+  move --no-auto-back-and-forth to workspace number $ws10
 
 for_window [app_id="(?i)(?:telegram)"] \
   move --no-auto-back-and-forth to workspace $ws9
