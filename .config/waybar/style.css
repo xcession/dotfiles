@@ -37,7 +37,7 @@ window#waybar {
 }
 
 window#waybar.empty {
-    background-color: rgba(22, 22, 28, 0.6);
+    background-color: rgba(22, 22, 28, 0.8);
 }
 
 /* window#waybar.spotify { */
