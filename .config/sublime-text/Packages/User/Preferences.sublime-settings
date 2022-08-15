@@ -5,7 +5,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 	"default_line_ending": "unix",
-	"font_face": "Iosevka Slab",
+	"font_face": "JetBrains Mono",
 	"font_size": 12,
 	"indent_guide_options": ["draw_normal", "draw_active"],
 	"line_padding_bottom": 2,
