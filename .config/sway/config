@@ -492,6 +492,8 @@ bar {
 
 #: Application Settings {{{
 
+for_window [shell=".*"] title_format "%title :: %shell"
+
 # assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
   number $ws1
