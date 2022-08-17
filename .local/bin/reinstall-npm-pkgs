@@ -2,10 +2,14 @@
 
 install_pkgs () {
   npm install --global \
-    yarn \
     bash-language-server \
     intelephense \
-    pyright
+    pyright \
+    typescript \
+    typescript-language-server \
+    vim-language-server \
+    vscode-langservers-extracted \
+    yarn
 }
 
 while true
@@ -14,16 +18,16 @@ do
 
   case "$confirmation" in
     [yY][eE][sS]|[yY])
-      echo "Installing..."
+      printf 'Installing...'
       install_pkgs
       break
       ;;
     [nN][oO]|[nN])
-      echo "Exit..."
+      printf 'Exit...'
       break
       ;;
     *)
-      echo "Invalid input..."
+      printf 'Invalid input...'
       ;;
   esac
 done
