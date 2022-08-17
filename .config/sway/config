@@ -148,8 +148,15 @@ bindswitch --reload --locked lid:off output $laptop enable
 input "type:keyboard" {
   repeat_delay 300
   repeat_rate 30
-  xkb_layout "us,gb,th"
   xkb_options "grp:alt_shift_toggle"
+}
+
+input "1:1:AT_Translated_Set_2_keyboard" {
+  xkb_layout "gb,th"
+}
+
+input "1241:521:USB-HID_Keyboard" {
+  xkb_layout "us,th"
 }
 
 input "2:10:TPPS/2_IBM_TrackPoint" {
