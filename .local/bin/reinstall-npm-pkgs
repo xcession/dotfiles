@@ -4,6 +4,7 @@ install_pkgs () {
   npm install --global \
     bash-language-server \
     intelephense \
+    pnpm \
     pyright \
     typescript \
     typescript-language-server \
