@@ -133,6 +133,8 @@ bindswitch --reload --locked lid:off output $laptop enable
 
 #: Input configuration {{{
 
+seat seat0 xcursor_theme WhiteSur-cursors 24
+
 # Example configuration:
 #
 #   input "2:14:SynPS/2_Synaptics_TouchPad" {
