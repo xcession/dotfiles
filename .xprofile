@@ -7,10 +7,6 @@ export XDG_CONFIG_HOME
 
 [ "$PATH" == *"$HOME/bin"* ] || PATH="$HOME/bin:$PATH"
 
-picom -b &
-nitrogen --restore &
-volumeicon &
-nm-applet &
-gnome-keyring-daemon --start --components=pkcs11 &
 xset dpms 600 900 1200
 xset r rate 350 60
+
