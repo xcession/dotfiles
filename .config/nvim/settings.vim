@@ -9,11 +9,9 @@
 
 " Settings {{{
 
-" Disable line wrapping
-set nowrap
-
-" Enable syntax highlighting
-syntax enable
+syntax enable                 " syntax highlighting, see :help syntax
+set path+=**                  " improves searching, see :help path
+set nowrap                    " disable line wrapping
 
 " Required to keep multiple buffers open multiple buffers
 set hidden
@@ -31,8 +29,8 @@ set iskeyword+=-
 set smartcase
 set ignorecase
 
-" Incremental search
-set incsearch
+set incsearch                 " see result while search is being typed, see :help incsearch
+
 
 " Use system clipboard
 set clipboard^=unnamed,unnamedplus
@@ -40,8 +38,7 @@ set clipboard^=unnamed,unnamedplus
 " Working directory will always be the same
 " set autochdir
 
-" Enable mouse
-set mouse=a
+set mouse=a                   " enable mouse click
 
 " }}}
 
@@ -50,8 +47,8 @@ set mouse=a
 " Enable true colors support
 set termguicolors
 
-" Loading the plugin files for specific file types
-filetype plugin on
+" file type detection, see :help filetype
+filetype plugin indent on
 
 source $HOME/.config/nvim/theme.vim
 
@@ -67,20 +64,16 @@ set guifont=Iosevka\ Nerd\ Font:12
 
 " Tabs and Spaces {{{
 
-" Number of space characters for a tab stop
-set tabstop=2 softtabstop=2
-
-" Number of space characters inserted for indentation
-set shiftwidth=2
+set tabstop=2                 " setting tab to 2 column
+set softtabstop=2             " setting tab to 2 column
+set shiftwidth=2              " setting tab to 2 column
 
 " Make tabbing smarter will realize you have 2 vs 4
 set smarttab
 
-" Converts tabs to spaces
-set expandtab
+set expandtab                 " expanding tab to spaces
 
-" Makes indenting smart
-set smartindent
+set smartindent               " auto indent on new lines, see :help smartindent
 
 " Good auto indent
 set autoindent
@@ -91,11 +84,11 @@ set linespace=2
 
 " UI {{{
 
-" Show current and relative line numbers
-set number relativenumber
+set number                    " display line number
+set relativenumber            " display relative line numbers
 
 " Show the cursor position all the time
-set ruler
+" set ruler
 
 " Enable highlight of the current line
 set cursorline
@@ -119,8 +112,7 @@ set laststatus=2
 " Hide mode information. Use what in the status line instead
 set noshowmode
 
-" Show matching brackets
-set showmatch
+set showmatch                 " display matching bracket or parenthesis
 
 " Stop newline continution of comments
 set formatoptions-=cro
