@@ -79,7 +79,7 @@ Plug 'sheerun/vim-polyglot'
 
 " Themes {{{
 
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'Abstract-IDE/Abstract-cs'
 
 " }}}
 
