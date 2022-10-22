@@ -7,6 +7,14 @@
 " GitHub:       https://github.com/xcession/dotfiles
 " Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+" Providers {{{
+
+" python
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
+
+" }}}
+
 " Settings {{{
 
 syntax enable                 " syntax highlighting, see :help syntax
