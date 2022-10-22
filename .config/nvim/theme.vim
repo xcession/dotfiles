@@ -12,6 +12,6 @@
 " lua:
 " luafile $HOME/.config/nvim/vim-plug/themes/theme.lua
 
-luafile $HOME/.config/nvim/vim-plug/themes/tokyonight.lua
+colorscheme abscs
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
