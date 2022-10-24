@@ -66,7 +66,7 @@ xinput set-prop "pointer:Logitech MX Master 2S" "libinput Natural Scrolling Enab
 #: Workspaces {{{
 
 # bspc monitor LVDS1 -d I II III IV V VI VII VIII IX X
-# bspc monitor DP2 -d VI VII VIII IX X
+# bspc monitor HDMI1 -d VI VII VIII IX X
 
 #: }}}
 
