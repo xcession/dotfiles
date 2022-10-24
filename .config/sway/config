@@ -519,6 +519,10 @@ for_window [title="(?i)(?:copying|deleting|moving)"] \
 for_window [window_role="(?i)(?:about|pop-up|setup)"] \
   floating enable
 
+
+for_window [class="(?i)(?:Tk)"] \
+  floating enable
+
 for_window [title="Android Emulator"] \
   floating enable
 for_window [class="(?i)(?:jetbrains-*)"] \
