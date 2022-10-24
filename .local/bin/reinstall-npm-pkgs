@@ -6,6 +6,7 @@ install_pkgs () {
     intelephense \
     pnpm \
     pyright \
+    sass \
     typescript \
     typescript-language-server \
     vim-language-server \
