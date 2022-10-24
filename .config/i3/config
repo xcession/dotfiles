@@ -298,7 +298,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9; workspace number $
 bindsym $mod+Shift+0 move container to workspace number $ws10; workspace number $ws10
 
 # move the current workspace to the next output
-bindsym $mod+Shift+backslash move workspace to output next
+# bindsym $mod+Shift+backslash move workspace to output next
 
 #: }}}
 
