@@ -17,5 +17,6 @@ Plug 'tpope/vim-surround'
 """ Common settings -------------------------
 set showmode
 set incsearch
+set relativenumber
 
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
