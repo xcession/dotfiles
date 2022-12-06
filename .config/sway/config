@@ -230,6 +230,12 @@ focus_on_window_activation      focus
 gaps inner 8
 gaps outer 0
 
+# only enable gaps on a workspace when there is at least one window
+smart_gaps on
+
+# borders will only be enabled if the workspace has more than one visible child.
+smart_borders on
+
 #: }}}
 
 #: Key bindings {{{
