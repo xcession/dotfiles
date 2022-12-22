@@ -30,14 +30,12 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-
-# SQLite
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# Rustup
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Yarn
 export PATH="$(yarn global bin):$PATH"
