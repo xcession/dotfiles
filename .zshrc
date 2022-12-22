@@ -114,6 +114,7 @@ plugins=(
   colored-man-pages
   git
   gitignore
+  poetry
   vi-mode
   zsh-autosuggestions
   zsh-nvm
