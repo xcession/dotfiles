@@ -10,8 +10,8 @@
 " Providers {{{
 
 " python
-let g:python_host_prog = '/opt/homebrew/opt/python/libexec/bin/python'
-let g:python3_host_prog = '/opt/homebrew/opt/python/libexec/bin/python'
+let g:python_host_prog = '$HOME/.pyenv/shims/python'
+let g:python3_host_prog = '$HOME/.pyenv/shims/python3'
 
 " }}}
 
