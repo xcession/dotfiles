@@ -87,9 +87,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Yarn
 export PATH="$(yarn global bin):$PATH"
 
-# Sublime Text
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
-
 # }}}
 
 # Oh My Zsh {{{
