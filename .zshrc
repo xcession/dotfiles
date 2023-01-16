@@ -162,6 +162,7 @@ plugins=(
   git
   gitignore
   poetry
+  qrcode
   vi-mode
   zsh-autosuggestions
   zsh-nvm
