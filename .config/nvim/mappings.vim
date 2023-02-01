@@ -33,4 +33,7 @@ inoremap <down>  <nop>
 inoremap <left>  <nop>
 inoremap <right> <nop>
 
+" Clear search highlights
+nnoremap <C-x> :nohl<CR>
+
 " vim:fileencoding=utf-8:ft=vim:foldmethod=marker
