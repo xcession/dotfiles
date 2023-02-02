@@ -94,7 +94,7 @@ set $menu bemenu-run -i -p "run >" \
 
 #: }}}
 
-#: Output configuration {{{
+#: Output {{{
 
 # font
 font pango:Noto Sans 9
@@ -115,7 +115,7 @@ bindswitch --reload --locked lid:off output $laptop enable
 
 #: }}}
 
-#: Idle configuration {{{
+#: Idle {{{
 #
 # Example configuration:
 #
@@ -131,7 +131,7 @@ bindswitch --reload --locked lid:off output $laptop enable
 
 #: }}}
 
-#: Input configuration {{{
+#: Input {{{
 
 seat seat0 xcursor_theme WhiteSur-cursors 24
 
@@ -238,7 +238,7 @@ smart_borders on
 
 #: }}}
 
-#: Key bindings {{{
+#: Binds {{{
 
 # Syntax:
 # bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
@@ -500,7 +500,7 @@ bar {
 
 #: }}}
 
-#: Application Settings {{{
+#: Window rules {{{
 
 for_window [shell=".*"] title_format "%title :: %shell"
 
