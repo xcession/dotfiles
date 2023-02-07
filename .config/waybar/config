@@ -3,7 +3,7 @@
     // List output from command line using:
     // Hyprland: `hyprctl monitors`
     // Sway: `swaymsg -t get_outputs`
-    "output": ["LVDS-1", "HDMI-A-1", "DP-2"],
+    "output": ["eDP-1", "HDMI-A-1", "DP-2"],
     "height": 24,
     "position": "top",
     "modules-left": ["wlr/workspaces", "hyprland/submap", "hyprland/window"],
