@@ -17,7 +17,7 @@
 exec --no-startup-id /usr/bin/lxpolkit
 
 # desktop notification
-exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id /usr/bin/mako
 
 exec_always --no-startup-id /usr/bin/xrdb -load ~/.Xresources
 
