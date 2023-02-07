@@ -64,11 +64,24 @@ window#waybar.empty {
     color: rgba(250, 218, 209, 1.0);
 }
 
+#workspaces button.active {
+    background-color: rgba(35, 37, 48, 1.0);
+    border-bottom: 2px solid rgba(41, 211, 152, 1.0);
+    color: rgba(250, 218, 209, 1.0);
+}
+
 #workspaces button.urgent {
     background-color: rgba(255, 0, 73, 1.0);
 }
 
 #mode {
+    background-color: rgba(41, 211, 152, 1.0);
+    color: rgba(22, 22, 28, 1.0);
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#submap {
     background-color: rgba(41, 211, 152, 1.0);
     color: rgba(22, 22, 28, 1.0);
     padding: 0 10px;
