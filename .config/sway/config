@@ -294,22 +294,11 @@ bindsym $mod+$up    focus up
 bindsym $mod+$down  focus down
 bindsym $mod+$left  focus left
 bindsym $mod+$right focus right
-# Or use $mod+[up|down|left|right]
+# or use $mod+[up|down|left|right]
 bindsym $mod+Up     focus up
 bindsym $mod+Down   focus down
 bindsym $mod+Left   focus left
 bindsym $mod+Right  focus right
-
-# move focused window
-bindsym $mod+Shift+$up      move up     10px
-bindsym $mod+Shift+$down    move down   10px
-bindsym $mod+Shift+$left    move left   10px
-bindsym $mod+Shift+$right   move right  10px
-# Or use $mod+Shift+[up|down|left|right]
-bindsym $mod+Shift+Up       move up     10px
-bindsym $mod+Shift+Down     move down   10px
-bindsym $mod+Shift+Left     move left   10px
-bindsym $mod+Shift+Right    move right  10px
 
 #: }}}
 
@@ -347,6 +336,21 @@ bindsym $mod+Shift+0 move container to workspace number $ws10; workspace number 
 
 # move the current workspace to the next output
 bindsym $mod+Shift+backslash move workspace to output next
+
+#: }}}
+
+#: Windows {{{
+
+# move focused window
+bindsym $mod+Shift+$up      move up     10px
+bindsym $mod+Shift+$down    move down   10px
+bindsym $mod+Shift+$left    move left   10px
+bindsym $mod+Shift+$right   move right  10px
+# Or use $mod+Shift+[up|down|left|right]
+bindsym $mod+Shift+Up       move up     10px
+bindsym $mod+Shift+Down     move down   10px
+bindsym $mod+Shift+Left     move left   10px
+bindsym $mod+Shift+Right    move right  10px
 
 #: }}}
 
