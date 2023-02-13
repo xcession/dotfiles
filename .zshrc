@@ -11,16 +11,12 @@
 
 export PATH="$PATH:$HOME/.local/bin"
 
-# Android {{{
-
 # Android SDK
 export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
-
-# }}}
 
 # Ncurses
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
