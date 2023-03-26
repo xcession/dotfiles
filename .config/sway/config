@@ -31,11 +31,10 @@ exec_always --no-startup-id ~/bin/import-gsettings
 
 #: Variables {{{
 
-# mod key used for most binds
-# Mod1 = Alt
-# Mod4 = Super
+# Mod key used for most binds
+# MOD4 = SUPER
 # (Use the `xmodmap` command to list them all)
-set $mod Mod4
+set $mainMod MOD4
 
 # direction keys
 set $up k
@@ -48,18 +47,6 @@ set $term alacritty
 
 # preferred file manager
 set $filemanager pcmanfm
-
-# define workspace
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "0"
 
 # define monitor(s)
 # (Use the 'swaymsg -t get_outputs')
@@ -244,147 +231,43 @@ smart_borders on
 
 #: Binds {{{
 
+# Mod key used for most binds
+# MOD1 = ALT
+# (Use the `xmodmap` command to list them all)
+#
 # Syntax:
 # bindsym [--release] [<Group>+][<Modifiers>+]<keysym> command
 # bindcode [--release] [<Group>+][<Modifiers>+]<keycode> command
 
 #: Basic {{{
 
-# terminal
-bindsym $mod+t          exec --no-startup-id $term
-bindsym $mod+Return     exec --no-startup-id $term
+# Terminal
+bindsym $mainMod+T exec --no-startup-id $term
+bindsym $mainMod+RETURN exec --no-startup-id $term
 
-# file manager
-bindsym $mod+Shift+Return exec --no-startup-id $filemanager
+# File manager
+bindsym $mainMod+SHIFT+RETURN exec --no-startup-id $filemanager
 
-# kill focused window
-bindsym $mod+Shift+q kill
-bindsym Mod1+q kill
-bindsym Mod1+F4 kill
+# Kill focused window
+bindsym $mainMod+SHIFT+Q kill
+# bindsym ALT+Q kill
+# bindsym ALT+F4 kill
 
-# launcher
-bindsym Control+space exec $launcher
-bindsym $mod+d exec $menu
+# Launcher
+bindsym $mainMod+D exec $menu
+bindsym $mainMod+MOD1+D exec $menu-alt
 
-# Drag floating windows by holding down $mod and left mouse button.
-# Resize them with right mouse button + $mod.
+# Drag floating windows by holding down $mainMod and left mouse button.
+# Resize them with right mouse button + $mainMod.
 # Despite the name, also works for non-floating windows.
 # Change normal to inverse to use left mouse button for resizing and right
-floating_modifier $mod normal
+floating_modifier $mainMod normal
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
+# Reload the configuration file
+bindsym $mainMod+SHIFT+C reload
 
 # Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-
-#: }}}
-
-#: Moving around {{{
-
-# move focus around
-bindsym $mod+$up    focus up
-bindsym $mod+$down  focus down
-bindsym $mod+$left  focus left
-bindsym $mod+$right focus right
-# or use $mod+[up|down|left|right]
-bindsym $mod+Up     focus up
-bindsym $mod+Down   focus down
-bindsym $mod+Left   focus left
-bindsym $mod+Right  focus right
-
-#: }}}
-
-#: Workspaces {{{
-
-workspace_auto_back_and_forth yes
-
-# switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
-
-# switch to next or previous workspace
-bindsym $mod+Mod1+Left workspace prev
-bindsym $mod+Mod1+Right workspace next
-
-# move focused window to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1; workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2; workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3; workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4; workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5; workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6; workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7; workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8; workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9; workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10; workspace number $ws10
-
-# move the current workspace to the next output
-bindsym $mod+Shift+backslash move workspace to output next
-
-#: }}}
-
-#: Windows {{{
-
-# move focused window
-bindsym $mod+Shift+$up      move up     10px
-bindsym $mod+Shift+$down    move down   10px
-bindsym $mod+Shift+$left    move left   10px
-bindsym $mod+Shift+$right   move right  10px
-# Or use $mod+Shift+[up|down|left|right]
-bindsym $mod+Shift+Up       move up     10px
-bindsym $mod+Shift+Down     move down   10px
-bindsym $mod+Shift+Left     move left   10px
-bindsym $mod+Shift+Right    move right  10px
-
-#: }}}
-
-#: Layouts {{{
-
-# split layout
-bindsym $mod+b splith
-bindsym $mod+v splitv
-
-# switch between layouts
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# make the current focus fullscreen
-bindsym $mod+f fullscreen toggle
-
-# toggle the current focus between tiling / floating
-bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
-# move focus between parent / child windows
-# bindsym $mod+p focus parent
-# bindsym $mod+c focus child
-bindsym $mod+a focus parent
-
-#: }}}
-
-#: Scratchpad {{{
-
-# Sway has a "scratchpad", which is a bag of holding for windows.
-# You can send windows there and get them back later.
-
-# move the current focus window to the scratchpad
-bindsym $mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the current focus scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $mod+minus scratchpad show
+bindsym $mainMod+SHIFT+E exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
 #: }}}
 
@@ -407,12 +290,12 @@ mode "resize" {
   bindsym Right   resize grow     width   10 px or 10 ppt
 
   # back to default mode
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym $mod+r mode "default"
+  bindsym RETURN mode "default"
+  bindsym ESCAPE mode "default"
+  bindsym $mainMod+R mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mainMod+R mode "resize"
 
 mode "mouse" {
   bindsym $up seat - cursor move 0 -10
@@ -423,44 +306,150 @@ mode "mouse" {
   # bindsym KP_End seat - cursor move -10 10
   # bindsym KP_Prior seat - cursor move 10 -10
   # bindsym KP_Next seat - cursor move 10 10
-  # bindsym --release KP_Insert seat - cursor press BTN_LEFT, seat - cursor release BTN_LEFT
-  # bindsym KP_Delete seat - cursor press BTN_RIGHT, seat - cursor release BTN_RIGHT
+  bindsym --release U seat - cursor press BTN_LEFT, seat - cursor release BTN_LEFT
+  bindsym I seat - cursor press BTN_RIGHT, seat - cursor release BTN_RIGHT
 
   # back to default mode
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-  bindsym $mod+m mode "default"
+  bindsym RETURN mode "default"
+  bindsym ESCAPE mode "default"
+  bindsym $mainMod+M mode "default"
 }
 
-bindsym $mod+m mode "mouse"
+bindsym $mainMod+M mode "mouse"
+
+#: }}}
+
+#: Moving around {{{
+
+# Move focus with arrow keys
+bindsym $mainMod+$up    focus up
+bindsym $mainMod+$down  focus down
+bindsym $mainMod+$left  focus left
+bindsym $mainMod+$right focus right
+
+# Move focus with hjkl keys
+bindsym $mainMod+Up     focus up
+bindsym $mainMod+Down   focus down
+bindsym $mainMod+Left   focus left
+bindsym $mainMod+Right  focus right
+
+#: }}}
+
+#: Workspaces {{{
+
+workspace_auto_back_and_forth yes
+
+# Switch workspaces
+bindsym $mainMod+1 workspace number 1
+bindsym $mainMod+2 workspace number 2
+bindsym $mainMod+3 workspace number 3
+bindsym $mainMod+4 workspace number 4
+bindsym $mainMod+5 workspace number 5
+bindsym $mainMod+6 workspace number 6
+bindsym $mainMod+7 workspace number 7
+bindsym $mainMod+8 workspace number 8
+bindsym $mainMod+9 workspace number 9
+bindsym $mainMod+0 workspace number 10
+
+# Move active window to a workspace
+bindsym $mainMod+SHIFT+1 move container to workspace number 1; workspace number 1
+bindsym $mainMod+SHIFT+2 move container to workspace number 2; workspace number 2
+bindsym $mainMod+SHIFT+3 move container to workspace number 3; workspace number 3
+bindsym $mainMod+SHIFT+4 move container to workspace number 4; workspace number 4
+bindsym $mainMod+SHIFT+5 move container to workspace number 5; workspace number 5
+bindsym $mainMod+SHIFT+6 move container to workspace number 6; workspace number 6
+bindsym $mainMod+SHIFT+7 move container to workspace number 7; workspace number 7
+bindsym $mainMod+SHIFT+8 move container to workspace number 8; workspace number 8
+bindsym $mainMod+SHIFT+9 move container to workspace number 9; workspace number 9
+bindsym $mainMod+SHIFT+0 move container to workspace number 10; workspace number 10
+
+# move the current workspace to the next output
+bindsym $mainMod+ALT+BACKSLASH move workspace to output right
+
+#: }}}
+
+#: Windows {{{
+
+# Move active window with hjkl keys
+bindsym $mainMod+SHIFT+$up      move up     10px
+bindsym $mainMod+SHIFT+$down    move down   10px
+bindsym $mainMod+SHIFT+$left    move left   10px
+bindsym $mainMod+SHIFT+$right   move right  10px
+
+# Move active window with arrow keys
+bindsym $mainMod+SHIFT+Up       move up     10px
+bindsym $mainMod+SHIFT+Down     move down   10px
+bindsym $mainMod+SHIFT+Left     move left   10px
+bindsym $mainMod+SHIFT+Right    move right  10px
+
+#: }}}
+
+#: Layouts {{{
+
+# split layout
+bindsym $mainMod+B splith
+bindsym $mainMod+V splitv
+
+# switch between layouts
+bindsym $mainMod+S layout stacking
+bindsym $mainMod+W layout tabbed
+bindsym $mainMod+E layout toggle split
+
+# make the current focus fullscreen
+bindsym $mainMod+F fullscreen toggle
+
+# toggle the current focus between tiling / floating
+bindsym $mainMod+SHIFT+SPACE floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mainMod+SPACE focus mode_toggle
+
+# move focus between parent / child windows
+# bindsym $mod+p focus parent
+# bindsym $mod+c focus child
+bindsym $mod+a focus parent
+
+#: }}}
+
+#: Scratchpad {{{
+
+# Sway has a "scratchpad", which is a bag of holding for windows.
+# You can send windows there and get them back later.
+
+# move the current focus window to the scratchpad
+bindsym $mainMod+SHIFT+minus move scratchpad
+
+# Show the next scratchpad window or hide the current focus scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mainMod+minus scratchpad show
 
 #: }}}
 
 #: Border & Gaps {{{
 
 # toggle border
-bindsym $mod+Shift+b border toggle
+bindsym $mainMod+SHIFT+B border toggle
 
 # changing border style
-# bindsym $mod+n border normal
-# bindsym $mod+y border pixel $border_size
-# bindsym $mod+u border none
+# bindsym $mainMod+N border normal
+# bindsym $mainMod+Y border pixel $border_size
+# bindsym $mainMod+U border none
 
 # change gaps
-# bindsym $mod+plus                   gaps inner current plus  5
-# bindsym $mod+minus                  gaps inner current minus 5
-# bindsym $mod+Shift+plus             gaps outer current plus  5
-# bindsym $mod+Shift+minus            gaps outer current minus 5
-# bindsym $mod+Control+plus           gaps inner all     plus  5
-# bindsym $mod+Control+minus          gaps inner all     minus 5
-# bindsym $mod+Control+Shift+plus     gaps outer all     plus  5
-# bindsym $mod+Control+Shift+minus    gaps outer all     minus 5
+# bindsym $mainMod+plus                   gaps inner current plus  5
+# bindsym $mainMod+minus                  gaps inner current minus 5
+# bindsym $mainMod+SHIFT+plus             gaps outer current plus  5
+# bindsym $mainMod+SHIFT+minus            gaps outer current minus 5
+# bindsym $mainMod+Control+plus           gaps inner all     plus  5
+# bindsym $mainMod+Control+minus          gaps inner all     minus 5
+# bindsym $mainMod+Control+SHIFT+plus     gaps outer all     plus  5
+# bindsym $mainMod+Control+SHIFT+minus    gaps outer all     minus 5
 
 #: }}}
 
 #: Media control {{{
 
-# audio
+# Audio
 bindsym XF86AudioMute           exec amixer set Master toggle
 bindsym XF86AudioMicMute        exec amixer set Capture toggle
 bindsym XF86AudioRaiseVolume    exec amixer set Master 2.5%+
@@ -475,12 +464,12 @@ bindsym XF86AudioPrev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2
 
 #: Misc {{{
 
-# backlight
+# Backlight
 bindsym XF86MonBrightnessUp     exec --no-startup-id light -A 10 && notify-send 'Brightness UP' -u low
 bindsym XF86MonBrightnessDown   exec --no-startup-id light -U 10 && notify-send 'Brightness DOWN' -u low
 
-# screenshot
-bindsym Print exec --no-startup-id grim -g "$(slurp)"
+# Screenshot
+bindsym PRINT exec --no-startup-id grim -g "$(slurp)" $(xdg-user-dir)/Captures/$(date +'%s_grim.png')
 
 #: }}}
 
@@ -512,18 +501,18 @@ bar {
 
 for_window [shell=".*"] title_format "%title :: %shell"
 
-# assign applications to specific workspace
+# Assign applications to specific workspace
 assign [class="(?i)(?:firefox)"] \
-  number $ws1
+  number 1
 
 for_window [class="(?i)(?:spotify)"] \
-  move --no-auto-back-and-forth to workspace number $ws10
+  move --no-auto-back-and-forth to workspace number 10
 
 for_window [class="(?i)(?:KeePassXC)"] \
-  move --no-auto-back-and-forth to workspace number $ws10
+  move --no-auto-back-and-forth to workspace number 10
 
 for_window [app_id="(?i)(?:telegram)"] \
-  move --no-auto-back-and-forth to workspace $ws9
+  move --no-auto-back-and-forth to workspace 9
 
 # focus, floating, & sticky
 for_window [class="(?i)(?:qt5ct|pinentry|yad)"] \
