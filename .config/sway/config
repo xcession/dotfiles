@@ -258,12 +258,6 @@ bindsym $mainMod+SHIFT+Q kill
 bindsym $mainMod+D exec $menu
 bindsym $mainMod+MOD1+D exec $menu-alt
 
-# Drag floating windows by holding down $mainMod and left mouse button.
-# Resize them with right mouse button + $mainMod.
-# Despite the name, also works for non-floating windows.
-# Change normal to inverse to use left mouse button for resizing and right
-floating_modifier $mainMod normal
-
 # Reload the configuration file
 bindsym $mainMod+SHIFT+C reload
 
@@ -382,6 +376,15 @@ bindsym $mainMod+SHIFT+Up       move up     10px
 bindsym $mainMod+SHIFT+Down     move down   10px
 bindsym $mainMod+SHIFT+Left     move left   10px
 bindsym $mainMod+SHIFT+Right    move right  10px
+
+# Drag floating windows by holding down $mainMod and left mouse button.
+# Resize them with right mouse button + $mainMod.
+# Despite the name, also works for non-floating windows.
+# Change normal to inverse to use left mouse button for resizing and right
+floating_modifier $mainMod normal
+
+# Pin active floating window
+bindsym MOD1+BACKSLASH sticky toggle
 
 #: }}}
 
