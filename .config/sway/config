@@ -409,9 +409,9 @@ bindsym $mainMod+SHIFT+SPACE floating toggle
 bindsym $mainMod+SPACE focus mode_toggle
 
 # move focus between parent / child windows
-# bindsym $mod+p focus parent
-# bindsym $mod+c focus child
-bindsym $mod+a focus parent
+# bindsym $mainMod+P focus parent
+# bindsym $mainMod+C focus child
+bindsym $mainMod+A focus parent
 
 #: }}}
 
