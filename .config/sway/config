@@ -228,6 +228,9 @@ smart_gaps on
 # borders will only be enabled if the workspace has more than one visible child.
 smart_borders on
 
+# maximum size of floating windows
+floating_maximum_size 1280 x 720
+
 #: }}}
 
 #: Binds {{{
