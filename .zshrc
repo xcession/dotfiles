@@ -157,7 +157,6 @@ plugins=(
   colored-man-pages
   git
   gitignore
-  poetry
   qrcode
   vi-mode
   zsh-autosuggestions
