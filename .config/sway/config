@@ -8,6 +8,8 @@
 # GitHub:       https://github.com/xcession/dotfiles
 # Maintainer:   Пэйнт (Tharawut Paripaiboon)
 
+# Read `man 5 sway` for a complete reference.
+
 #: Autostart {{{
 
 # run once: exec
@@ -76,10 +78,10 @@ set $menu-alt tofi-run | xargs swaymsg exec --
 
 #: Output {{{
 
-# font
+# Font
 font pango:Noto Sans 9
 
-# wallpaper
+# Wallpaper
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 output * bg $HOME/.wallpaper.jpg fill
@@ -420,7 +422,7 @@ bindsym $mod+a focus parent
 # Sway has a "scratchpad", which is a bag of holding for windows.
 # You can send windows there and get them back later.
 
-# move the current focus window to the scratchpad
+# Move the currently focused window to the scratchpad
 bindsym $mainMod+SHIFT+minus move scratchpad
 
 # Show the next scratchpad window or hide the current focus scratchpad window.
@@ -479,7 +481,7 @@ bindsym PRINT exec --no-startup-id grim -g "$(slurp)" $(xdg-user-dir)/Captures/$
 
 #: }}}
 
-#: Statusbar {{{
+#: Status Bar {{{
 
 # Read `man 5 sway-bar` for more information about this section.
 bar {
