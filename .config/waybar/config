@@ -2,7 +2,8 @@
     "layer": "top",
     // List output from command line using:
     // Sway: `swaymsg -t get_outputs`
-    "output": ["eDP-1", "HDMI-A-1", "DP-1", "DP-2"],
+    //"output": ["LVDS-1", "HDMI-A-1"],
+    "output": ["eDP-1", "DP-1", "DP-2"],
     "height": 24,
     "position": "top",
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
