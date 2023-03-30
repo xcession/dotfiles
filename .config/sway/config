@@ -52,7 +52,8 @@ set $filemanager pcmanfm
 
 # define monitor(s)
 # (Use the 'swaymsg -t get_outputs')
-set $laptop "LVDS-1"
+# set $laptop "LVDS-1"
+set $laptop "eDP-1"
 
 # bar and window color
 set $bg-color               #16161c
