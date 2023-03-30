@@ -27,12 +27,6 @@
         "format": "{name}"
     },
 
-    "wlr/workspaces": {
-        "all-outputs": false,
-        "disable-scroll": true,
-        "format": "{name}"
-    },
-
     "sway/language": {
         "format": "{}",
         "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
