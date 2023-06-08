@@ -27,7 +27,7 @@ exec_always --no-startup-id /usr/bin/xrdb -load ~/.Xresources
 exec_always --no-startup-id /usr/bin/autotiling-rs
 
 # import gsettings
-exec_always --no-startup-id ~/bin/import-gsettings
+exec_always --no-startup-id ~/.local/bin/import-gsettings
 
 #: }}}
 
