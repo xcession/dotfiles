@@ -45,7 +45,7 @@ set $left h
 set $right l
 
 # preferred terminal
-set $term foot
+set $term alacritty
 
 # preferred file manager
 set $filemanager pcmanfm
