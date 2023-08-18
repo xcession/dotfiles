@@ -5,14 +5,16 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
-  sort_by = "name",
+  sort = {
+    sorter = "name",
+    folders_first = true,
+  },
   root_dirs = {},
   prefer_startup_root = false,
   sync_root_with_cwd = false,
   reload_on_bufenter = false,
   respect_buf_cwd = false,
-  on_attach = "disable",
-  remove_keymaps = false,
+  on_attach = "default",
   select_prompts = false,
   view = {
     centralize_selection = false,
@@ -25,12 +27,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     number = false,
     relativenumber = false,
     signcolumn = "yes",
-    mappings = {
-      custom_only = false,
-      list = {
-        -- user mappings go here
-      },
-    },
     float = {
       enable = false,
       quit_on_focus_loss = true,
@@ -70,6 +66,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     icons = {
       webdev_colors = true,
       git_placement = "before",
+      modified_placement = "after",
       padding = " ",
       symlink_arrow = " ➛ ",
       show = {
@@ -143,6 +140,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
   },
   filters = {
+    git_ignored = true,
     dotfiles = false,
     git_clean = false,
     no_buffer = false,
@@ -156,9 +154,9 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   git = {
     enable = true,
-    ignore = true,
     show_on_dirs = true,
     show_on_open_dirs = true,
+    disable_for_dirs = {},
     timeout = 400,
   },
   modified = {
@@ -188,14 +186,26 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
     },
     open_file = {
       quit_on_open = true,
+      eject = true,
       resize_window = true,
       window_picker = {
         enable = true,
         picker = "default",
         chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
         exclude = {
-          filetype = { "notify", "packer", "qf", "diff", "fugitive", "fugitiveblame" },
-          buftype = { "nofile", "terminal", "help" },
+          filetype = {
+            "notify",
+            "packer",
+            "qf",
+            "diff",
+            "fugitive",
+            "fugitiveblame",
+          },
+          buftype = {
+            "nofile",
+            "terminal",
+            "help",
+          },
         },
       },
     },
@@ -205,7 +215,6 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   trash = {
     cmd = "gio trash",
-    require_confirm = true,
   },
   live_filter = {
     prefix = "[FILTER]: ",
@@ -220,6 +229,7 @@ require'nvim-tree'.setup { -- BEGIN_DEFAULT_OPTS
   },
   notify = {
     threshold = vim.log.levels.INFO,
+    absolute_path = true,
   },
   ui = {
     confirm = {
