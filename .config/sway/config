@@ -48,7 +48,7 @@ set $right l
 set $term alacritty
 
 # preferred file manager
-set $filemanager pcmanfm
+set $filemanager nautilus
 
 # define monitor(s)
 # (Use the 'swaymsg -t get_outputs')
