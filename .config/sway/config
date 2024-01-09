@@ -495,44 +495,29 @@ bar {
 
 #: Window rules {{{
 
-for_window [shell=".*"] title_format "%title :: %shell"
-
 # Assign applications to specific workspace
-assign [class="(?i)(?:firefox)"] \
-  number 1
+assign {
+  [app_id="(?i)(?:telegram)"] number 9
+  [class="(?i)(?:firefox)"] number 1
+  [class="(?i)(?:KeePassXC)"] number 10
+  [class="(?i)(?:spotify)"] number 10
+}
 
-for_window [class="(?i)(?:spotify)"] \
-  move --no-auto-back-and-forth to workspace number 10
+for_window {
+  [shell="xwayland"] title_format "%title [XWayland]"
 
-for_window [class="(?i)(?:KeePassXC)"] \
-  move --no-auto-back-and-forth to workspace number 10
+  [class="(?i)(?:qt5ct|pinentry|yad)"] floating enable, focus
+  [title="(?i)(?:copying|deleting|moving)"] floating enable
+  [window_role="(?i)(?:about|pop-up|setup)"] floating enable
 
-for_window [app_id="(?i)(?:telegram)"] \
-  move --no-auto-back-and-forth to workspace 9
-
-# focus, floating, & sticky
-for_window [class="(?i)(?:qt5ct|pinentry|yad)"] \
-  floating enable, focus
-for_window [title="(?i)(?:copying|deleting|moving)"] \
-  floating enable
-for_window [window_role="(?i)(?:about|pop-up|setup)"] \
-  floating enable
-
-
-for_window [class="(?i)(?:Tk)"] \
-  floating enable
-
-for_window [title="Android Emulator"] \
-  floating enable
-# GOG installer
-for_window [class="(?i)(?:mojosetup)"] \
-  floating enable
-# Flameshot
-for_window [class="(?i)(?:flameshot)"] \
-  floating enable
-#Ulauncher
-for_window [class="(?i)(?:ulauncher)"] \
-  border none, floating enable
+  [app_id="org.gnome.Dictionary"] floating enable
+  [app_id="localsend_app"] floating enable
+  [class="(?i)(?:flameshot)"] floating enable
+  [class="(?i)(?:mojosetup)"] floating enable
+  [class="(?i)(?:Tk)"] floating enable
+  [class="(?i)(?:ulauncher)"] floating enable, border none
+  [title="Android Emulator"] floating enable
+}
 
 popup_during_fullscreen smart
 
