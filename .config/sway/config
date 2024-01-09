@@ -129,58 +129,46 @@ seat seat0 xcursor_theme WhiteSur-cursors 24
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-input "type:keyboard" {
+input type:keyboard {
   repeat_delay 300
   repeat_rate 30
+  xkb_layout "us,th"
   xkb_options "grp:alt_shift_toggle"
 }
 
-input "1:1:AT_Translated_Set_2_keyboard" {
-  xkb_layout "us,th"
-}
-
-input "1241:521:USB-HID_Keyboard" {
-  xkb_layout "us,th"
-}
-
-input "2:10:TPPS/2_IBM_TrackPoint" {
-  dwt enabled
-  tap enabled
-  natural_scroll enabled
-  middle_emulation enabled
-  scroll_factor 0.5
-}
-
-input "1267:32:Elan_TrackPoint" {
-  dwt enabled
-  tap enabled
-  natural_scroll enabled
-  middle_emulation disabled
-  scroll_factor 0.5
-}
-
-input "2:7:SynPS/2_Synaptics_TouchPad" {
-  events disabled
-  dwt enabled
-  tap enabled
-  natural_scroll enabled
-  middle_emulation enabled
-}
-
-input "1267:32:Elan_Touchpad" {
-  events enabled
+input type:touchpad {
+  # events disabled
   dwt enabled
   tap disabled
   natural_scroll enabled
   middle_emulation enabled
 }
 
+input type:mouse {
+  dwt enabled
+  natural_scroll enabled
+}
+
+input "2:10:TPPS/2_IBM_TrackPoint" {
+  scroll_factor 0.5
+}
+
+input "1267:32:Elan_TrackPoint" {
+  scroll_factor 0.5
+}
+
 input "1133:16489:Logitech_MX_Master_2S" {
   accel_profile "adaptive"
-  dwt enabled
   natural_scroll enabled
   pointer_accel -0.9
   scroll_factor 2
+}
+
+input "1133:49970:Logitech_Gaming_Mouse_G502" {
+  accel_profile "adaptive"
+  natural_scroll enabled
+  pointer_accel -0.2
+  scroll_factor 1
 }
 
 #: }}}
