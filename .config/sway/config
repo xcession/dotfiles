@@ -151,10 +151,12 @@ input type:mouse {
 }
 
 input "2:10:TPPS/2_IBM_TrackPoint" {
+  natural_scroll enabled
   scroll_factor 0.5
 }
 
 input "1267:32:Elan_TrackPoint" {
+  natural_scroll enabled
   scroll_factor 0.5
 }
 
