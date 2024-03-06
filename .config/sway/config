@@ -165,6 +165,15 @@ input "1133:16489:Logitech_MX_Master_2S" {
   natural_scroll enabled
   pointer_accel -0.9
   scroll_factor 2
+  middle_emulation enabled
+}
+
+input "1133:45081:MX_Master_2S_Mouse" {
+  accel_profile "adaptive"
+  natural_scroll enabled
+  pointer_accel 0.5
+  scroll_factor 2
+  middle_emulation enabled
 }
 
 input "1133:49970:Logitech_Gaming_Mouse_G502" {
@@ -172,6 +181,7 @@ input "1133:49970:Logitech_Gaming_Mouse_G502" {
   natural_scroll enabled
   pointer_accel -0.2
   scroll_factor 1
+  middle_emulation enabled
 }
 
 #: }}}
