@@ -45,7 +45,7 @@ set $left h
 set $right l
 
 # preferred terminal
-set $term alacritty
+set $terminal alacritty
 
 # preferred file manager
 set $filemanager nautilus
@@ -248,8 +248,8 @@ floating_maximum_size 1280 x 720
 #: Basic {{{
 
 # Terminal
-bindsym $mainMod+T exec --no-startup-id $term
-bindsym $mainMod+RETURN exec --no-startup-id $term
+bindsym $mainMod+T exec --no-startup-id $terminal
+bindsym $mainMod+RETURN exec --no-startup-id $terminal
 
 # File manager
 bindsym $mainMod+SHIFT+RETURN exec --no-startup-id $filemanager
