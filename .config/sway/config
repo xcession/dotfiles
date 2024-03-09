@@ -479,6 +479,7 @@ bindsym XF86MonBrightnessDown   exec --no-startup-id light -U 10 && notify-send 
 
 # Screenshot
 bindsym PRINT exec --no-startup-id grim -g "$(slurp)" $(xdg-user-dir)/Captures/$(date +'%s_grim.png')
+bindsym MOD1+PRINT exec --no-startup-id grim $(xdg-user-dir)/Captures/$(date +'%s_grim.png')
 
 #: }}}
 
