@@ -11,8 +11,20 @@
     "modules-center": ["clock"],
     "modules-right": ["idle_inhibitor", "temperature", "pulseaudio", "backlight", "network", "battery", "keyboard-state", "hyprland/language", "tray"],
 
+    "hyprland/submap": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "hyprland/window": {
+        "max-length": 50,
+        "rewrite": {
+            "(.*) - Brave": "Brave | $1",
+            "(.*) - Mozilla Firefox": "Mozilla Firefox | $1"
+        }
     },
 
     "sway/window": {
@@ -22,10 +34,21 @@
         }
     },
 
+    "hyprland/workspaces": {
+        "all-outputs": false,
+        "disable-scroll": true,
+        "format": "{name}"
+    },
+
     "sway/workspaces": {
         "all-outputs": false,
         "disable-scroll": true,
         "format": "{name}"
+    },
+
+    "hyprland/language": {
+        "format": "{}",
+        "keyboard-name": "at-translated-set-2-keyboard",
     },
 
     "sway/language": {
