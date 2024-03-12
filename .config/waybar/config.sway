@@ -1,6 +1,7 @@
 {
     "layer": "top",
     // List output from command line using:
+    // Hyprland: `hyprctl monitors`
     // Sway: `swaymsg -t get_outputs`
     "output": ["eDP-1", "HDMI-A-1", "DP-1", "DP-2"],
     "height": 24,
