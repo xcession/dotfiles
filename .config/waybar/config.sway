@@ -6,8 +6,8 @@
     "height": 24,
     "position": "top",
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": [],
-    "modules-right": ["idle_inhibitor", "cpu", "memory", "temperature", "pulseaudio", "network", "backlight", "battery", "sway/language", "keyboard-state", "clock", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["idle_inhibitor", "cpu", "memory", "temperature", "pulseaudio", "backlight", "network", "battery", "sway/language", "keyboard-state", "tray"],
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
