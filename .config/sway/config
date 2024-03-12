@@ -501,7 +501,7 @@ bar {
   #     inactive_workspace #32323200 #32323200 #5c5c5c
   # }
 
-  swaybar_command waybar
+  swaybar_command $HOME/.local/bin/launch-waybar
 
 }
 
