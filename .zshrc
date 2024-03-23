@@ -77,6 +77,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Composer
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
 # Rustup
 export PATH="$HOME/.cargo/bin:$PATH"
 
