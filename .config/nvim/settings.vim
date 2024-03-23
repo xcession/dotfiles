@@ -64,12 +64,6 @@ autocmd BufNewFile,BufRead *.json.template set syntax=json
 
 " }}}
 
-" Font {{{
-
-set guifont=Iosevka\ Nerd\ Font:12
-
-" }}}
-
 " Tabs and Spaces {{{
 
 set tabstop=2                 " setting tab to 2 column
