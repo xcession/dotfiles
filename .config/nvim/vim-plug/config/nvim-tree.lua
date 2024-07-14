@@ -69,8 +69,8 @@ require("nvim-tree").setup {
       "readme.md",
     },
     symlink_destination = true,
-    highlight_git = true,
-    highlight_diagnostics = false,
+    highlight_git = "icon",
+    highlight_diagnostics = "none",
     highlight_opened_files = "icon",
     highlight_modified = "none",
     highlight_bookmarks = "none",
@@ -149,6 +149,7 @@ require("nvim-tree").setup {
     enable = false,
     update_root = false,
     ignore_list = {},
+    exclude = false,
   },
   -- OPTS: SYSTEM OPEN
   system_open = {
@@ -189,6 +190,7 @@ require("nvim-tree").setup {
   },
   -- OPTS: FILTERS
   filters = {
+    enable = true,
     git_ignored = true,
     dotfiles = false,
     git_clean = false,
@@ -289,8 +291,10 @@ require("nvim-tree").setup {
   },
   -- OPTS: EXPERIMENTAL
   experimental = {
-    git = {
-      async = true,
+    actions = {
+      open_file = {
+        relative_path = false,
+      },
     },
   },
   -- OPTS: LOG
