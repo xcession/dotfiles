@@ -1,3 +1,3 @@
 -- npm i -g typescript typescript-language-server
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ts_ls.setup{}
 
