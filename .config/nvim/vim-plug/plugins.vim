@@ -38,7 +38,7 @@ Plug 'unblevable/quick-scope'
 Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-tree/nvim-tree.lua'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " }}}
