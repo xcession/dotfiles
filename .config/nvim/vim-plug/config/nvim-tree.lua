@@ -2,11 +2,11 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- set termguicolors to enable highlight groups
+-- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
-require("nvim-tree").setup {
+require("nvim-tree").setup({
   -- OPTS
   on_attach = "default",
   hijack_cursor = false,
@@ -312,4 +312,4 @@ require("nvim-tree").setup {
       watcher = false,
     },
   },
-} -- END_DEFAULT_OPTS
+}) -- END_DEFAULT_OPTS
