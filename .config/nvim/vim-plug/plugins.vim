@@ -51,6 +51,7 @@ Plug 'junegunn/fzf.vim'
 
 " Git {{{
 
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
 
