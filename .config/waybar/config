@@ -4,7 +4,7 @@
     // Hyprland: `hyprctl monitors`
     // Sway: `swaymsg -t get_outputs`
     //"output": ["LVDS-1", "HDMI-A-1"],
-    "output": ["eDP-1", "DP-1", "DP-2"],
+    "output": ["eDP-1", "DP-1", "DP-2", "DP-3"],
     "height": 24,
     "position": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
